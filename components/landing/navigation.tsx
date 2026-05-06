@@ -46,14 +46,9 @@ export function Navigation() {
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="flex items-center gap-1">
-              <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-lg" : "text-xl lg:text-2xl"}`}>
-                Mutual
-              </span>
-              <span className={`text-accent font-display transition-all duration-500 ${isScrolled ? "text-lg" : "text-xl lg:text-2xl"}`}>
-                CS
-              </span>
-            </div>
+            <span className={`font-kanit font-bold text-white transition-all duration-500 ${isScrolled ? "text-lg" : "text-2xl lg:text-3xl"}`}>
+              MUTUAL
+            </span>
           </a>
 
           {/* Desktop Navigation */}
