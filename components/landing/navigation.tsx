@@ -67,7 +67,7 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+919876543210" className={`flex items-center gap-2 text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
+            <a href="tel:+917042477535" className={`flex items-center gap-2 text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
               <Phone className="w-4 h-4" />
               <span className="hidden lg:inline">Talk to Expert</span>
             </a>
@@ -134,7 +134,7 @@ export function Navigation() {
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
             <a 
-              href="tel:+919876543210"
+              href="tel:+917042477535"
               className="flex items-center justify-center gap-2 h-14 rounded-full border border-border text-foreground"
               onClick={() => setIsMobileMenuOpen(false)}
             >
