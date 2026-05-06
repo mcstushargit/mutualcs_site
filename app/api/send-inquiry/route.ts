@@ -16,9 +16,13 @@ interface InquiryData {
 export async function POST(request: NextRequest) {
   try {
     const body: InquiryData = await request.json();
+    
+    console.log("[v0] Received inquiry:", JSON.stringify(body, null, 2));
+    console.log("[v0] RESEND_API_KEY exists:", !!process.env.RESEND_API_KEY);
 
     // Validate required fields
     if (!body.name || !body.email || !body.phone) {
+      console.log("[v0] Validation failed - missing fields");
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -26,8 +30,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email to Mutual Consulting Services
-    const data = await resend.emails.send({
-      from: 'noreply@mutualcs.com',
+    // Using Resend's default domain - change to your verified domain
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'Mutual CS <onboarding@resend.dev>';
+    
+    console.log("[v0] Sending email from:", fromEmail);
+    
+    const { data, error } = await resend.emails.send({
+      from: fromEmail,
       to: 'connect@mutualcs.com',
       replyTo: body.email,
       subject: `New Talent Inquiry from ${body.name} - ${body.company || 'N/A'}`,
@@ -62,10 +71,20 @@ export async function POST(request: NextRequest) {
         </div>
       `,
     });
+    
+    console.log("[v0] Main email response - data:", data, "error:", error);
+    
+    if (error) {
+      console.error("[v0] Resend error:", error);
+      return NextResponse.json(
+        { error: 'Failed to send email', details: error },
+        { status: 500 }
+      );
+    }
 
     // Send confirmation email to the user
-    await resend.emails.send({
-      from: 'noreply@mutualcs.com',
+    const confirmationResult = await resend.emails.send({
+      from: fromEmail,
       to: body.email,
       subject: 'We Received Your Inquiry - Mutual Consulting Services',
       html: `
@@ -104,6 +123,8 @@ export async function POST(request: NextRequest) {
         </div>
       `,
     });
+    
+    console.log("[v0] Confirmation email result:", confirmationResult);
 
     return NextResponse.json(
       { 
