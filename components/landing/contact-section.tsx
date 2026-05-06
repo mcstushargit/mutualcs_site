@@ -32,16 +32,42 @@ export function ContactSection() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch("/api/send-inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send inquiry");
+      }
+
+      setIsSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        hiringVolume: "",
+        serviceType: "",
+        message: ""
+      });
+    } catch (err) {
+      setError("Failed to send inquiry. Please try again or contact us directly.");
+      console.error("Form submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -141,6 +167,12 @@ export function ContactSection() {
                 <p className="text-sm text-muted-foreground mb-6">
                   Fill out the form and get a customized hiring plan.
                 </p>
+                
+                {error && (
+                  <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+                    {error}
+                  </div>
+                )}
                 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
