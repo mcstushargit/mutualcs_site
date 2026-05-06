@@ -67,23 +67,23 @@ export function ContactSection() {
             
             {/* Contact info */}
             <div className="space-y-6 mb-12">
-              <a href="tel:+919876543210" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
+              <a href="tel:+917042477535" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Call us directly</div>
-                  <div className="font-semibold">+91 98765 43210</div>
+                  <div className="font-semibold">+91 7042477535</div>
                 </div>
               </a>
               
-              <a href="mailto:hello@mutualcs.com" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
+              <a href="mailto:connect@mutualcs.com" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Email us</div>
-                  <div className="font-semibold">hello@mutualcs.com</div>
+                  <div className="font-semibold">connect@mutualcs.com</div>
                 </div>
               </a>
               
@@ -93,7 +93,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Connect on LinkedIn</div>
-                  <div className="font-semibold">MutualCS</div>
+                  <div className="font-semibold">Mutual Consulting Services</div>
                 </div>
               </a>
             </div>
