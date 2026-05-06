@@ -47,7 +47,7 @@ export function Navigation() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <span className={`font-kanit font-bold text-white transition-all duration-500 ${isScrolled ? "text-lg" : "text-2xl lg:text-3xl"}`}>
-              MUTUAL
+              Mutual
             </span>
           </a>
 
