@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -52,13 +52,13 @@ export function FooterSection() {
             
             {/* Contact info */}
             <div className="space-y-3 text-sm">
-              <a href="tel:+919876543210" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              <a href="tel:+917042477535" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="w-4 h-4" />
-                +91 98765 43210
+                +91 7042477535
               </a>
-              <a href="mailto:hello@mutualcs.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+              <a href="mailto:connect@mutualcs.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                hello@mutualcs.com
+                connect@mutualcs.com
               </a>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5" />
@@ -76,15 +76,6 @@ export function FooterSection() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
-              </a>
-              <a 
-                href="https://twitter.com/mutualcs" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:bg-accent/10 hover:border-accent/50 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-4 h-4" />
               </a>
             </div>
           </div>
