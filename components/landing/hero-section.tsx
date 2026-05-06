@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { AnimatedSphere } from "./animated-sphere";
+import { ArrowRight, Clock, Users, Building2 } from "lucide-react";
 
-const words = ["create", "build", "scale", "ship"];
+const words = ["GCCs", "Startups", "Enterprises", "MNCs"];
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,36 +23,11 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Animated sphere background */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] opacity-40 pointer-events-none">
-        <AnimatedSphere />
-      </div>
+      {/* Grid pattern background */}
+      <div className="absolute inset-0 grid-pattern opacity-40 pointer-events-none" />
       
-      {/* Subtle grid lines */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={`h-${i}`}
-            className="absolute h-px bg-foreground/10"
-            style={{
-              top: `${12.5 * (i + 1)}%`,
-              left: 0,
-              right: 0,
-            }}
-          />
-        ))}
-        {[...Array(12)].map((_, i) => (
-          <div
-            key={`v-${i}`}
-            className="absolute w-px bg-foreground/10"
-            style={{
-              left: `${8.33 * (i + 1)}%`,
-              top: 0,
-              bottom: 0,
-            }}
-          />
-        ))}
-      </div>
+      {/* Accent glow */}
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[150px] pointer-events-none pulse-glow" />
       
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
         {/* Eyebrow */}
@@ -62,26 +36,25 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
-            <span className="w-8 h-px bg-foreground/30" />
-            The platform for modern teams
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-accent">
+            <span className="w-8 h-px bg-accent" />
+            India&apos;s Fastest GCC Recruitment Partner
           </span>
         </div>
         
         {/* Main headline */}
         <div className="mb-12">
           <h1 
-            className={`text-[clamp(3rem,12vw,10rem)] font-display leading-[0.9] tracking-tight transition-all duration-1000 ${
+            className={`text-[clamp(2.5rem,8vw,7rem)] font-display leading-[0.95] tracking-tight transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">The platform</span>
+            <span className="block text-balance">Elite Talent for</span>
             <span className="block">
-              to{" "}
               <span className="relative inline-block">
                 <span 
                   key={wordIndex}
-                  className="inline-flex"
+                  className="inline-flex text-accent"
                 >
                   {words[wordIndex].split("").map((char, i) => (
                     <span
@@ -95,7 +68,6 @@ export function HeroSection() {
                     </span>
                   ))}
                 </span>
-                <span className="absolute -bottom-2 left-0 right-0 h-3 bg-foreground/10" />
               </span>
             </span>
           </h1>
@@ -108,8 +80,9 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Your toolkit to stop configuring and start innovating. 
-            Securely build, deploy, and scale the best experiences.
+            Hire top tech professionals for your Global Capability Center with an{" "}
+            <span className="text-foreground font-semibold">average closure rate of just 2 weeks</span>.
+            From AI engineers to Cloud architects, we deliver culture-fit profiles at scale.
           </p>
           
           {/* CTAs */}
@@ -120,53 +93,65 @@ export function HeroSection() {
           >
             <Button 
               size="lg" 
-              className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
+              asChild
+              className="bg-accent hover:bg-accent/90 text-background px-8 h-14 text-base rounded-full group font-semibold"
             >
-              Start free trial
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              <a href="#contact">
+                Start Hiring Now
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
-              className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
+              asChild
+              className="h-14 px-8 text-base rounded-full border-border hover:bg-foreground/5"
             >
-              Watch demo
+              <a href="#services">Explore Services</a>
             </Button>
           </div>
         </div>
         
       </div>
       
-      {/* Stats marquee - full width outside container */}
+      {/* Stats bar */}
       <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
+        className={`absolute bottom-0 left-0 right-0 border-t border-border bg-background/50 backdrop-blur-sm transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
-              {[
-                { value: "20 days", label: "saved on builds", company: "NETFLIX" },
-                { value: "98%", label: "faster deployment", company: "STRIPE" },
-                { value: "300%", label: "throughput increase", company: "LINEAR" },
-                { value: "6x", label: "faster to ship", company: "NOTION" },
-              ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
-                  </span>
-                </div>
-              ))}
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
+            <div className="py-6 lg:py-8 pr-4">
+              <div className="flex items-center gap-3 mb-2">
+                <Clock className="w-5 h-5 text-accent" />
+                <span className="text-3xl lg:text-4xl font-display">2 Weeks</span>
+              </div>
+              <span className="text-sm text-muted-foreground">Average Closure Time</span>
             </div>
-          ))}
+            <div className="py-6 lg:py-8 px-4">
+              <div className="flex items-center gap-3 mb-2">
+                <Users className="w-5 h-5 text-accent" />
+                <span className="text-3xl lg:text-4xl font-display">500+</span>
+              </div>
+              <span className="text-sm text-muted-foreground">Successful Placements</span>
+            </div>
+            <div className="py-6 lg:py-8 px-4">
+              <div className="flex items-center gap-3 mb-2">
+                <Building2 className="w-5 h-5 text-accent" />
+                <span className="text-3xl lg:text-4xl font-display">50+</span>
+              </div>
+              <span className="text-sm text-muted-foreground">GCC Clients Served</span>
+            </div>
+            <div className="py-6 lg:py-8 pl-4">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-3xl lg:text-4xl font-display">85%</span>
+              </div>
+              <span className="text-sm text-muted-foreground">First-Year Retention</span>
+            </div>
+          </div>
         </div>
       </div>
-      
-      {/* Scroll indicator */}
-      
     </section>
   );
 }

@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { name: "Features", href: "#features" },
-  { name: "How it works", href: "#how-it-works" },
-  { name: "Developers", href: "#developers" },
-  { name: "Pricing", href: "#pricing" },
+  { name: "Services", href: "#services" },
+  { name: "Industries", href: "#industries" },
+  { name: "Why Us", href: "#why-us" },
+  { name: "Process", href: "#process" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export function Navigation() {
@@ -34,7 +35,7 @@ export function Navigation() {
       <nav 
         className={`mx-auto transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
-            ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
+            ? "bg-background/90 backdrop-blur-xl border border-border rounded-2xl shadow-lg max-w-[1200px]"
             : "bg-transparent max-w-[1400px]"
         }`}
       >
@@ -45,12 +46,18 @@ export function Navigation() {
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>Optimus</span>
-            <span className={`text-muted-foreground font-mono transition-all duration-500 ${isScrolled ? "text-[10px] mt-0.5" : "text-xs mt-1"}`}>TM</span>
+            <div className="flex items-center gap-1">
+              <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-lg" : "text-xl lg:text-2xl"}`}>
+                Mutual
+              </span>
+              <span className={`text-accent font-display transition-all duration-500 ${isScrolled ? "text-lg" : "text-xl lg:text-2xl"}`}>
+                CS
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden md:flex items-center gap-8 lg:gap-12">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -58,21 +65,23 @@ export function Navigation() {
                 className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
-              Sign in
+            <a href="tel:+919876543210" className={`flex items-center gap-2 text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
+              <Phone className="w-4 h-4" />
+              <span className="hidden lg:inline">Talk to Expert</span>
             </a>
             <Button
               size="sm"
-              className={`bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
+              asChild
+              className={`bg-accent hover:bg-accent/90 text-background font-semibold rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
             >
-              Start creating
+              <a href="#contact">Get Started</a>
             </Button>
           </div>
 
@@ -109,7 +118,7 @@ export function Navigation() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`text-5xl font-display text-foreground hover:text-muted-foreground transition-all duration-500 ${
+                className={`text-4xl font-display text-foreground hover:text-accent transition-all duration-500 ${
                   isMobileMenuOpen 
                     ? "opacity-100 translate-y-0" 
                     : "opacity-0 translate-y-4"
@@ -122,25 +131,27 @@ export function Navigation() {
           </div>
           
           {/* Bottom CTAs */}
-          <div className={`flex gap-4 pt-8 border-t border-foreground/10 transition-all duration-500 ${
+          <div className={`flex flex-col gap-4 pt-8 border-t border-border transition-all duration-500 ${
             isMobileMenuOpen 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-4"
           }`}
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
-            <Button 
-              variant="outline" 
-              className="flex-1 rounded-full h-14 text-base"
+            <a 
+              href="tel:+919876543210"
+              className="flex items-center justify-center gap-2 h-14 rounded-full border border-border text-foreground"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sign in
-            </Button>
+              <Phone className="w-5 h-5" />
+              Call Now
+            </a>
             <Button 
-              className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
+              asChild
+              className="bg-accent text-background rounded-full h-14 text-base font-semibold"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Start creating
+              <a href="#contact">Get Started</a>
             </Button>
           </div>
         </div>
