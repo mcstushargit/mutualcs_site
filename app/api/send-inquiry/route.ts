@@ -30,8 +30,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email to Mutual Consulting Services
-    // Using Resend's default domain - change to your verified domain
-    const fromEmail = process.env.RESEND_FROM_EMAIL || 'Mutual CS <onboarding@resend.dev>';
+    // Using verified domain: connect.mutualcs.com
+    const fromEmail = 'onboarding@connect.mutualcs.com';
     
     console.log("[v0] Sending email from:", fromEmail);
     
