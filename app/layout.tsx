@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google'
+import { Inter, Playfair_Display, JetBrains_Mono, Kanit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -17,6 +17,12 @@ const playfair = Playfair_Display({
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"],
   variable: '--font-jetbrains'
+});
+
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: '--font-kanit'
 });
 
 export const metadata: Metadata = {
@@ -146,7 +152,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} ${kanit.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
