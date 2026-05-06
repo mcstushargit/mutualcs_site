@@ -1,15 +1,17 @@
 "use client";
 
 const clients = [
-  "Fortune 500 Tech",
-  "Global BFSI",
-  "Enterprise SaaS",
-  "FinTech Unicorn",
-  "Cloud Platform",
-  "AI Startup",
-  "E-Commerce Giant",
-  "Healthcare MNC"
+  { label: "Fortune 500 Tech", abbr: "FT" },
+  { label: "Global BFSI", abbr: "GB" },
+  { label: "Enterprise SaaS", abbr: "ES" },
+  { label: "FinTech Unicorn", abbr: "FU" },
+  { label: "Cloud Platform", abbr: "CP" },
+  { label: "AI Startup", abbr: "AS" },
+  { label: "E-Commerce Giant", abbr: "EC" },
+  { label: "Healthcare MNC", abbr: "HM" }
 ];
+
+const colors = ["bg-teal-500/20 text-teal-300", "bg-emerald-500/20 text-emerald-300", "bg-cyan-500/20 text-cyan-300", "bg-green-500/20 text-green-300"];
 
 export function ClientsSection() {
   return (
@@ -35,12 +37,10 @@ export function ClientsSection() {
                     key={`${setIndex}-${index}`}
                     className="flex items-center gap-3 px-6 py-3 rounded-lg border border-border/50 bg-card/50"
                   >
-                    <div className="w-8 h-8 rounded-md bg-accent/20 flex items-center justify-center">
-                      <span className="text-xs font-bold text-accent">
-                        {client.split(' ').map(w => w[0]).join('')}
-                      </span>
+                    <div className={`w-8 h-8 rounded-md flex items-center justify-center font-bold text-xs ${colors[index % colors.length]}`}>
+                      {client.abbr}
                     </div>
-                    <span className="text-sm font-medium text-muted-foreground">{client}</span>
+                    <span className="text-sm font-medium text-muted-foreground">{client.label}</span>
                   </div>
                 ))}
               </div>
