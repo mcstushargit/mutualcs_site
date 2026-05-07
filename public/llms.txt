@@ -1,0 +1,39 @@
+# MutualCS
+
+## What We Do
+MutualCS is a specialist tech and executive search firm. We recruit permanent tech talent and C-suite leaders for high-growth companies and Global Capability Centers (GCCs), globally. No staffing or contracting — permanent placement only.
+
+## Services
+- Executive Search: CXO, VP, Country Head, CHRO, CISO, Board — retained search, global mandates
+- Tech Recruitment: Engineers, architects, data scientists — permanent placement, any country
+- GCC Recruitment: End-to-end talent acquisition for companies building India Global Capability Centers
+- Embedded RPO: Dedicated recruiter embedded in client hiring process
+
+## Roles We Place
+AI/ML Engineers, GenAI Architects, Platform & Cloud Engineers, Data Engineering leads, Cybersecurity professionals, FinTech engineers, Embedded & ADAS Engineers, Full-Stack & Backend Engineers, Engineering Managers, Staff Engineers, CEO/MD, CTO/CIO, CFO, CHRO, CISO, VP Engineering, VP Product, Country Head, GCC Site Director, Board Member, Independent Director
+
+## Clients
+Global Capability Centers, Fortune 500 enterprises, Series B–D startups, financial institutions, technology companies — headquartered in the US, UK, Singapore, Japan, Middle East, and Europe.
+
+## Differentiators
+- 30-day shortlist SLA with contractual 20% fee-back if missed
+- 85%+ first-year retention rate
+- Passive headhunting — not job board sourcing
+- Permanent placement only — no staffing or contracting
+- Operates globally with deep expertise in India's engineering talent market
+
+## Key Pages
+- / — homepage
+- /gcc-recruitment — GCC talent acquisition specialist page
+- /executive-search — C-suite and VP search globally
+- /tech-recruitment — permanent tech hiring globally
+- /ai-ml-hiring — AI/ML specialist hiring
+- /united-states — GCC recruitment for US-headquartered companies
+- /united-kingdom — GCC recruitment for UK-headquartered companies
+- /singapore — GCC recruitment for Singapore-headquartered companies
+- /japan — GCC recruitment for Japanese companies
+- /middle-east — GCC recruitment for Middle East companies
+- /resources/gcc-salary-guide — India GCC salary benchmarks
+
+## Contact
+https://mutualcs.com

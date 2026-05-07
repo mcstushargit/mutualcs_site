@@ -37,7 +37,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-accent font-semibold">
             <span className="w-8 h-px bg-accent" />
-            Specialist GCC Recruitment Partner
+            Tech &amp; Executive Search · Global · Permanent
           </span>
         </div>
 
@@ -60,9 +60,9 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Specialist recruitment for AI, Cloud, Cybersecurity, Platform Engineering —
-            and{" "}
-            <span className="text-foreground font-semibold">GCC leadership from Engineering Managers to CHRO.</span>{" "}
+            Permanent tech recruitment and executive search — from Staff Engineers to CXOs —
+            for{" "}
+            <span className="text-foreground font-semibold">high-growth companies and GCCs, globally.</span>{" "}
             We fill the roles your team can&apos;t. Miss the 30-day SLA, get 20% back.
           </p>
 
@@ -110,16 +110,16 @@ export function HeroSection() {
             <div className="py-5 lg:py-6 px-4">
               <div className="flex items-center gap-3 mb-1">
                 <Users className="w-4 h-4 text-accent-foreground/70" />
-                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">200+</span>
+                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">500+</span>
               </div>
-              <span className="text-xs text-accent-foreground/75 font-medium tracking-wide">GCC Placements</span>
+              <span className="text-xs text-accent-foreground/75 font-medium tracking-wide">Placements Globally</span>
             </div>
             <div className="py-5 lg:py-6 px-4">
               <div className="flex items-center gap-3 mb-1">
                 <Building2 className="w-4 h-4 text-accent-foreground/70" />
-                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">50+</span>
+                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">75+</span>
               </div>
-              <span className="text-xs text-accent-foreground/75 font-medium tracking-wide">GCC Clients</span>
+              <span className="text-xs text-accent-foreground/75 font-medium tracking-wide">Clients Globally</span>
             </div>
             <div className="py-5 lg:py-6 pl-4">
               <div className="flex items-center gap-3 mb-1">

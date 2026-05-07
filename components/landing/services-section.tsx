@@ -13,42 +13,48 @@ import {
 const services = [
   {
     icon: Zap,
-    title: "GCC Fast Track",
-    description: "Contingent hiring with a hard SLA. Pay 16–18% of first-year CTC on placement — and get 20% back if we miss 30 days.",
+    title: "Contingent Hire",
+    description: "Permanent placement with a hard SLA. Pay 16–18% of first-year CTC on placement — and get 20% back if we miss 30 days. Any company, any country.",
     features: ["30-Day SLA Guarantee", "20% Fee Reduction if SLA Missed", "Exclusive/Semi-Exclusive Mandate", "Pre-Vetted Shortlist in 7 Days"],
-    tier: "Tier 1"
+    tier: "Tier 1",
+    link: "/tech-recruitment"
   },
   {
     icon: Search,
     title: "Executive & Retained Search",
-    description: "For senior and hard-to-fill roles — Engineering VPs, CHROs, Data Science Leads, CISOs. Fee split across milestones. Passive headhunting, structured assessment.",
+    description: "For CXO, VP, and Country Head mandates globally. Fee split across milestones. Passive headhunting, confidential searches, structured assessment.",
     features: ["25–28% of First-Year CTC", "33% Upfront / 33% Shortlist / 33% Acceptance", "Passive Candidate Headhunting", "3-Month Replacement Guarantee"],
-    tier: "Tier 2"
+    tier: "Tier 2",
+    link: "/executive-search"
   },
   {
     icon: Building,
-    title: "GCC Embedded RPO",
-    description: "We become your GCC's de facto recruitment team. A dedicated embedded recruiter who knows your culture, your tech stack, and your hiring bar.",
+    title: "Embedded RPO",
+    description: "We become your de facto recruitment team. A dedicated embedded recruiter who knows your culture, tech stack, and hiring bar — for any company building at scale.",
     features: ["Monthly Retainer", "Per-Hire Fee on Success", "Predictable Monthly Recurring Model", "Ideal for 8–20+ Hires/Year"],
-    tier: "Tier 3"
+    tier: "Tier 3",
+    link: "#contact"
   },
   {
     icon: Brain,
     title: "AI/ML & GenAI Hiring",
-    description: "Specialists for the roles nobody else can fill — AI Engineers, ML Scientists, GenAI Architects, LLM & MLOps specialists for GCCs facing the talent crunch.",
-    features: ["AI/ML Engineers", "GenAI & LLM Architects", "Data Science Leads", "MLOps Specialists"]
+    description: "Specialists for the roles nobody else can fill — AI Engineers, ML Scientists, GenAI Architects, LLM & MLOps specialists for companies at the frontier.",
+    features: ["AI/ML Engineers", "GenAI & LLM Architects", "Data Science Leads", "MLOps Specialists"],
+    link: "/ai-ml-hiring"
   },
   {
     icon: Cloud,
     title: "Platform & Cloud Engineering",
-    description: "Cloud architects, DevOps engineers, SREs, and Platform leads for GCCs scaling their infrastructure and engineering orgs.",
-    features: ["Cloud Architects (AWS/GCP/Azure)", "DevOps & SRE Engineers", "Platform Engineers", "Cybersecurity Specialists"]
+    description: "Cloud architects, DevOps engineers, SREs, and Platform leads for companies scaling their infrastructure and engineering organisations.",
+    features: ["Cloud Architects (AWS/GCP/Azure)", "DevOps & SRE Engineers", "Platform Engineers", "Cybersecurity Specialists"],
+    link: "#contact"
   },
   {
     icon: Briefcase,
-    title: "GCC Leadership Search",
-    description: "C-suite and VP-level executive search for GCC leadership — Engineering Managers, VP Engineering, CHRO, CISO, Head of Product, and Country Heads.",
-    features: ["VP Engineering & CTO", "CHRO & People Leaders", "Head of Product & Innovation", "Country Heads & GCC Directors"]
+    title: "Executive Leadership Search",
+    description: "Board-level to VP search — CTO, CHRO, CISO, Head of Product, Country Head, and GCC Site Directors. Global mandates, full discretion.",
+    features: ["VP Engineering & CTO", "CHRO & People Leaders", "Head of Product & Innovation", "Country Heads & GCC Directors"],
+    link: "/executive-search"
   }
 ];
 
@@ -63,13 +69,13 @@ export function ServicesSection() {
             What We Do
           </span>
           <h2 className="text-4xl lg:text-5xl font-display tracking-tight mb-6 text-balance">
-            Every GCC Hiring Need.{" "}
+            Tech to C-Suite.{" "}
             <span className="text-accent">One Accountable Partner.</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Three engagement models built around accountability, not just success fees.
-            Three specialist practice areas for the roles that stay open for 60+ days.
-            From niche tech to C-suite — we recruit for GCCs end to end.
+            Three specialist practice areas — from niche tech to board-level executive search.
+            Permanent placement, globally.
           </p>
         </div>
 
@@ -111,10 +117,10 @@ export function ServicesSection() {
 
               {/* Link */}
               <a
-                href="#contact"
+                href={service.link ?? "#contact"}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"
               >
-                Get started
+                {service.link && service.link !== "#contact" ? "Learn more" : "Get started"}
                 <ArrowRight className="w-4 h-4" />
               </a>
 

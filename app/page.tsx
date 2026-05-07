@@ -24,6 +24,29 @@ export default function Home() {
       <FaqSection />
       <ContactSection />
       <FooterSection />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MutualCS",
+            "url": "https://mutualcs.com",
+            "description": "Specialist tech and executive search firm for high-growth companies and Global Capability Centers. Permanent placement globally.",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Recruitment Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executive Search", "url": "https://mutualcs.com/executive-search" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tech Recruitment", "url": "https://mutualcs.com/tech-recruitment" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GCC Recruitment", "url": "https://mutualcs.com/gcc-recruitment" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI/ML Hiring", "url": "https://mutualcs.com/ai-ml-hiring" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Embedded RPO", "url": "https://mutualcs.com/#contact" } }
+              ]
+            }
+          })
+        }}
+      />
     </main>
   );
 }

@@ -4,11 +4,11 @@ import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   services: [
-    { name: "GCC Recruitment", href: "#services" },
-    { name: "RPO Services", href: "#services" },
-    { name: "Executive Search", href: "#services" },
-    { name: "Campus Hiring", href: "#services" },
-    { name: "Contract Staffing", href: "#services" },
+    { name: "GCC Recruitment", href: "/gcc-recruitment" },
+    { name: "Tech Recruitment", href: "/tech-recruitment" },
+    { name: "Executive Search", href: "/executive-search" },
+    { name: "AI/ML Hiring", href: "/ai-ml-hiring" },
+    { name: "Embedded RPO", href: "#contact" },
   ],
   industries: [
     { name: "AI & Machine Learning", href: "#industries" },
