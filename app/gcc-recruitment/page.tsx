@@ -36,8 +36,8 @@ const whySpecialist = [
     body: "V3Staffing says '10 days' — that is marketing. Our 30-day SLA is written into the engagement terms. Miss it due to our delays? You receive a 20% fee reduction. No competitor does this."
   },
   {
-    heading: "Founder-reviewed shortlists. You talk to Tushar — not an account manager.",
-    body: "Every shortlist goes through the founder. Clients dealing with a named, accountable individual get better outcomes than those dealing with a team of generalist BDMs."
+    heading: "Founder-reviewed shortlists. You talk to our experts — not an account manager.",
+    body: "Every shortlist goes through our leadership team. Clients dealing with accountable, senior individuals get better outcomes than those dealing with a team of generalist BDMs."
   }
 ];
 

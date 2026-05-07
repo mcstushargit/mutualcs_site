@@ -101,7 +101,7 @@ export function ContactSection() {
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               Share your open GCC tech roles and we&apos;ll come back with a tailored plan —
               including timeline, approach, and the right engagement model.{" "}
-              <span className="text-foreground font-semibold">Tushar will contact you within 4 hours.</span>
+              <span className="text-foreground font-semibold">Our team will contact you within 4 hours.</span>
             </p>
 
             {/* Contact info */}
@@ -111,7 +111,7 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground">Call Tushar directly</div>
+                  <div className="text-sm text-muted-foreground">Call us directly</div>
                   <div className="font-semibold">+91 7042477535</div>
                 </div>
               </a>
@@ -164,7 +164,7 @@ export function ContactSection() {
                 <h3 className="text-2xl font-display mb-4">Request Received</h3>
                 <p className="text-muted-foreground mb-8">
                   We&apos;ve received your request.{" "}
-                  <span className="text-foreground font-semibold">Tushar will contact you within 4 hours</span>{" "}
+                  <span className="text-foreground font-semibold">Our team will contact you within 4 hours</span>{" "}
                   with a tailored plan for your GCC hiring needs.
                 </p>
                 <Button
@@ -180,7 +180,7 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Book Your Free GCC Hiring Audit</h3>
                   <p className="text-sm text-muted-foreground">
-                    Tell us what you&apos;re hiring for. Tushar will contact you within 4 hours.
+                    Tell us what you&apos;re hiring for. Our team will contact you within 4 hours.
                   </p>
                 </div>
 

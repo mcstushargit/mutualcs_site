@@ -27,7 +27,7 @@ const differentiators = [
 
 const benefits = [
   "GCC specialist — tech roles, leadership roles, C-suite search",
-  "Founder-accountable: Tushar reviews every shortlist personally",
+  "Founder-accountable: every shortlist reviewed by our leadership",
   "30-day SLA with a contractual fee-reduction guarantee",
   "Passive candidate headhunting for hard-to-fill mandates",
   "Executive search for VP, CHRO, CISO, Country Head roles",

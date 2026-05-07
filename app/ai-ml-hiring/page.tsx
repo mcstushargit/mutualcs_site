@@ -195,7 +195,7 @@ export default function AiMlHiringPage() {
               "GCC-only recruitment — we speak the same language as your hiring managers",
               "30-day SLA with 20% fee-back guarantee on all AI/ML mandates",
               "Pre-built passive candidate networks in AI/ML across Bengaluru, Hyderabad, and Pune",
-              "Founder-reviewed shortlists — Tushar screens every AI candidate personally",
+              "Founder-reviewed shortlists — every AI candidate screened by our leadership",
             ].map((point) => (
               <div key={point} className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-accent mt-0.5 shrink-0" />

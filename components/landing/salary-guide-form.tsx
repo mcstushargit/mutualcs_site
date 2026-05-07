@@ -40,7 +40,7 @@ export function SalaryGuideForm() {
         <h3 className="text-2xl font-display mb-4">Guide Sent to Your Email</h3>
         <p className="text-muted-foreground mb-8">
           Check your inbox — the GCC Tech Salary Guide 2026 is on its way.
-          If you&apos;d like to discuss your GCC hiring mandate, Tushar is available for a quick call.
+          If you&apos;d like to discuss your GCC hiring mandate, our team is available for a quick call.
         </p>
         <Link
           href="/#contact"
