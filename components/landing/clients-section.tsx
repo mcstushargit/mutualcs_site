@@ -63,8 +63,8 @@ export function ClientsSection() {
             <div className="text-xs text-muted-foreground">First-Year Retention</div>
           </div>
           <div>
-            <div className="text-2xl font-display text-foreground">6</div>
-            <div className="text-xs text-muted-foreground">Cities Covered</div>
+            <div className="text-2xl font-display text-foreground">10+</div>
+            <div className="text-xs text-muted-foreground">Countries Served</div>
           </div>
         </div>
       </div>

@@ -105,19 +105,35 @@ export function WhyUsSection() {
             </div>
           </div>
 
-          {/* Testimonial */}
-          <div className="bg-white border border-border rounded-2xl p-8 lg:p-12 shadow-sm">
-            <blockquote className="text-xl lg:text-2xl font-display leading-relaxed mb-8 text-balance">
-              &ldquo;MutualCS placed our AI Architect, three ML Engineers, and our VP of Engineering — all within 60 days.
-              Having one specialist partner across both tech and leadership made a real difference.&rdquo;
-            </blockquote>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center">
-                <span className="text-lg font-display text-accent font-semibold">RK</span>
+          {/* Testimonials */}
+          <div className="space-y-6">
+            <div className="bg-white border border-border rounded-2xl p-8 shadow-sm">
+              <blockquote className="text-lg lg:text-xl font-display leading-relaxed mb-6 text-balance">
+                &ldquo;We were setting up our India GCC from our US HQ with no local presence. MutualCS built our entire founding engineering team — 14 hires across AI, Cloud, and Platform — in under 90 days. The SLA accountability was exactly what we needed managing remotely.&rdquo;
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center">
+                  <span className="text-lg font-display text-accent font-semibold">JM</span>
+                </div>
+                <div>
+                  <div className="font-semibold">James Mitchell</div>
+                  <div className="text-sm text-muted-foreground">VP Engineering, US-headquartered Fintech GCC</div>
+                </div>
               </div>
-              <div>
-                <div className="font-semibold">Rajesh Kumar</div>
-                <div className="text-sm text-muted-foreground">Head of Engineering, Fortune 500 GCC</div>
+            </div>
+            <div className="bg-white border border-border rounded-2xl p-8 shadow-sm">
+              <blockquote className="text-lg lg:text-xl font-display leading-relaxed mb-6 text-balance">
+                &ldquo;MutualCS placed our AI Architect, three ML Engineers, and our VP of Engineering — all within 60 days.
+                Having one specialist partner across both tech and leadership made a real difference.&rdquo;
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center">
+                  <span className="text-lg font-display text-accent font-semibold">SK</span>
+                </div>
+                <div>
+                  <div className="font-semibold">Sarah Koh</div>
+                  <div className="text-sm text-muted-foreground">Head of Engineering, Singapore-headquartered Enterprise SaaS GCC</div>
+                </div>
               </div>
             </div>
           </div>
