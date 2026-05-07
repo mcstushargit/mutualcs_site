@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 interface InquiryData {
   name: string;
   email: string;
@@ -15,8 +13,9 @@ interface InquiryData {
 
 export async function POST(request: NextRequest) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body: InquiryData = await request.json();
-    
+
     console.log("[v0] Received inquiry:", JSON.stringify(body, null, 2));
     console.log("[v0] RESEND_API_KEY exists:", !!process.env.RESEND_API_KEY);
 
