@@ -46,8 +46,8 @@ export function FooterSection() {
               <span className="text-2xl font-display text-accent">CS</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              India&apos;s fastest recruitment agency for Global Capability Centers. 
-              Helping Fortune 500 companies build world-class tech teams.
+              Specialist recruitment partner for Global Capability Centers.
+              Helping global companies build world-class tech teams.
             </p>
             
             {/* Contact info */}
@@ -150,7 +150,7 @@ export function FooterSection() {
             &copy; {new Date().getFullYear()} Mutual Consulting Services. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Specialist GCC Tech Recruiter — India
+            Specialist GCC Recruitment Partner — Global
           </p>
         </div>
       </div>

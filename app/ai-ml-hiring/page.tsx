@@ -3,15 +3,15 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle, Brain } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI/ML Hiring for GCCs India | GenAI Talent Specialists | MutualCS",
+  title: "AI/ML Hiring for GCCs | GenAI Talent Specialists | MutualCS",
   description:
-    "MutualCS specialises in AI, ML, and GenAI talent acquisition for Global Capability Centers in India. We fill AI Engineers, ML Scientists, LLM Architects, and Data Science Leads in 30 days.",
+    "MutualCS specialises in AI, ML, and GenAI talent acquisition for Global Capability Centers. We fill AI Engineers, ML Scientists, LLM Architects, and Data Science Leads in 30 days.",
   keywords: [
     "hire AI engineer GCC",
-    "AI ML recruitment India GCC",
-    "GenAI talent hiring India",
+    "AI ML recruitment GCC",
+    "GenAI talent hiring",
     "ML engineer recruitment GCC",
-    "LLM architect hiring India",
+    "LLM architect hiring",
     "AI talent shortage GCC",
   ],
 };
@@ -34,7 +34,7 @@ const assessmentSteps = [
   {
     step: "02",
     heading: "Passive talent mapping",
-    body: "The best AI talent is not on Naukri. We map candidates at target GCCs and product companies, identify who fits your brief, and initiate direct outreach."
+    body: "The best AI talent isn't actively job-hunting. We map candidates at target GCCs and product companies, identify who fits your brief, and initiate direct outreach."
   },
   {
     step: "03",
@@ -78,7 +78,7 @@ export default function AiMlHiringPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             42% of GCCs report a critical AI/GenAI talent shortage. The candidates you need are passive —
-            they are at Google, Microsoft, Flipkart, and growing AI startups. They are not on Naukri.
+            they are at Google, Microsoft, and leading AI startups — and they are not actively looking.
             MutualCS finds them, screens them, and delivers a shortlist in 30 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

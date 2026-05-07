@@ -3,15 +3,15 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle, Shield, Clock, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GCC Recruitment Agency India | 30-Day Tech Hiring SLA | MutualCS",
+  title: "GCC Recruitment Agency | 30-Day Tech Hiring SLA | MutualCS",
   description:
-    "MutualCS is India's specialist GCC recruitment agency for AI, Cloud, Platform Engineering and Cybersecurity roles. 30-day SLA with a 20% fee-back guarantee. No generalists.",
+    "MutualCS is the specialist GCC recruitment partner for AI, Cloud, Platform Engineering and Cybersecurity roles. 30-day SLA with a 20% fee-back guarantee. No generalists.",
   keywords: [
-    "GCC recruitment agency India",
+    "GCC recruitment agency",
     "Global Capability Center recruitment",
-    "GCC tech hiring India",
-    "GCC staffing agency India",
-    "hire tech talent GCC India",
+    "GCC tech hiring",
+    "GCC staffing agency",
+    "hire tech talent GCC",
     "GCC recruitment 30 days",
   ],
 };
@@ -60,17 +60,17 @@ export default function GccRecruitmentPage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-accent mb-6">
             <span className="w-8 h-px bg-accent" />
-            India&apos;s Specialist GCC Tech Recruiter
+            Specialist GCC Tech Recruiter
           </span>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
             GCC Recruitment
             <br />
-            <span className="text-accent">Agency India.</span>
+            <span className="text-accent">Agency.</span>
             <br />
             30-Day SLA.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            MutualCS is the specialist recruitment partner for Global Capability Centers in India.
+            MutualCS is the specialist recruitment partner for Global Capability Centers.
             We fill AI, Cloud, Cybersecurity, and Platform Engineering roles in 30 days —
             with a contractual fee-back guarantee if we miss the SLA.
           </p>
@@ -146,8 +146,8 @@ export default function GccRecruitmentPage() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 A Global Capability Center (GCC) is a wholly-owned offshore or nearshore entity set up by
                 a multinational corporation to handle technology, operations, and R&amp;D functions.
-                India hosts over 1,800 GCCs employing 1.9 million professionals — and the number is
-                growing at 15–20% annually.
+                India is the world's largest GCC hub — 1,800+ centres employing 1.9 million professionals,
+                growing at 15–20% annually. We know this market from the inside.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Hiring for a GCC is different from hiring for a domestic tech company. The roles are global

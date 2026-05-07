@@ -29,7 +29,7 @@ const services = [
     icon: Building,
     title: "GCC Embedded RPO",
     description: "We become your GCC's de facto recruitment team. A dedicated embedded recruiter who knows your culture, your tech stack, and your hiring bar.",
-    features: ["₹2–4L/Month Retainer", "₹30–50K Per Successful Hire", "Predictable Monthly Recurring Model", "Ideal for 8–20+ Hires/Year"],
+    features: ["Monthly Retainer", "Per-Hire Fee on Success", "Predictable Monthly Recurring Model", "Ideal for 8–20+ Hires/Year"],
     tier: "Tier 3"
   },
   {

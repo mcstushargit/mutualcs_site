@@ -6,7 +6,7 @@ const differentiators = [
   {
     metric: "30-Day",
     label: "SLA Guarantee",
-    description: "Contractual time-to-shortlist for every mandate. No competitor in India backs their speed claim this way."
+    description: "Contractual time-to-shortlist for every mandate. No competitor backs their speed claim this way."
   },
   {
     metric: "85%+",
@@ -21,7 +21,7 @@ const differentiators = [
   {
     metric: "200+",
     label: "Roles Placed",
-    description: "From AI engineers to CHROs, across Bengaluru, Hyderabad, Pune, NCR, and Chennai."
+    description: "From AI engineers to CHROs, across India's major GCC hubs."
   }
 ];
 
@@ -31,7 +31,7 @@ const benefits = [
   "30-day SLA with a contractual fee-reduction guarantee",
   "Passive candidate headhunting for hard-to-fill mandates",
   "Executive search for VP, CHRO, CISO, Country Head roles",
-  "Multi-city hiring: Bengaluru, Hyderabad, Pune, NCR, Chennai",
+  "Hiring across all major India GCC hubs — Bengaluru, Hyderabad, Pune, NCR, Chennai",
   "Background verification and offer management included",
   "3-month replacement guarantee on every placement"
 ];

@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "What locations do you cover for GCC recruitment?",
-    answer: "We cover all major GCC hubs in India including Bengaluru (487+ GCCs), Hyderabad (273+ GCCs), Delhi NCR (180+ GCCs), Pune (120+ GCCs), Chennai (95+ GCCs), and Mumbai (85+ GCCs). We have local networks and talent pools in each city to ensure quick turnaround."
+    answer: "We recruit for GCCs globally, with deep specialisation in India's major talent hubs — Bengaluru, Hyderabad, Pune, NCR, Chennai, and Mumbai. For companies building India GCCs from the US, UK, Europe, Singapore, Japan, or the Middle East, we provide end-to-end talent acquisition from requirement to onboarding."
   },
   {
     question: "What are your pricing models?",

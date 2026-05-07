@@ -22,7 +22,6 @@ const tiers = [
     ],
     cta: "Start a Fast Track Mandate",
     bestFor: "Mid-market GCCs, 1–5 roles/year",
-    revenue: "Avg ₹8–15L per client/year",
   },
   {
     name: "Executive & Retained Search",
@@ -43,14 +42,13 @@ const tiers = [
     ],
     cta: "Discuss an Executive Search",
     bestFor: "VP, C-suite, CHRO, Country Head, roles open 60+ days",
-    revenue: "Avg ₹15–40L per client/year",
   },
   {
     name: "GCC Embedded RPO",
     tier: "Tier 3",
     description: "For GCCs hiring 8–20+ tech roles per year who want a dedicated recruitment team without building internally.",
-    fee: "₹2–4L/mo",
-    feeLabel: "+ ₹30–50K per successful hire",
+    fee: "Retainer-based",
+    feeLabel: "Monthly fee + per-hire; pricing on consultation",
     highlight: false,
     guarantee: "Predictable MRR, no feast-or-famine",
     features: [
@@ -64,7 +62,6 @@ const tiers = [
     ],
     cta: "Explore Embedded RPO",
     bestFor: "High-volume GCCs, 8–20+ hires/year",
-    revenue: "Avg ₹40–80L per client/year",
   },
 ];
 

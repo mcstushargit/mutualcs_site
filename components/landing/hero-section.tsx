@@ -37,7 +37,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-accent font-semibold">
             <span className="w-8 h-px bg-accent" />
-            India&apos;s Specialist GCC Recruitment Partner
+            Specialist GCC Recruitment Partner
           </span>
         </div>
 

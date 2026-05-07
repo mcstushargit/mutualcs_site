@@ -56,7 +56,7 @@ export function CtaSection() {
 
               <p className="text-lg text-accent-foreground/80 mb-10 leading-relaxed max-w-lg">
                 Tech roles, leadership hires, executive search — one partner with one SLA
-                and one accountability mechanism. No competitor in India offers this.
+                and one accountability mechanism. No competitor offers this.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-4">

@@ -27,6 +27,13 @@ const gccCities = [
   "NCR (Gurgaon/Noida)",
   "Chennai",
   "Mumbai",
+  "United States",
+  "United Kingdom",
+  "Europe",
+  "Singapore",
+  "Japan",
+  "Middle East",
+  "Australia / NZ",
   "Other"
 ];
 
@@ -243,15 +250,14 @@ export function ContactSection() {
 
                 {/* GCC City dropdown */}
                 <div>
-                  <label htmlFor="city" className="block text-sm font-medium mb-2">GCC City *</label>
+                  <label htmlFor="city" className="block text-sm font-medium mb-2">Location</label>
                   <select
                     id="city"
                     value={formData.city}
                     onChange={(e) => setFormData({...formData, city: e.target.value})}
-                    required
                     className="w-full h-10 px-3 rounded-md border border-border bg-card text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                   >
-                    <option value="" disabled>Select your GCC location</option>
+                    <option value="">Select location (optional)</option>
                     {gccCities.map((city) => (
                       <option key={city} value={city}>{city}</option>
                     ))}
@@ -302,7 +308,7 @@ export function ContactSection() {
                   <label htmlFor="message" className="block text-sm font-medium mb-2">What roles are you hiring for?</label>
                   <Textarea
                     id="message"
-                    placeholder="E.g. 'AI Engineer, Cloud Architect, DevOps Lead — need 3 people in Bengaluru by August'"
+                    placeholder="E.g. 'AI Engineer, Cloud Architect, DevOps Lead — need 3 people in [city] by [month]'"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     rows={3}
