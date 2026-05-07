@@ -136,7 +136,7 @@ export function FooterSection() {
         
         {/* SEO keywords section */}
         <div className="border-t border-border pt-8 mb-8">
-          <p className="text-xs text-muted-foreground/60 leading-relaxed">
+          <p className="text-xs text-muted-foreground leading-relaxed">
             <strong className="text-muted-foreground">GCC Recruitment Services:</strong> Best recruitment agency for GCC companies in India | Global Capability Center hiring solutions | 
             GCC staffing Bangalore Hyderabad NCR | Tech recruitment for captive centers | RPO services for multinational corporations | 
             Fortune 500 GCC recruitment partner | AI ML cloud cybersecurity hiring | Fast recruitment company India | 
@@ -150,7 +150,7 @@ export function FooterSection() {
             &copy; {new Date().getFullYear()} Mutual Consulting Services. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Pioneer in GCC Recruitment Since 2014
+            Specialist GCC Tech Recruiter — India
           </p>
         </div>
       </div>

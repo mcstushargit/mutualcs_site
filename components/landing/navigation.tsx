@@ -46,7 +46,7 @@ export function Navigation() {
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-kanit font-bold text-white transition-all duration-500 ${isScrolled ? "text-lg" : "text-2xl lg:text-3xl"}`}>
+            <span className={`font-kanit font-bold text-foreground transition-all duration-500 ${isScrolled ? "text-lg" : "text-2xl lg:text-3xl"}`}>
               Mutual
             </span>
           </a>
@@ -57,7 +57,7 @@ export function Navigation() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
+                className="text-sm text-foreground/85 hover:text-foreground transition-colors duration-300 relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
@@ -67,7 +67,7 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+917042477535" className={`flex items-center gap-2 text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
+            <a href="tel:+917042477535" className={`flex items-center gap-2 text-foreground/85 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
               <Phone className="w-4 h-4" />
               <span className="hidden lg:inline">Talk to Expert</span>
             </a>
@@ -76,7 +76,7 @@ export function Navigation() {
               asChild
               className={`bg-accent hover:bg-accent/90 text-background font-semibold rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
             >
-              <a href="#contact">Get Started</a>
+              <a href="#contact">Book Hiring Audit</a>
             </Button>
           </div>
 
@@ -146,7 +146,7 @@ export function Navigation() {
               className="bg-accent text-background rounded-full h-14 text-base font-semibold"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <a href="#contact">Get Started</a>
+              <a href="#contact">Book Hiring Audit</a>
             </Button>
           </div>
         </div>

@@ -4,20 +4,30 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, Phone, Mail, Linkedin, CheckCircle } from "lucide-react";
+import { ArrowRight, Phone, Mail, Linkedin, CheckCircle, Clock } from "lucide-react";
 
 const hiringVolumes = [
-  "1-10 hires",
-  "11-50 hires",
-  "51-100 hires", 
-  "100+ hires"
+  "1-5 hires",
+  "6-15 hires",
+  "16-50 hires",
+  "50+ hires"
 ];
 
 const serviceTypes = [
-  "Success-Based Hiring",
-  "RPO / Dedicated Team",
-  "Executive Search",
-  "Campus Hiring"
+  "GCC Fast Track",
+  "Executive / Leadership Search",
+  "Embedded RPO",
+  "Not Sure — Help Me Decide"
+];
+
+const gccCities = [
+  "Bengaluru",
+  "Hyderabad",
+  "Pune",
+  "NCR (Gurgaon/Noida)",
+  "Chennai",
+  "Mumbai",
+  "Other"
 ];
 
 export function ContactSection() {
@@ -26,6 +36,7 @@ export function ContactSection() {
     email: "",
     company: "",
     phone: "",
+    city: "",
     hiringVolume: "",
     serviceType: "",
     message: ""
@@ -38,7 +49,7 @@ export function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     setError(null);
-    
+
     try {
       const response = await fetch("/api/send-inquiry", {
         method: "POST",
@@ -58,6 +69,7 @@ export function ContactSection() {
         email: "",
         company: "",
         phone: "",
+        city: "",
         hiringVolume: "",
         serviceType: "",
         message: ""
@@ -74,23 +86,24 @@ export function ContactSection() {
     <section id="contact" className="relative py-24 lg:py-32 bg-card/50">
       {/* Accent glow */}
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[150px] pointer-events-none" />
-      
+
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
           {/* Left - Content */}
           <div>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-accent mb-6">
               <span className="w-8 h-px bg-accent" />
-              Get Started
+              Book a Hiring Audit
             </span>
             <h2 className="text-4xl lg:text-5xl font-display tracking-tight mb-6 text-balance">
-              Ready to Build Your Dream GCC Team?
+              Tell Us What You&apos;re Hiring For.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Share your hiring requirements and get a tailored recruitment plan 
-              within 24 hours. No obligations, just expert guidance.
+              Share your open GCC tech roles and we&apos;ll come back with a tailored plan —
+              including timeline, approach, and the right engagement model.{" "}
+              <span className="text-foreground font-semibold">Tushar will contact you within 4 hours.</span>
             </p>
-            
+
             {/* Contact info */}
             <div className="space-y-6 mb-12">
               <a href="tel:+917042477535" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
@@ -98,11 +111,11 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground">Call us directly</div>
+                  <div className="text-sm text-muted-foreground">Call Tushar directly</div>
                   <div className="font-semibold">+91 7042477535</div>
                 </div>
               </a>
-              
+
               <a href="mailto:connect@mutualcs.com" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Mail className="w-5 h-5 text-accent" />
@@ -112,27 +125,27 @@ export function ContactSection() {
                   <div className="font-semibold">connect@mutualcs.com</div>
                 </div>
               </a>
-              
+
               <a href="https://linkedin.com/company/mutualcs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Linkedin className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Connect on LinkedIn</div>
-                  <div className="font-semibold">Mutual Consulting Services</div>
+                  <div className="font-semibold">MutualCS — GCC Tech Recruiting</div>
                 </div>
               </a>
             </div>
-            
+
             {/* Trust badges */}
             <div className="flex flex-wrap gap-6 items-center text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-accent" />
-                <span>Free Consultation</span>
+                <Clock className="w-4 h-4 text-accent" />
+                <span>4-Hour Response</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-accent" />
-                <span>24hr Response</span>
+                <span>30-Day SLA</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-accent" />
@@ -140,7 +153,7 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-          
+
           {/* Right - Form */}
           <div className="bg-background border border-border rounded-2xl p-8 lg:p-10">
             {isSubmitted ? (
@@ -148,12 +161,13 @@ export function ContactSection() {
                 <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-6">
                   <CheckCircle className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-2xl font-display mb-4">Thank You!</h3>
+                <h3 className="text-2xl font-display mb-4">Request Received</h3>
                 <p className="text-muted-foreground mb-8">
-                  We&apos;ve received your inquiry. Our GCC recruitment experts will 
-                  reach out within 24 hours with a tailored proposal.
+                  We&apos;ve received your request.{" "}
+                  <span className="text-foreground font-semibold">Tushar will contact you within 4 hours</span>{" "}
+                  with a tailored plan for your GCC hiring needs.
                 </p>
-                <Button 
+                <Button
                   variant="outline"
                   onClick={() => setIsSubmitted(false)}
                   className="rounded-full"
@@ -163,21 +177,23 @@ export function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <h3 className="text-xl font-semibold mb-2">Share Your Requirements</h3>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Fill out the form and get a customized hiring plan.
-                </p>
-                
+                <div>
+                  <h3 className="text-xl font-semibold mb-1">Book Your Free GCC Hiring Audit</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Tell us what you&apos;re hiring for. Tushar will contact you within 4 hours.
+                  </p>
+                </div>
+
                 {error && (
                   <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
                     {error}
                   </div>
                 )}
-                
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name *</label>
-                    <Input 
+                    <Input
                       id="name"
                       placeholder="John Smith"
                       value={formData.name}
@@ -188,7 +204,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">Work Email *</label>
-                    <Input 
+                    <Input
                       id="email"
                       type="email"
                       placeholder="john@company.com"
@@ -199,11 +215,11 @@ export function ContactSection() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium mb-2">Company Name *</label>
-                    <Input 
+                    <label htmlFor="company" className="block text-sm font-medium mb-2">Company *</label>
+                    <Input
                       id="company"
                       placeholder="Your Company"
                       value={formData.company}
@@ -213,8 +229,8 @@ export function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone Number</label>
-                    <Input 
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone</label>
+                    <Input
                       id="phone"
                       type="tel"
                       placeholder="+91 98765 43210"
@@ -224,7 +240,24 @@ export function ContactSection() {
                     />
                   </div>
                 </div>
-                
+
+                {/* GCC City dropdown */}
+                <div>
+                  <label htmlFor="city" className="block text-sm font-medium mb-2">GCC City *</label>
+                  <select
+                    id="city"
+                    value={formData.city}
+                    onChange={(e) => setFormData({...formData, city: e.target.value})}
+                    required
+                    className="w-full h-10 px-3 rounded-md border border-border bg-card text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                  >
+                    <option value="" disabled>Select your GCC location</option>
+                    {gccCities.map((city) => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </select>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium mb-2">Hiring Volume</label>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -234,8 +267,8 @@ export function ContactSection() {
                         type="button"
                         onClick={() => setFormData({...formData, hiringVolume: volume})}
                         className={`px-4 py-2 text-sm rounded-lg border transition-colors ${
-                          formData.hiringVolume === volume 
-                            ? "bg-accent text-background border-accent" 
+                          formData.hiringVolume === volume
+                            ? "bg-accent text-background border-accent"
                             : "border-border hover:border-accent/50"
                         }`}
                       >
@@ -244,18 +277,18 @@ export function ContactSection() {
                     ))}
                   </div>
                 </div>
-                
+
                 <div>
-                  <label className="block text-sm font-medium mb-2">Service Type</label>
+                  <label className="block text-sm font-medium mb-2">Engagement Type</label>
                   <div className="grid grid-cols-2 gap-2">
                     {serviceTypes.map((service) => (
                       <button
                         key={service}
                         type="button"
                         onClick={() => setFormData({...formData, serviceType: service})}
-                        className={`px-4 py-2 text-sm rounded-lg border transition-colors ${
-                          formData.serviceType === service 
-                            ? "bg-accent text-background border-accent" 
+                        className={`px-4 py-2 text-sm rounded-lg border transition-colors text-left ${
+                          formData.serviceType === service
+                            ? "bg-accent text-background border-accent"
                             : "border-border hover:border-accent/50"
                         }`}
                       >
@@ -264,21 +297,21 @@ export function ContactSection() {
                     ))}
                   </div>
                 </div>
-                
+
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">Additional Details</label>
-                  <Textarea 
+                  <label htmlFor="message" className="block text-sm font-medium mb-2">What roles are you hiring for?</label>
+                  <Textarea
                     id="message"
-                    placeholder="Tell us about the roles you're hiring for, tech stack, timeline, etc."
+                    placeholder="E.g. 'AI Engineer, Cloud Architect, DevOps Lead — need 3 people in Bengaluru by August'"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    rows={4}
+                    rows={3}
                     className="bg-card border-border resize-none"
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-accent hover:bg-accent/90 text-background rounded-full h-12 font-semibold group"
                 >
@@ -286,12 +319,12 @@ export function ContactSection() {
                     "Submitting..."
                   ) : (
                     <>
-                      Get Your Hiring Plan
+                      Get Your Hiring Audit
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </>
                   )}
                 </Button>
-                
+
                 <p className="text-xs text-muted-foreground text-center">
                   By submitting, you agree to our privacy policy. We&apos;ll never share your data.
                 </p>

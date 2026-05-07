@@ -11,7 +11,7 @@ const clients = [
   { label: "Healthcare MNC", abbr: "HM" }
 ];
 
-const colors = ["bg-teal-500/20 text-teal-300", "bg-emerald-500/20 text-emerald-300", "bg-cyan-500/20 text-cyan-300", "bg-green-500/20 text-green-300"];
+const colors = ["bg-teal-100 text-teal-700", "bg-emerald-100 text-emerald-700", "bg-cyan-100 text-cyan-700", "bg-green-100 text-green-700"];
 
 export function ClientsSection() {
   return (
@@ -55,12 +55,12 @@ export function ClientsSection() {
             <div className="text-xs text-muted-foreground">GCC Clients</div>
           </div>
           <div>
-            <div className="text-2xl font-display text-foreground">500+</div>
-            <div className="text-xs text-muted-foreground">Placements</div>
+            <div className="text-2xl font-display text-foreground">200+</div>
+            <div className="text-xs text-muted-foreground">GCC Tech Placements</div>
           </div>
           <div>
-            <div className="text-2xl font-display text-foreground">10+</div>
-            <div className="text-xs text-muted-foreground">Years Experience</div>
+            <div className="text-2xl font-display text-foreground">85%+</div>
+            <div className="text-xs text-muted-foreground">First-Year Retention</div>
           </div>
           <div>
             <div className="text-2xl font-display text-foreground">6</div>

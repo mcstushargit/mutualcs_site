@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "How fast can MutualCS fill positions for our GCC?",
-    answer: "Our average time-to-fill is just 2 weeks, which is 3x faster than the industry average. This is possible because of our pre-vetted talent pool of 10,000+ profiles, streamlined assessment process, and dedicated team model. For urgent requirements, we can present qualified candidates within 48-72 hours."
+    answer: "Our standard time-to-shortlist SLA is 30 days, backed by a contractual 20% fee reduction if we miss it. For most mandates we present qualified candidates within 7 business days. This is possible because of our deep GCC network, active headhunting approach, and streamlined assessment process."
   },
   {
     question: "What industries and roles do you specialize in?",

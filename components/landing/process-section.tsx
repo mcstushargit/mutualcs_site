@@ -10,7 +10,7 @@ const steps = [
   {
     number: "02", 
     title: "Talent Mapping",
-    description: "Our team maps the market, identifies qualified candidates from our 10,000+ pre-vetted pool and active sourcing.",
+    description: "Our team maps the market, identifies qualified candidates through active headhunting, referrals, and targeted outreach.",
     duration: "Day 2-3"
   },
   {
