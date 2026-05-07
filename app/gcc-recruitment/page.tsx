@@ -280,6 +280,36 @@ export default function GccRecruitmentPage() {
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is a Global Capability Center (GCC)?", "acceptedAnswer": { "@type": "Answer", "text": "A Global Capability Center (GCC) is a wholly-owned offshore or nearshore entity established by a multinational corporation to handle technology development, R&D, data analytics, and operations. Unlike outsourcing, a GCC is fully owned and controlled by the parent company. India hosts 1,800+ GCCs employing 1.9 million professionals." } },
+              { "@type": "Question", "name": "How long does GCC recruitment take with MutualCS?", "acceptedAnswer": { "@type": "Answer", "text": "Our contractual shortlist SLA is 30 days — we present 4–6 interview-ready candidates within 30 days of mandate signature. For most roles, the initial shortlist is delivered within 7 business days. If we miss the SLA due to our delays, you receive a 20% fee reduction." } },
+              { "@type": "Question", "name": "What is the difference between a GCC and outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "A GCC is a wholly-owned captive entity — you own it, you control it, and your employees work exclusively for your company. Outsourcing means engaging a third-party vendor whose employees work across multiple clients. GCCs offer full IP ownership, cultural alignment, and long-term cost efficiency; outsourcing offers flexibility without capital commitment." } },
+              { "@type": "Question", "name": "What fees does MutualCS charge for GCC recruitment?", "acceptedAnswer": { "@type": "Answer", "text": "Contingent hire: 16–18% of the placed candidate's first-year CTC, payable on successful placement. Executive and retained search: 25–28% across three milestones. Embedded RPO: monthly retainer plus per-hire fee. All contingent placements include a 30-day SLA with 20% fee-back if missed." } },
+              { "@type": "Question", "name": "Which India cities does MutualCS recruit in?", "acceptedAnswer": { "@type": "Answer", "text": "We recruit across all major India GCC hubs: Bengaluru, Hyderabad, Pune, NCR (Gurgaon/Noida), Chennai, and Mumbai. We also recruit for GCC roles in the US, UK, Singapore, Japan, and the Middle East." } },
+              { "@type": "Question", "name": "Can MutualCS help set up a greenfield GCC from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We specialize in founding team hires — Country Head, Site Director, VP Engineering, CHRO — and can scale from the first 5 hires to 100+ as your GCC grows. Our Embedded RPO model is specifically designed for this ramp-up phase." } }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+              { "@type": "ListItem", "position": 2, "name": "GCC Recruitment", "item": "https://mutualcs.com/gcc-recruitment" }
+            ]
+          })
+        }}
+      />
     </main>
   );
 }

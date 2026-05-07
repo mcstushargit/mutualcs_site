@@ -55,6 +55,29 @@ const industries = [
   { name: "Industrial & Manufacturing", examples: "CEO/MD, CTO, Country Head — automotive, pharma, FMCG" },
 ];
 
+const execFaqs = [
+  {
+    q: "What is executive search and how is it different from contingent recruitment?",
+    a: "Executive search (retained headhunting) is a dedicated, confidential search for senior leadership — CXO, VP, Country Head, and Board mandates. Unlike contingent recruitment (pay on success only), retained search involves a fee split across milestones, ensuring the recruiter's full commitment to your mandate. We do not post roles publicly without client approval.",
+  },
+  {
+    q: "How much does executive search cost?",
+    a: "MutualCS executive search is priced at 25–28% of the placed candidate's first-year total compensation, split across three milestones: mandate signing (33%), shortlist delivery (33%), and offer acceptance (33%). This milestone structure aligns our incentives with yours throughout the search.",
+  },
+  {
+    q: "How long does an executive search take?",
+    a: "Our contractual shortlist SLA is 30 days — we present 4–6 interview-ready candidates within 30 days of mandate signature. Total time-to-offer for C-suite mandates is typically 45–90 days depending on interview rounds and decision timelines.",
+  },
+  {
+    q: "Do you handle confidential and succession searches?",
+    a: "Yes. We regularly handle confidential mandates — succession planning, replacement searches where the incumbent is still in post, and board appointments. We do not post roles publicly or disclose client identity without explicit permission.",
+  },
+  {
+    q: "What seniority levels do you place through executive search?",
+    a: "We place C-suite (CEO/MD, CTO/CIO, CFO, CHRO, CISO), VP-level (VP Engineering, VP Product), Country Heads and GCC Site Directors, Head of AI/Data, General Counsel, and Independent Board Members — globally.",
+  },
+];
+
 const engagementModels = [
   {
     name: "Retained Search",
@@ -81,6 +104,16 @@ export default function ExecutiveSearchPage() {
           <Link href="/" className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-2">
             ← MutualCS Home
           </Link>
+        </div>
+      </div>
+
+      <div className="border-b border-border bg-accent/5">
+        <div className="max-w-[1200px] mx-auto px-6 py-5">
+          <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-1">Quick Answer</span>
+          <p className="text-foreground leading-relaxed max-w-3xl text-sm">
+            <strong>MutualCS executive search:</strong> retained headhunting for CXO, VP Engineering, Country Head, CHRO, CISO, and board mandates globally.
+            Fee 25–28% across milestones. 30-day shortlist SLA with contractual 20% fee-back if missed. Passive candidates only — we never use job boards for senior mandates.
+          </p>
         </div>
       </div>
 
@@ -204,6 +237,49 @@ export default function ExecutiveSearchPage() {
           </div>
         </div>
       </section>
+
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">FAQ</span>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Executive Search — Common Questions</h2>
+          <div className="space-y-8 max-w-3xl">
+            {execFaqs.map((faq) => (
+              <div key={faq.q} className="border-b border-border pb-8 last:border-0">
+                <h3 className="font-semibold text-lg mb-3">{faq.q}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": execFaqs.map(f => ({
+              "@type": "Question",
+              "name": f.q,
+              "acceptedAnswer": { "@type": "Answer", "text": f.a }
+            }))
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+              { "@type": "ListItem", "position": 2, "name": "Executive Search", "item": "https://mutualcs.com/executive-search" }
+            ]
+          })
+        }}
+      />
 
       <section className="py-24 bg-accent">
         <div className="max-w-[1200px] mx-auto px-6 text-center">

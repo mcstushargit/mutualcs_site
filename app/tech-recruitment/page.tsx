@@ -55,6 +55,29 @@ const industries = [
   { name: "Healthcare & Pharma", examples: "HealthTech, clinical data, biotech, medical devices" },
 ];
 
+const techFaqs = [
+  {
+    q: "What is the difference between tech recruitment and staffing?",
+    a: "Tech recruitment (permanent placement) means placing full-time employees who join your team with equity, benefits, and long-term career intent. Staffing means placing temporary contractors. MutualCS does permanent placement only — because it produces better retention, deeper cultural fit, and stronger long-term outcomes.",
+  },
+  {
+    q: "What is MutualCS's fee for tech recruitment?",
+    a: "Our contingent hire fee is 16–18% of the placed candidate's first-year CTC, payable on successful placement. No upfront fee. If we miss our 30-day shortlist SLA, you receive 20% of the fee back — contractually, not as a goodwill gesture.",
+  },
+  {
+    q: "Can you hire for tech roles outside India?",
+    a: "Yes. While our network is deepest in India's engineering market, we recruit for permanent tech roles in any country — US, UK, Singapore, UAE, Europe, and more. We also place Indian diaspora talent in international markets and source local talent where needed.",
+  },
+  {
+    q: "How do you find senior engineers who aren't on job boards?",
+    a: "We use direct outreach to passive candidates — senior engineers at top-tier companies who aren't actively looking. Our sourcing includes referral networks, alumni connections, community networks, and targeted LinkedIn outreach. We do not use Naukri, Indeed, or similar job boards for senior technical hires.",
+  },
+  {
+    q: "What is embedded RPO and when should I use it?",
+    a: "Embedded RPO means we place a dedicated recruiter inside your organisation — attending standups, learning your culture, operating as part of your internal team. Ideal for companies hiring 8–20+ roles per year who want recruitment to feel internal. Pricing is a monthly retainer plus a per-hire success fee.",
+  },
+];
+
 const engagementModels = [
   {
     name: "Contingent Hire",
@@ -81,6 +104,16 @@ export default function TechRecruitmentPage() {
           <Link href="/" className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-2">
             ← MutualCS Home
           </Link>
+        </div>
+      </div>
+
+      <div className="border-b border-border bg-accent/5">
+        <div className="max-w-[1200px] mx-auto px-6 py-5">
+          <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-1">Quick Answer</span>
+          <p className="text-foreground leading-relaxed max-w-3xl text-sm">
+            <strong>MutualCS tech recruitment:</strong> permanent placement of engineers, architects, and data specialists globally. No staffing or contracting.
+            Fee 16–18% contingent hire with 30-day SLA and 20% fee-back guarantee. Roles from IC to Staff Engineer across AI/ML, Cloud, Platform, Cybersecurity, FinTech, and more.
+          </p>
         </div>
       </div>
 
@@ -204,6 +237,49 @@ export default function TechRecruitmentPage() {
           </div>
         </div>
       </section>
+
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">FAQ</span>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech Recruitment — Common Questions</h2>
+          <div className="space-y-8 max-w-3xl">
+            {techFaqs.map((faq) => (
+              <div key={faq.q} className="border-b border-border pb-8 last:border-0">
+                <h3 className="font-semibold text-lg mb-3">{faq.q}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": techFaqs.map(f => ({
+              "@type": "Question",
+              "name": f.q,
+              "acceptedAnswer": { "@type": "Answer", "text": f.a }
+            }))
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+              { "@type": "ListItem", "position": 2, "name": "Tech Recruitment", "item": "https://mutualcs.com/tech-recruitment" }
+            ]
+          })
+        }}
+      />
 
       <section className="py-24 bg-accent">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
