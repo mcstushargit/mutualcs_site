@@ -193,6 +193,58 @@ export default function BengaluruPage() {
           </Link>
         </div>
       </section>
+
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MutualCS — GCC Recruitment Bengaluru",
+        "description": "Specialist GCC tech recruitment agency in Bengaluru. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
+        "url": "https://mutualcs.com/bengaluru",
+        "telephone": "+91-80-0000-0000",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "addressCountry": "IN" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 12.9716, "longitude": 77.5946 },
+        "areaServed": { "@type": "City", "name": "Bengaluru" },
+        "priceRange": "16–28% placement fee",
+        "parentOrganization": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" }
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many GCCs are in Bengaluru?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Bengaluru hosts over 1,600 active Global Capability Centers — more than 35% of all GCCs in India. Major employers include Goldman Sachs, JPMorgan, Google, Microsoft, Walmart Global Tech, Boeing, and hundreds of mid-size MNCs across BFSI, tech, and manufacturing sectors." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the average AI/ML engineer salary in Bengaluru GCCs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "AI/ML Engineers in Bengaluru GCCs typically earn ₹22–48 LPA at mid-level (3–7 years experience) and ₹50–90 LPA for senior and lead roles. GenAI and LLM Architects with production experience command a 20–30% premium above standard ML bands. Exact compensation varies by parent company tier and role scope." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does GCC tech hiring take in Bengaluru?",
+            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS delivers a curated shortlist of 4–6 interview-ready candidates within 30 days of mandate signature — backed by a contractual 20% fee reduction if we miss the SLA due to our delays. The industry average for senior GCC tech roles via generalist recruiters in Bengaluru is 60–90 days." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which tech roles are hardest to hire for in Bengaluru GCCs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The highest-demand, hardest-to-fill roles in Bengaluru GCCs are: AI/ML Engineers with LLM/GenAI experience, Platform and SRE Engineers with multi-cloud expertise, Cybersecurity specialists (CISO track), and senior Engineering Managers who can bridge India delivery with US/EU product teams." }
+          }
+        ]
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "GCC Recruitment", "item": "https://mutualcs.com/gcc-recruitment" },
+          { "@type": "ListItem", "position": 3, "name": "Bengaluru", "item": "https://mutualcs.com/bengaluru" }
+        ]
+      })}} />
     </main>
   );
 }

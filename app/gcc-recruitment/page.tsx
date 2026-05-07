@@ -20,6 +20,7 @@ const cityLinks = [
   { city: "Bengaluru", href: "/bengaluru", tagline: "35%+ of India's GCCs" },
   { city: "Hyderabad", href: "/hyderabad", tagline: "Cyberabad corridor GCCs" },
   { city: "Pune", href: "/pune", tagline: "Tier 2 expansion hub" },
+  { city: "NCR", href: "/ncr", tagline: "BFSI & enterprise tech GCCs" },
 ];
 
 const whySpecialist = [

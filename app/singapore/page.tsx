@@ -201,6 +201,39 @@ export default function SingaporePage() {
           </Link>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "GCC Recruitment for Singapore Companies in India",
+        "description": "MutualCS helps Singapore-headquartered companies build and scale India GCCs. Tech, APAC delivery, and leadership roles with a 30-day SLA.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "GCC Recruitment for Singapore Companies",
+        "areaServed": [{ "@type": "Country", "name": "India" }]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do Singapore companies set up India GCCs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Singapore companies set up India GCCs primarily for tech talent access and cost efficiency. Singapore has a limited tech talent pool and high compensation costs; India offers substantially more engineering graduate output and 30-50% lower compensation at comparable quality. DBS, OCBC, GIC, and Grab all run major India GCCs." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does MutualCS place Indian diaspora from Singapore into India GCC roles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS has experience placing Singapore-based Indian professionals into GCC leadership roles in India — particularly for Country Head, CTO, and VP Engineering positions where APAC exposure and Singapore headquarters alignment are valued." }
+          }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "Singapore", "item": "https://mutualcs.com/singapore" }
+        ]
+      })}} />
     </main>
   );
 }

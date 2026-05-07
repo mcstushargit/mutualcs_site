@@ -214,6 +214,34 @@ export default function UnitedStatesPage() {
           </Link>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "GCC Recruitment for US Companies in India",
+        "description": "MutualCS helps US-headquartered companies build and scale India GCCs. AI, Cloud, Platform Engineering, and executive search with a 30-day SLA.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "GCC Recruitment for US Companies",
+        "areaServed": [{ "@type": "Country", "name": "India" }],
+        "audience": { "@type": "Audience", "audienceType": "US-headquartered multinational corporations" }
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do US companies set up GCCs in India?", "acceptedAnswer": { "@type": "Answer", "text": "US companies setting up a GCC in India typically start by registering a Private Limited Company (Pvt Ltd), which takes 4–8 weeks. The next step is hiring a founding leadership team — Country Head, VP Engineering — which MutualCS specialises in. A fully operational GCC with 20–50 people takes 6–9 months from decision to live." } },
+          { "@type": "Question", "name": "What cities in India are best for US companies building GCCs?", "acceptedAnswer": { "@type": "Answer", "text": "Bengaluru is the top choice for US tech companies due to the depth of engineering talent, strong startup ecosystem, and established GCC infrastructure. Hyderabad is preferred for BFSI and pharmaceutical GCCs. Pune is growing for automotive and embedded systems. NCR (Gurgaon/Noida) suits companies with existing India offices and BFSI verticals." } },
+          { "@type": "Question", "name": "How much does it cost to hire tech talent in an India GCC vs the US?", "acceptedAnswer": { "@type": "Answer", "text": "Senior engineers in India earn approximately 20–30% of equivalent US compensation while delivering comparable technical output for most roles. This cost advantage compounds at scale — a 100-person India GCC engineering team costs roughly what 20–25 US-based engineers would cost." } }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "United States", "item": "https://mutualcs.com/united-states" }
+        ]
+      })}} />
     </main>
   );
 }

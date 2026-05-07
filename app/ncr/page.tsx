@@ -3,16 +3,19 @@ import Link from "next/link";
 import { ArrowRight, MapPin, CheckCircle, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GCC Recruitment Pune | Tech Hiring Specialist | MutualCS",
+  title: "GCC Recruitment NCR (Gurgaon/Noida) | Tech Hiring Specialist | MutualCS",
   description:
-    "MutualCS is Pune's specialist GCC tech recruitment agency. We fill AI, Cloud, Platform Engineering & Cybersecurity roles in 30 days with a fee-back guarantee.",
+    "MutualCS is the specialist GCC tech recruitment agency in NCR — Gurgaon, Noida, and Delhi. We fill AI, Cloud, BFSI, and Platform Engineering roles in 30 days with a fee-back guarantee.",
   keywords: [
-    "GCC recruitment Pune",
-    "GCC hiring Pune",
-    "tech recruitment Pune GCC",
-    "AI ML hiring Pune",
-    "Global Capability Center recruitment Pune",
+    "GCC recruitment NCR",
+    "GCC hiring Gurgaon",
+    "GCC recruitment Noida",
+    "tech recruitment NCR GCC",
+    "AI ML hiring Gurgaon",
+    "Global Capability Center recruitment Delhi NCR",
+    "BFSI GCC hiring NCR",
   ],
+  alternates: { canonical: "https://mutualcs.com/ncr" },
 };
 
 const roles = [
@@ -20,20 +23,20 @@ const roles = [
   "Cloud Architects (AWS, GCP, Azure)",
   "Platform & DevOps Engineers",
   "Cybersecurity Specialists",
-  "Engineering Managers",
-  "Data Science Leads",
+  "BFSI Technology Engineers",
+  "Engineering Managers & VP Engineering",
+  "Data Science & Analytics Leads",
   "GenAI & LLM Architects",
-  "SRE & Infrastructure Engineers",
 ];
 
 const gccStats = [
-  { value: "400+", label: "active GCCs in Pune & PCMC" },
-  { value: "Tier 2", label: "expansion hub for cost arbitrage" },
-  { value: "₹18–38L", label: "typical Cloud Architect CTC range" },
-  { value: "30 Days", label: "our SLA for Pune mandates" },
+  { value: "500+", label: "active GCCs in NCR (Gurgaon + Noida)" },
+  { value: "Top 3", label: "India GCC hub — after Bengaluru & Hyderabad" },
+  { value: "BFSI", label: "dominant sector — Citi, AmEx, EY, Deloitte GCCs" },
+  { value: "30 Days", label: "our SLA for NCR mandates" },
 ];
 
-export default function PunePage() {
+export default function NcrPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Nav back */}
@@ -52,26 +55,26 @@ export default function PunePage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-sm font-mono text-accent mb-6">
             <MapPin className="w-4 h-4" />
-            Pune, Maharashtra
+            NCR — Gurgaon · Noida · Delhi
           </div>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
             GCC Tech Hiring
             <br />
-            <span className="text-accent">in Pune.</span>
+            <span className="text-accent">in NCR.</span>
             <br />
             Done in 30 Days.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Pune is India&apos;s fastest-growing Tier 2 GCC expansion hub. Fortune 500s are
-            establishing and scaling GCCs here for cost arbitrage without compromising on engineering
-            quality. MutualCS is the specialist tech recruiter that makes this work.
+            NCR hosts 500+ GCCs — India&apos;s third-largest hub — with particular depth in BFSI,
+            consulting, and enterprise technology. MutualCS fills AI, Cloud, and Platform Engineering
+            roles with a 30-day SLA and a 20% fee-back guarantee.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Hire in Pune — speak to us today
+              Hire in NCR — speak to us today
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -98,27 +101,28 @@ export default function PunePage() {
         </div>
       </section>
 
-      {/* Why Pune GCCs need a specialist */}
+      {/* Why NCR */}
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Opportunity</span>
+              <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Market</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                Pune&apos;s GCC Expansion Needs Specialist Recruiters — Not Generalists
+                NCR&apos;s GCC Talent Market Is Deep — Particularly for BFSI and Enterprise Tech
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                GCCs expanding to Pune are chasing two things simultaneously: quality engineering talent
-                and 20–30% cost savings versus Bengaluru. The challenge is that Pune&apos;s tech talent
-                pool is deep but less mapped — passive candidates here require specialist outreach, not job board posts.
+                Gurgaon (Gurugram) is home to the India GCCs of Citibank, American Express, EY, Deloitte,
+                PwC, McKinsey, and dozens of global financial institutions. Noida houses major GCCs for
+                HCL parent companies, Samsung, Adobe, and telecom-sector MNCs.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                MutualCS has built Pune-specific talent pipelines in AI/ML, Cloud, and Platform Engineering.
-                We know which companies are hiring here, what compensation looks like by role, and how to
-                attract talent from Bengaluru and NCR for GCC relocations.
+                Unlike Bengaluru — which skews heavily toward product and deep tech — NCR has particular
+                strength in BFSI technology, enterprise software, ERP, and consulting delivery GCCs.
+                Knowing this distinction matters when sourcing and positioning candidates.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our 30-day SLA applies to Pune mandates. Miss it due to our delays? You receive 20% of the fee back.
+                MutualCS has active networks in both Gurgaon and Noida corridors. When you give us a
+                mandate, we know which companies to target for passive candidates — and we do it in 30 days.
               </p>
             </div>
             <div>
@@ -140,7 +144,7 @@ export default function PunePage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">How We Work</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Three Models for Pune GCCs</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Three Models for NCR GCCs</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
@@ -155,7 +159,7 @@ export default function PunePage() {
               },
               {
                 name: "Embedded RPO",
-                desc: "₹2–4L/month + per-hire fee. Your dedicated embedded recruiter in Pune.",
+                desc: "₹2–4L/month + per-hire fee. Your dedicated GCC recruiter embedded in NCR.",
                 cta: "Explore embedded RPO"
               }
             ].map((model) => (
@@ -178,7 +182,7 @@ export default function PunePage() {
       <section className="py-24">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-display tracking-tight mb-6">
-            Hiring GCC Tech Talent in Pune?
+            Hiring GCC Tech Talent in NCR?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
             Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
@@ -197,12 +201,16 @@ export default function PunePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MutualCS — GCC Recruitment Pune",
-        "description": "Specialist GCC tech recruitment agency in Pune. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
-        "url": "https://mutualcs.com/pune",
-        "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-        "geo": { "@type": "GeoCoordinates", "latitude": 18.5204, "longitude": 73.8567 },
-        "areaServed": { "@type": "City", "name": "Pune" },
+        "name": "MutualCS — GCC Recruitment NCR",
+        "description": "Specialist GCC tech recruitment agency in NCR (Gurgaon, Noida, Delhi). AI, Cloud, BFSI, and Platform Engineering roles filled in 30 days with a contractual fee-back guarantee.",
+        "url": "https://mutualcs.com/ncr",
+        "address": { "@type": "PostalAddress", "addressLocality": "Gurgaon", "addressRegion": "Haryana", "addressCountry": "IN" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 28.4595, "longitude": 77.0266 },
+        "areaServed": [
+          { "@type": "City", "name": "Gurgaon" },
+          { "@type": "City", "name": "Noida" },
+          { "@type": "City", "name": "Delhi" }
+        ],
         "priceRange": "16–28% placement fee",
         "parentOrganization": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" }
       })}} />
@@ -213,18 +221,23 @@ export default function PunePage() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Is Pune a good location for a GCC?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Pune is one of India's fastest-growing GCC destinations, particularly for automotive, engineering, and BFSI sectors. It has a large engineering talent pool from top institutions, lower real estate costs than Bengaluru, and strong connectivity. Companies like Volkswagen, Barclays, Cummins, and Deutsche Bank run significant GCCs in Pune." }
+            "name": "Which companies have GCCs in Gurgaon?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Major GCCs in Gurgaon include Citibank, American Express, EY, Deloitte, PwC, McKinsey, Nestle, Maruti Suzuki's tech center, Bharti Airtel, and numerous BFSI and consulting firms. The Gurgaon GCC cluster is particularly strong in financial services technology, enterprise software, and consulting delivery." }
           },
           {
             "@type": "Question",
-            "name": "What tech roles are in demand in Pune GCCs?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Pune GCCs are particularly strong in embedded systems, automotive software, BFSI technology, and cloud infrastructure roles. High-demand roles include Software Engineers, Cloud Architects, Platform Engineers, Data Engineers, and Cybersecurity professionals. AI/ML roles are growing rapidly as GCCs expand capability." }
+            "name": "Which companies have GCCs in Noida?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Noida hosts GCCs for Samsung, Adobe, HCL Technologies parent entities, Sapient, Concentrix, Genpact, and a growing number of Japanese automotive and Korean electronics companies. The Noida sector 62 and 63 corridors are major GCC clusters." }
           },
           {
             "@type": "Question",
-            "name": "How does MutualCS recruit in Pune?",
-            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS has an active candidate network in Pune across GCCs and product companies. We source passively — reaching out to candidates who are not on job boards — and deliver a curated shortlist of 4–6 interview-ready profiles within 30 days of mandate signature, backed by our contractual fee-back guarantee." }
+            "name": "How long does GCC tech hiring take in NCR?",
+            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS delivers a curated shortlist of 4-6 interview-ready candidates within 30 days of mandate signature for NCR GCC roles, backed by a contractual 20% fee reduction if we miss the SLA due to our delays." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is NCR better than Bengaluru for GCC hiring?",
+            "acceptedAnswer": { "@type": "Answer", "text": "NCR and Bengaluru serve different GCC profiles. Bengaluru has deeper pure-tech and product engineering talent, particularly for AI, ML, and cloud-native roles. NCR has stronger BFSI technology, enterprise ERP, and consulting delivery talent pools, often at slightly lower compensation than Bengaluru equivalents." }
           }
         ]
       })}} />
@@ -235,7 +248,7 @@ export default function PunePage() {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
           { "@type": "ListItem", "position": 2, "name": "GCC Recruitment", "item": "https://mutualcs.com/gcc-recruitment" },
-          { "@type": "ListItem", "position": 3, "name": "Pune", "item": "https://mutualcs.com/pune" }
+          { "@type": "ListItem", "position": 3, "name": "NCR", "item": "https://mutualcs.com/ncr" }
         ]
       })}} />
     </main>

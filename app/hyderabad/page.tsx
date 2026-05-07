@@ -192,6 +192,52 @@ export default function HyderabadPage() {
           </Link>
         </div>
       </section>
+
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MutualCS — GCC Recruitment Hyderabad",
+        "description": "Specialist GCC tech recruitment agency in Hyderabad. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
+        "url": "https://mutualcs.com/hyderabad",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 17.3850, "longitude": 78.4867 },
+        "areaServed": { "@type": "City", "name": "Hyderabad" },
+        "priceRange": "16–28% placement fee",
+        "parentOrganization": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" }
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many GCCs are in Hyderabad?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hyderabad (Cyberabad corridor) hosts 400+ Global Capability Centers, making it India's second-largest GCC hub after Bengaluru. Major GCCs include Microsoft, Amazon, Google, HSBC, UBS, Deloitte, and leading pharma and manufacturing MNCs. The HITEC City and Financial District areas are the primary GCC clusters." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the average tech salary in Hyderabad GCCs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Tech salaries in Hyderabad GCCs are typically 10–15% lower than Bengaluru for equivalent roles, but the cost of living is also lower. AI/ML Engineers earn ₹20–42 LPA mid-level; Cloud Architects ₹25–55 LPA; Platform Engineers ₹18–38 LPA. Senior and lead roles command premium compensation regardless of city." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do companies set up GCCs in Hyderabad over Bengaluru?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hyderabad offers lower real estate costs, a strong pharma and manufacturing engineering talent pool, government incentives (Telangana state is actively GCC-friendly), and less intense attrition than Bengaluru for certain roles. It is particularly strong for BFSI, pharmaceutical R&D, and industrial engineering GCCs." }
+          }
+        ]
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "GCC Recruitment", "item": "https://mutualcs.com/gcc-recruitment" },
+          { "@type": "ListItem", "position": 3, "name": "Hyderabad", "item": "https://mutualcs.com/hyderabad" }
+        ]
+      })}} />
     </main>
   );
 }

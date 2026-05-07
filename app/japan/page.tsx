@@ -201,6 +201,39 @@ export default function JapanPage() {
           </Link>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "GCC Recruitment for Japanese Companies in India",
+        "description": "MutualCS helps Japanese companies build and scale India GCCs. Tech, manufacturing, and R&D roles with a 30-day SLA and fee-back guarantee.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "GCC Recruitment for Japanese Companies",
+        "areaServed": [{ "@type": "Country", "name": "India" }]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which Japanese companies have GCCs in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Major Japanese companies with India GCCs include Toyota, Honda, Hitachi, Sony, NTT Data, Rakuten, and Fujitsu. Japanese automotive and electronics GCCs in India focus on embedded systems, connected vehicle technology, IoT, and enterprise software development." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does MutualCS specialise in Japanese GCC hiring in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS recruits for Japanese GCCs with an understanding of specific cultural and technical requirements — including cross-cultural communication skills and Japanese business protocols. We have placed engineering, product, and leadership talent for Japanese automotive and technology GCCs in Bengaluru and Pune." }
+          }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "Japan", "item": "https://mutualcs.com/japan" }
+        ]
+      })}} />
     </main>
   );
 }

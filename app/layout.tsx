@@ -67,11 +67,20 @@ export const metadata: Metadata = {
     siteName: 'Mutual Consulting Services',
     title: 'Mutual Consulting Services | Best GCC Recruitment Agency in India',
     description: 'India\'s fastest recruitment agency for Global Capability Centers. Hire top tech talent with 2-week average closures. Trusted by Fortune 500 GCCs.',
+    images: [
+      {
+        url: 'https://mutualcs.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'MutualCS — India\'s fastest GCC recruitment agency. 30-day SLA.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mutual Consulting Services | GCC Recruitment Experts',
     description: 'India\'s fastest recruitment agency for Global Capability Centers. 2-week average closures.',
+    images: ['https://mutualcs.com/og-image.png'],
   },
   alternates: {
     canonical: 'https://mutualcs.com',
@@ -92,6 +101,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <head>
+        {/* Organization — enriched for GEO/LLM entity recognition */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -99,15 +109,35 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Mutual Consulting Services",
+              "alternateName": ["MutualCS", "Mutual CS"],
               "url": "https://mutualcs.com",
               "logo": "https://mutualcs.com/logo.png",
-              "description": "India's fastest recruitment agency for Global Capability Centers (GCCs). Specializing in tech talent acquisition with 2-week average closures.",
+              "description": "India's fastest GCC recruitment agency. Specialist tech and executive search for Global Capability Centers with a 30-day SLA and contractual fee-back guarantee.",
+              "foundingDate": "2020",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "IN"
+                "addressCountry": "IN",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "Karnataka"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "hello@mutualcs.com",
+                "availableLanguage": "English"
               },
               "sameAs": [
                 "https://www.linkedin.com/company/mutualcs"
+              ],
+              "knowsAbout": [
+                "GCC Recruitment",
+                "Global Capability Center Hiring",
+                "Tech Talent Acquisition India",
+                "Executive Search",
+                "RPO Services",
+                "AI/ML Hiring",
+                "Cloud Architect Recruitment",
+                "Cybersecurity Recruitment"
               ],
               "serviceArea": {
                 "@type": "GeoCircle",
@@ -127,26 +157,67 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Service",
                       "name": "GCC Recruitment",
-                      "description": "Specialized recruitment services for Global Capability Centers"
+                      "url": "https://mutualcs.com/gcc-recruitment",
+                      "description": "Specialist permanent recruitment for Global Capability Centers. 30-day SLA with contractual fee-back guarantee."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "RPO Services",
-                      "description": "Recruitment Process Outsourcing for high-volume hiring"
+                      "name": "Executive Search",
+                      "url": "https://mutualcs.com/executive-search",
+                      "description": "Retained executive search for CXO, VP, Country Head, and CHRO roles globally."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Tech Talent Acquisition",
-                      "description": "Specialized hiring for AI, Cloud, Cybersecurity roles"
+                      "name": "Tech Recruitment",
+                      "url": "https://mutualcs.com/tech-recruitment",
+                      "description": "Permanent tech hiring globally — engineers, architects, data scientists."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI/ML Hiring",
+                      "url": "https://mutualcs.com/ai-ml-hiring",
+                      "description": "Specialist AI, ML, and GenAI talent acquisition for GCCs."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Embedded RPO",
+                      "description": "Recruitment Process Outsourcing — dedicated embedded recruiter for high-volume GCC hiring."
                     }
                   }
                 ]
+              }
+            })
+          }}
+        />
+        {/* WebSite — enables sitelinks search box in Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "MutualCS",
+              "url": "https://mutualcs.com",
+              "description": "India's fastest GCC recruitment agency — specialist tech and executive search for Global Capability Centers.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://mutualcs.com/?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
               }
             })
           }}

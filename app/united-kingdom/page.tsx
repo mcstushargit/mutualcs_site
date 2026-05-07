@@ -201,6 +201,33 @@ export default function UnitedKingdomPage() {
           </Link>
         </div>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "GCC Recruitment for UK Companies in India",
+        "description": "MutualCS helps UK-headquartered companies build and scale India GCCs. BFSI, FinTech, and tech roles with a 30-day SLA and fee-back guarantee.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "GCC Recruitment for UK Companies",
+        "areaServed": [{ "@type": "Country", "name": "India" }],
+        "audience": { "@type": "Audience", "audienceType": "UK-headquartered multinational corporations" }
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Which UK companies have GCCs in India?", "acceptedAnswer": { "@type": "Answer", "text": "Major UK companies with India GCCs include HSBC, Barclays, Standard Chartered, Lloyds Banking Group, BP, GSK, Unilever, and Rolls-Royce. UK BFSI and FinTech firms have some of the largest India GCC footprints globally, particularly in Bengaluru, Hyderabad, and Pune." } },
+          { "@type": "Question", "name": "Does MutualCS work with UK BFSI companies for GCC hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS has deep experience recruiting for BFSI GCCs — including roles in risk technology, regulatory engineering, core banking platforms, and financial data science. We understand the compliance and technical bars set by UK Financial Conduct Authority (FCA) regulated entities." } }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "United Kingdom", "item": "https://mutualcs.com/united-kingdom" }
+        ]
+      })}} />
     </main>
   );
 }

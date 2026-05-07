@@ -201,6 +201,39 @@ export default function MiddleEastPage() {
           </Link>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "GCC Recruitment for Middle East Companies in India",
+        "description": "MutualCS helps UAE, Saudi Arabia, and wider Middle East companies build India GCCs. Tech, BFSI, and leadership roles with a 30-day SLA.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "GCC Recruitment for Middle East Companies",
+        "areaServed": [{ "@type": "Country", "name": "India" }]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are UAE and Middle East companies setting up GCCs in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, rapidly. UAE-based banks such as Emirates NBD, FAB, and ADCB, along with conglomerates and tech companies, are establishing India GCCs at an accelerating rate, driven by India's tech talent depth and cost efficiency. Saudi Vision 2030 companies are also expanding India GCC presence for tech and digital transformation functions." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Indian diaspora in the Middle East be hired into India GCC roles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS specialises in placing Indian diaspora professionals from the Middle East into leadership roles in India GCCs. This is particularly relevant for Country Head, VP Engineering, and senior technical positions where international exposure adds significant value." }
+          }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "Middle East", "item": "https://mutualcs.com/middle-east" }
+        ]
+      })}} />
     </main>
   );
 }

@@ -233,6 +233,73 @@ export default function AiMlHiringPage() {
           </div>
         </div>
       </section>
+
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI/ML Hiring for Global Capability Centers",
+        "description": "Specialist AI, ML, and GenAI talent acquisition for Global Capability Centers in India. 30-day SLA with contractual fee-back guarantee.",
+        "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "serviceType": "AI/ML Recruitment",
+        "areaServed": [
+          { "@type": "City", "name": "Bengaluru" },
+          { "@type": "City", "name": "Hyderabad" },
+          { "@type": "City", "name": "Pune" },
+          { "@type": "Country", "name": "India" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "AI/ML Roles",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI / ML Engineer Recruitment" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GenAI & LLM Architect Hiring" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "MLOps Engineer Recruitment" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Science Lead Hiring" } }
+          ]
+        }
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does it take to hire an AI or ML engineer for a GCC in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "With MutualCS, the contractual SLA is 30 days from mandate signature to shortlist delivery. Generalist agencies typically take 60–90 days for senior AI/ML roles because they rely on job boards, where experienced ML engineers are not actively present. MutualCS uses active headhunting to source passive candidates at target companies." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the salary range for AI/ML engineers in Indian GCCs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "In 2026, AI/ML Engineer salaries in Indian GCCs typically range from ₹22–48 LPA for mid-level roles (3–7 years experience) and ₹50–90 LPA for senior and lead positions. LLM/GenAI Architects with production experience command a premium of 20–30% above standard ML Engineer bands. Exact figures vary by city, GCC tier, and parent company." }
+          },
+          {
+            "@type": "Question",
+            "name": "What AI/ML roles does MutualCS recruit for?",
+            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS recruits for the full AI/ML spectrum: AI/ML Engineers, Data Scientists, GenAI & LLM Architects, MLOps Engineers, Computer Vision Engineers, NLP Engineers, Data Science Leads, and ML Platform Engineers. We also place AI leadership: Head of AI, VP Data Science, and Chief AI Officer roles for GCCs." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is AI/ML hiring so difficult for GCCs compared to product companies?",
+            "acceptedAnswer": { "@type": "Answer", "text": "GCCs face a positioning challenge: they often cannot match the equity compensation or brand recognition of AI-native startups. The best AI talent is passive and selective. GCCs win when they can articulate the interesting problems, global exposure, and career growth available — something a specialist recruiter with GCC experience can communicate effectively." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does MutualCS do AI/ML contract or staffing roles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. MutualCS is a permanent placement firm only. All AI/ML recruitment is for full-time, permanent positions. We do not do contract staffing, body-shop placements, or temporary AI/ML hiring." }
+          }
+        ]
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "AI/ML Hiring", "item": "https://mutualcs.com/ai-ml-hiring" }
+        ]
+      })}} />
     </main>
   );
 }

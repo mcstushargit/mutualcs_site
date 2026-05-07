@@ -92,6 +92,54 @@ export default function GccSalaryGuidePage() {
           </div>
         </div>
       </section>
+
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "GCC Tech Salary Guide India 2026",
+        "description": "Salary benchmarks for AI/ML, Cloud, Platform Engineering, and Cybersecurity roles across India's top GCC cities — Bengaluru, Hyderabad, Pune, and NCR.",
+        "datePublished": "2026-01-01",
+        "dateModified": "2026-05-01",
+        "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "publisher": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
+        "mainEntityOfPage": "https://mutualcs.com/resources/gcc-salary-guide",
+        "about": [
+          { "@type": "Thing", "name": "GCC Tech Salaries India" },
+          { "@type": "Thing", "name": "AI Engineer Salary India" },
+          { "@type": "Thing", "name": "Cloud Architect Salary India" }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the salary of an AI/ML engineer in an Indian GCC?",
+            "acceptedAnswer": { "@type": "Answer", "text": "AI/ML Engineers in Indian GCCs earn approximately Rs 22-48 LPA at mid-level (3-7 years experience) and Rs 50-90 LPA for senior and lead roles in 2026. Bengaluru commands the highest salaries, typically 10-15% above Hyderabad and Pune for equivalent roles. GenAI and LLM Architects with production experience command a further 20-30% premium." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do GCC salaries compare to Indian product companies?",
+            "acceptedAnswer": { "@type": "Answer", "text": "GCC salaries are typically 10-20% lower than top Indian product companies like Flipkart, Swiggy, or Zepto for equivalent engineering roles, but often higher than IT services firms. GCCs compensate with job stability, global exposure, and structured career paths that product startups cannot always offer." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the notice period norm for GCC tech roles in India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The standard notice period for GCC tech roles in India is 60-90 days, compared to 30 days common at Indian product startups. MutualCS salary guide covers joining bonus norms and buy-out structures that GCCs use to accelerate candidate transition." }
+          }
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "MutualCS", "item": "https://mutualcs.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://mutualcs.com/resources" },
+          { "@type": "ListItem", "position": 3, "name": "GCC Salary Guide 2026", "item": "https://mutualcs.com/resources/gcc-salary-guide" }
+        ]
+      })}} />
     </main>
   );
 }
