@@ -2,6 +2,7 @@ import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
 import { ClientsSection } from "@/components/landing/clients-section";
 import { ServicesSection } from "@/components/landing/services-section";
+import { FeeCalculator } from "@/components/landing/fee-calculator";
 import { IndustriesSection } from "@/components/landing/industries-section";
 import { WhyUsSection } from "@/components/landing/why-us-section";
 import { ProcessSection } from "@/components/landing/process-section";
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <ClientsSection />
       <ServicesSection />
+      <FeeCalculator />
       <IndustriesSection />
       <WhyUsSection />
       <ProcessSection />

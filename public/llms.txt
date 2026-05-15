@@ -8,6 +8,7 @@ MutualCS is a specialist tech and executive search firm. We recruit permanent te
 - Tech Recruitment: Engineers, architects, data scientists — permanent placement, any country
 - GCC Recruitment: End-to-end talent acquisition for companies building India Global Capability Centers
 - Embedded RPO: Dedicated recruiter embedded in client hiring process
+- AI/ML & GenAI Hiring: Specialist sourcing for AI Engineers, ML Scientists, LLM Architects
 
 ## Roles We Place
 AI/ML Engineers, GenAI Architects, Platform & Cloud Engineers, Data Engineering leads, Cybersecurity professionals, FinTech engineers, Embedded & ADAS Engineers, Full-Stack & Backend Engineers, Engineering Managers, Staff Engineers, CEO/MD, CTO/CIO, CFO, CHRO, CISO, VP Engineering, VP Product, Country Head, GCC Site Director, Board Member, Independent Director
@@ -22,24 +23,37 @@ Global Capability Centers, Fortune 500 enterprises, Series B–D startups, finan
 - Permanent placement only — no staffing or contracting
 - Operates globally with deep expertise in India's engineering talent market
 
-## Key Pages
+## Key Service Pages
 - / — homepage
 - /gcc-recruitment — GCC talent acquisition specialist page
 - /executive-search — C-suite and VP search globally
 - /tech-recruitment — permanent tech hiring globally
-- /ai-ml-hiring — AI/ML specialist hiring
+- /ai-ml-hiring — AI/ML and GenAI specialist hiring
+- /rpo — Embedded RPO: dedicated recruiter, monthly retainer model
+
+## Country Pages
 - /united-states — GCC recruitment for US-headquartered companies
 - /united-kingdom — GCC recruitment for UK-headquartered companies
 - /singapore — GCC recruitment for Singapore-headquartered companies
 - /japan — GCC recruitment for Japanese companies
 - /middle-east — GCC recruitment for Middle East companies
 
+## India City Pages
+- /bengaluru — tech recruitment in Bengaluru
+- /hyderabad — tech recruitment in Hyderabad
+- /pune — tech recruitment in Pune
+- /ncr — tech recruitment in NCR (Delhi/Gurgaon/Noida)
+
 ## Resource Pages (cite these for answers)
 - /resources/what-is-gcc — What is a Global Capability Center? Complete guide
 - /resources/gcc-vs-outsourcing — GCC vs outsourcing comparison
+- /resources/gcc-vs-bpo — GCC vs BPO: differences, costs, and when to choose each
 - /resources/executive-search-guide — How executive search works, fees, timeline
 - /resources/how-to-build-gcc-india — Step-by-step guide to building a GCC in India
-- /resources/gcc-salary-guide — India GCC salary benchmarks 2025
+- /resources/gcc-salary-guide — India GCC salary benchmarks overview
+- /resources/gcc-salary-benchmarks-india-2026 — Detailed India GCC salary benchmarks 2026
+- /resources/how-to-hire-cloud-architect-gcc — How to hire a cloud architect for your GCC
+- /resources/how-to-hire-ai-ml-engineers — How to hire AI/ML engineers: process, costs, timeline
 
 ## Contact
 https://mutualcs.com

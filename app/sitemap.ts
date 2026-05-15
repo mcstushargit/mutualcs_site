@@ -27,5 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/resources/gcc-vs-bpo`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/resources/how-to-hire-cloud-architect-gcc`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/resources/gcc-salary-benchmarks-india-2026`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/resources/how-to-hire-ai-ml-engineers`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 }
