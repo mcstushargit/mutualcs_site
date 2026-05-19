@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "How fast can MutualCS fill positions for our GCC?",
-    answer: "Our standard time-to-shortlist SLA is 30 days, backed by a contractual 20% fee reduction if we miss it. For most mandates we present qualified candidates within 7 business days. This is possible because of our deep GCC network, active headhunting approach, and streamlined assessment process."
+    answer: "It depends on the role. For tech and specialist roles, our SLA is 30 days to first shortlist — backed by a contractual 20% fee reduction if we miss it. For leadership and executive mandates (VP, CXO, Country Head), we commit to a 60-day shortlist SLA, which reflects the deeper market mapping and passive headhunting these roles require. Most tech mandates see a qualified shortlist within 7 business days. Both SLAs are contractual — not promises."
   },
   {
     question: "What industries and roles do you specialize in?",

@@ -22,8 +22,8 @@ const services = [
   {
     icon: Search,
     title: "Executive & Retained Search",
-    description: "For CXO, VP, and Country Head mandates globally. Fee split across milestones. Passive headhunting, confidential searches, structured assessment.",
-    features: ["25–28% of First-Year CTC", "33% Upfront / 33% Shortlist / 33% Acceptance", "Passive Candidate Headhunting", "3-Month Replacement Guarantee"],
+    description: "For CXO, VP, and Country Head mandates globally. Fee split across milestones. Passive headhunting, confidential searches, structured assessment. 60-day shortlist SLA — the only executive search firm that commits contractually.",
+    features: ["25–28% of First-Year CTC", "60-Day Shortlist SLA — Contractual", "Passive Candidate Headhunting", "3-Month Replacement Guarantee"],
     tier: "Tier 2",
     link: "/executive-search"
   },

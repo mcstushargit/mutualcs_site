@@ -18,10 +18,10 @@ export default function Home() {
       <HeroSection />
       <ClientsSection />
       <ServicesSection />
-      <FeeCalculator />
       <IndustriesSection />
       <WhyUsSection />
       <ProcessSection />
+      <FeeCalculator />
       <LocationsSection />
       <FaqSection />
       <ContactSection />

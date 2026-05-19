@@ -63,7 +63,7 @@ export function HeroSection() {
             Permanent tech recruitment and executive search — from Staff Engineers to CXOs —
             for{" "}
             <span className="text-foreground font-semibold">high-growth companies and GCCs, globally.</span>{" "}
-            We fill the roles your team can&apos;t. Miss the 30-day SLA, get 20% back.
+            We fill the roles your team can&apos;t. 30-day SLA for tech roles, 60-day for leadership — miss it, get 20% back.
           </p>
 
           {/* CTAs */}
@@ -103,7 +103,7 @@ export function HeroSection() {
             <div className="py-5 lg:py-6 pr-4">
               <div className="flex items-center gap-3 mb-1">
                 <Clock className="w-4 h-4 text-accent-foreground/70" />
-                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">30-Day</span>
+                <span className="text-2xl lg:text-3xl font-display text-accent-foreground">Tiered</span>
               </div>
               <span className="text-xs text-accent-foreground/75 font-medium tracking-wide">SLA Guarantee</span>
             </div>
