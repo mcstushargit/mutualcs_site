@@ -6,6 +6,7 @@ import { IndustriesSection } from "@/components/landing/industries-section";
 import { WhyUsSection } from "@/components/landing/why-us-section";
 import { ProcessSection } from "@/components/landing/process-section";
 import { LocationsSection } from "@/components/landing/locations-section";
+import { FeeCalculator } from "@/components/landing/fee-calculator";
 import { FaqSection } from "@/components/landing/faq-section";
 import { ContactSection } from "@/components/landing/contact-section";
 import { FooterSection } from "@/components/landing/footer-section";
@@ -20,6 +21,7 @@ export default function Home() {
       <IndustriesSection />
       <WhyUsSection />
       <ProcessSection />
+      <FeeCalculator />
       <LocationsSection />
       <FaqSection />
       <ContactSection />
