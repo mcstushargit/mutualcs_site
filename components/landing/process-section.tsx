@@ -45,11 +45,12 @@ export function ProcessSection() {
             <span className="w-8 h-px bg-accent" />
           </span>
           <h2 className="text-4xl lg:text-5xl font-display tracking-tight mb-6 text-balance">
-            From Requirement to Onboarding in 2 Weeks
+            A Process Built Around Accountability
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our streamlined recruitment process ensures you get the right talent 
-            without the typical delays and bottlenecks.
+            For tech and specialist roles, we target first shortlist within 2 weeks.
+            For leadership and executive mandates, we follow a dedicated timeline —
+            typically 4–8 weeks — with milestone-based updates throughout.
           </p>
         </div>
         

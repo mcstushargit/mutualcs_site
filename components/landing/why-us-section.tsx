@@ -4,9 +4,9 @@ import { CheckCircle2 } from "lucide-react";
 
 const differentiators = [
   {
-    metric: "30-Day",
+    metric: "Tiered",
     label: "SLA Guarantee",
-    description: "Contractual time-to-shortlist for every mandate. No competitor backs their speed claim this way."
+    description: "30-day shortlist SLA for tech roles. 60-day for leadership and executive mandates. Tiered by role complexity — contractual in both cases. No competitor backs their speed claim this way."
   },
   {
     metric: "85%+",
@@ -16,7 +16,7 @@ const differentiators = [
   {
     metric: "20%",
     label: "Fee Back if SLA Missed",
-    description: "If we miss the 30-day window due to our delays, you receive a 20% fee reduction. Contractual — not goodwill."
+    description: "Miss the SLA window due to our delays — 20% fee reduction, regardless of role level. Contractual — not goodwill."
   },
   {
     metric: "200+",
@@ -28,7 +28,7 @@ const differentiators = [
 const benefits = [
   "GCC specialist — tech roles, leadership roles, C-suite search",
   "Founder-accountable: every shortlist reviewed by our leadership",
-  "30-day SLA with a contractual fee-reduction guarantee",
+  "Tiered SLA: 30 days for tech roles, 60 days for leadership — both contractual",
   "Passive candidate headhunting for hard-to-fill mandates",
   "Executive search for VP, CHRO, CISO, Country Head roles",
   "Hiring across all major India GCC hubs — Bengaluru, Hyderabad, Pune, NCR, Chennai",

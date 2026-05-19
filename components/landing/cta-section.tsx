@@ -49,14 +49,15 @@ export function CtaSection() {
               <h2 className="text-4xl lg:text-6xl xl:text-7xl font-display tracking-tight mb-8 leading-[0.95] text-accent-foreground">
                 Your Next GCC Hire.
                 <br />
-                30 Days.
+                Accountable.
                 <br />
                 <span className="opacity-80">Guaranteed.</span>
               </h2>
 
               <p className="text-lg text-accent-foreground/80 mb-10 leading-relaxed max-w-lg">
-                Tech roles, leadership hires, executive search — one partner with one SLA
-                and one accountability mechanism. No competitor offers this.
+                30-day SLA for tech roles. 60-day for leadership and executive mandates.
+                One partner, one accountability standard — contractual at every level.
+                No competitor offers this.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -82,7 +83,7 @@ export function CtaSection() {
               <div className="flex flex-wrap gap-6 mt-10">
                 {[
                   { icon: Clock, text: "4-Hour Response" },
-                  { icon: Shield, text: "30-Day SLA" },
+                  { icon: Shield, text: "SLA Guaranteed" },
                   { icon: Star, text: "85%+ Retention" },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-sm text-accent-foreground/75 font-medium">
