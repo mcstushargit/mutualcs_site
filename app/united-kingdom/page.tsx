@@ -1,20 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Globe, CheckCircle, Building2 } from "lucide-react";
+import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GCC Recruitment for UK Companies in India | MutualCS",
+  title: "Recruitment Agency for UK Companies | Hire in UK, India & Globally | MutualCS",
   description:
-    "MutualCS helps UK-headquartered companies build and scale their India GCCs. BFSI, FinTech, and tech roles — 30-day SLA with a contractual fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for UK companies. We find tech, AI/ML, and executive talent in the UK, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
   keywords: [
+    "recruitment agency United Kingdom",
+    "tech recruitment UK companies",
+    "hire talent UK",
+    "executive search United Kingdom",
+    "recruitment agency for UK companies",
+    "London tech recruitment",
     "GCC recruitment UK companies India",
     "hire tech talent India from UK",
     "India GCC setup UK company",
     "Global Capability Center recruitment United Kingdom",
     "UK company India tech hiring",
     "British company India GCC",
+    "BFSI recruitment UK",
+    "fintech recruitment London",
   ],
+  alternates: {
+    canonical: "https://mutualcs.com/united-kingdom",
+  },
+  openGraph: {
+    title: "Recruitment Agency for UK Companies | Hire in UK, India & Globally | MutualCS",
+    description:
+      "MutualCS finds tech, AI/ML, and executive talent for UK companies — in the UK, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+    url: "https://mutualcs.com/united-kingdom",
+    locale: "en_GB",
+  },
 };
+
+const whereWeHire = [
+  {
+    flag: "🇬🇧",
+    location: "United Kingdom",
+    desc: "Find talent in London, Manchester, Edinburgh, Bristol, and across the UK — BFSI, fintech, and tech roles.",
+    tags: ["London", "Manchester", "Edinburgh", "Bristol", "Leeds"],
+    link: "/tech-recruitment",
+  },
+  {
+    flag: "🇮🇳",
+    location: "India (GCC & Tech Hubs)",
+    desc: "Build or scale your India GCC with vetted AI/ML, cloud, and leadership talent from Bengaluru, Hyderabad, Pune, and NCR.",
+    tags: ["Bengaluru", "Hyderabad", "Pune", "NCR", "Chennai"],
+    link: "/gcc-recruitment",
+  },
+  {
+    flag: "🌐",
+    location: "Global",
+    desc: "UAE, US, Singapore, Japan, Europe — permanent placement wherever your team needs to grow.",
+    tags: ["UAE", "United States", "Singapore", "Japan", "Europe"],
+    link: "/tech-recruitment",
+  },
+];
 
 const challenges = [
   {
@@ -70,26 +112,25 @@ export default function UnitedKingdomPage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-sm font-mono text-accent mb-6">
             <Globe className="w-4 h-4" />
-            GCC Recruitment · United Kingdom
+            Recruitment Agency · United Kingdom &amp; Global
           </div>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
-            Building Your India GCC
+            Hire Anywhere.
             <br />
-            <span className="text-accent">from the UK.</span>
+            <span className="text-accent">United Kingdom. India. Global.</span>
             <br />
-            Done in 30 Days.
+            30 Days. Guaranteed.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            British banks, FinTechs, and tech companies are among India&apos;s largest GCC operators.
-            MutualCS is the specialist recruitment partner for UK-headquartered organisations
-            building world-class India capability centres — 30-day SLA, contractual.
+            MutualCS is the recruitment partner for UK companies hiring in the UK, building India
+            GCC teams, or placing talent globally — one agency, one SLA, wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
+              href="/?loc=United%20Kingdom#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Talk to us about your India GCC
+              Tell us where you need to hire
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -120,10 +161,41 @@ export default function UnitedKingdomPage() {
         </div>
       </section>
 
+      {/* Where We Hire */}
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
-          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What UK Companies Face</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Hiring Challenges for UK-HQ GCCs</h2>
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
+          <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
+          <p className="text-muted-foreground mb-12 max-w-2xl">
+            UK. India. UAE. US. Singapore. Japan. You tell us where the role is — we find the talent.
+            The SLA and guarantee apply regardless of location.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {whereWeHire.map((item) => (
+              <div key={item.location} className="bg-card border border-border rounded-2xl p-8 hover:border-accent/40 transition-colors group">
+                <div className="text-4xl mb-4">{item.flag}</div>
+                <h3 className="font-semibold text-lg mb-3">{item.location}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">{item.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="text-xs font-mono text-accent bg-accent/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                      <MapPin className="w-2.5 h-2.5" />{tag}
+                    </span>
+                  ))}
+                </div>
+                <Link href={item.link} className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                  Learn more <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help UK Companies With</span>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring — In the UK, India, or Anywhere</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
               <div key={item.heading} className="border-l-2 border-accent/30 pl-6">
@@ -180,7 +252,7 @@ export default function UnitedKingdomPage() {
                   <h3 className="font-semibold">{model.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{model.desc}</p>
-                <Link href="/#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                <Link href="/?loc=United%20Kingdom#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
                   {model.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -191,12 +263,12 @@ export default function UnitedKingdomPage() {
 
       <section className="py-24 bg-accent">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
-          <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Ready to Build Your India GCC Team?</h2>
+          <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Tell Us Where You Need to Hire.</h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            Tell us what you&apos;re hiring for. We&apos;ll respond with a tailored plan within 4 hours.
+            In the UK, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
-          <Link href="/#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
-            Book a Free GCC Hiring Audit
+          <Link href="/?loc=United%20Kingdom#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
+            Book a Free Hiring Audit
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -205,11 +277,20 @@ export default function UnitedKingdomPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "GCC Recruitment for UK Companies in India",
-        "description": "MutualCS helps UK-headquartered companies build and scale India GCCs. BFSI, FinTech, and tech roles with a 30-day SLA and fee-back guarantee.",
+        "name": "Recruitment Agency for UK Companies — UK, India & Global Hiring",
+        "description": "MutualCS provides specialist recruitment for UK companies hiring in the UK, India, or globally. BFSI, FinTech, and tech roles with a 30-day contractual SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
-        "serviceType": "GCC Recruitment for UK Companies",
-        "areaServed": [{ "@type": "Country", "name": "India" }],
+        "serviceType": "Permanent Recruitment",
+        "areaServed": [
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "City", "name": "London" },
+          { "@type": "City", "name": "Manchester" },
+          { "@type": "Country", "name": "India" },
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "Singapore" },
+          { "@type": "Country", "name": "Japan" }
+        ],
         "audience": { "@type": "Audience", "audienceType": "UK-headquartered multinational corporations" }
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

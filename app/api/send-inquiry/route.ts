@@ -6,6 +6,7 @@ interface InquiryData {
   email: string;
   company: string;
   phone: string;
+  city: string;
   hiringVolume: string;
   serviceType: string;
   message: string;
@@ -38,7 +39,7 @@ export async function POST(request: NextRequest) {
       from: fromEmail,
       to: 'connect@mutualcs.com',
       replyTo: body.email,
-      subject: `New Talent Inquiry from ${body.name} - ${body.company || 'N/A'}`,
+      subject: `New Talent Inquiry from ${body.name} - ${body.company || 'N/A'}${body.city ? ` [${body.city}]` : ''}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #1a1a1a; margin-bottom: 24px;">New Inquiry Received</h2>
@@ -53,6 +54,7 @@ export async function POST(request: NextRequest) {
 
           <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
             <h3 style="color: #333; margin-top: 0;">Hiring Details</h3>
+            <p><strong>Location:</strong> ${body.city || 'Not specified'}</p>
             <p><strong>Hiring Volume:</strong> ${body.hiringVolume}</p>
             <p><strong>Service Type:</strong> ${body.serviceType}</p>
           </div>
@@ -95,7 +97,7 @@ export async function POST(request: NextRequest) {
           </p>
 
           <p style="color: #555; font-size: 16px; line-height: 1.6;">
-            Our team will review your requirements and get back to you within 24 hours with personalized recommendations.
+            Our team will review your requirements and get back to you within 4 business hours with a tailored plan.
           </p>
 
           <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">

@@ -1,20 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Globe, CheckCircle, Building2 } from "lucide-react";
+import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GCC Recruitment for Singapore Companies in India | MutualCS",
+  title: "Recruitment Agency for Singapore Companies | Hire in Singapore, India & Globally | MutualCS",
   description:
-    "MutualCS helps Singapore-headquartered companies build and scale their India GCCs. Tech, APAC delivery, and leadership roles — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for Singapore companies. We find tech, AI/ML, and executive talent in Singapore, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
   keywords: [
+    "recruitment agency Singapore",
+    "tech recruitment Singapore companies",
+    "hire talent Singapore",
+    "executive search Singapore",
+    "recruitment agency for Singapore companies",
+    "fintech recruitment Singapore",
     "GCC recruitment Singapore companies India",
     "hire tech talent India from Singapore",
     "Singapore company India GCC",
     "APAC GCC recruitment India",
     "Singapore HQ India tech hiring",
     "DBS OCBC India GCC recruitment",
+    "APAC delivery hub recruitment",
+    "permanent placement Singapore",
   ],
+  alternates: {
+    canonical: "https://mutualcs.com/singapore",
+  },
+  openGraph: {
+    title: "Recruitment Agency for Singapore Companies | Hire in Singapore, India & Globally | MutualCS",
+    description:
+      "MutualCS finds tech, AI/ML, and executive talent for Singapore companies — in Singapore, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+    url: "https://mutualcs.com/singapore",
+    locale: "en_SG",
+  },
 };
+
+const whereWeHire = [
+  {
+    flag: "🇸🇬",
+    location: "Singapore",
+    desc: "Find talent locally in Singapore — fintech, APAC delivery, and engineering roles for your Singapore operations.",
+    tags: ["Singapore", "Marina Bay", "Changi", "Jurong"],
+    link: "/tech-recruitment",
+  },
+  {
+    flag: "🇮🇳",
+    location: "India (GCC & Tech Hubs)",
+    desc: "Build or scale your India GCC with vetted AI/ML, cloud, and leadership talent from Bengaluru, Hyderabad, Pune, and NCR.",
+    tags: ["Bengaluru", "Hyderabad", "Pune", "NCR", "Chennai"],
+    link: "/gcc-recruitment",
+  },
+  {
+    flag: "🌐",
+    location: "Global",
+    desc: "UAE, US, UK, Japan, Europe — permanent placement wherever your team needs to grow.",
+    tags: ["UAE", "United States", "United Kingdom", "Japan", "Europe"],
+    link: "/tech-recruitment",
+  },
+];
 
 const challenges = [
   {
@@ -70,26 +112,26 @@ export default function SingaporePage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-sm font-mono text-accent mb-6">
             <Globe className="w-4 h-4" />
-            GCC Recruitment · Singapore
+            Recruitment Agency · Singapore &amp; Global
           </div>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
-            Building Your India GCC
+            Hire Anywhere.
             <br />
-            <span className="text-accent">from Singapore.</span>
+            <span className="text-accent">Singapore. India. Global.</span>
             <br />
-            Done in 30 Days.
+            30 Days. Guaranteed.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Singapore is the APAC headquarters for hundreds of global companies using India
-            as their engineering and delivery hub. MutualCS is the specialist GCC recruitment
-            partner that fills India tech roles with a 30-day SLA and contractual accountability.
+            MutualCS is the recruitment partner for Singapore companies hiring in Singapore,
+            building India GCC teams, or placing talent globally — one agency, one SLA,
+            wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
+              href="/?loc=Singapore#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Talk to us about your India GCC
+              Tell us where you need to hire
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -120,10 +162,41 @@ export default function SingaporePage() {
         </div>
       </section>
 
+      {/* Where We Hire */}
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
-          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What Singapore Companies Face</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Hiring Challenges for SG-HQ GCCs</h2>
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
+          <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
+          <p className="text-muted-foreground mb-12 max-w-2xl">
+            Singapore. India. UAE. US. UK. Japan. You tell us where the role is — we find the talent.
+            The SLA and guarantee apply regardless of location.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {whereWeHire.map((item) => (
+              <div key={item.location} className="bg-card border border-border rounded-2xl p-8 hover:border-accent/40 transition-colors group">
+                <div className="text-4xl mb-4">{item.flag}</div>
+                <h3 className="font-semibold text-lg mb-3">{item.location}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">{item.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="text-xs font-mono text-accent bg-accent/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                      <MapPin className="w-2.5 h-2.5" />{tag}
+                    </span>
+                  ))}
+                </div>
+                <Link href={item.link} className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                  Learn more <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help Singapore Companies With</span>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring — In Singapore, India, or Anywhere</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
               <div key={item.heading} className="border-l-2 border-accent/30 pl-6">
@@ -180,7 +253,7 @@ export default function SingaporePage() {
                   <h3 className="font-semibold">{model.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{model.desc}</p>
-                <Link href="/#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                <Link href="/?loc=Singapore#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
                   {model.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -191,12 +264,12 @@ export default function SingaporePage() {
 
       <section className="py-24 bg-accent">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
-          <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Ready to Build Your India GCC Team?</h2>
+          <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Tell Us Where You Need to Hire.</h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            Tell us what you&apos;re hiring for. We&apos;ll respond with a tailored plan within 4 hours.
+            In Singapore, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
-          <Link href="/#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
-            Book a Free GCC Hiring Audit
+          <Link href="/?loc=Singapore#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
+            Book a Free Hiring Audit
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -204,11 +277,18 @@ export default function SingaporePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "GCC Recruitment for Singapore Companies in India",
-        "description": "MutualCS helps Singapore-headquartered companies build and scale India GCCs. Tech, APAC delivery, and leadership roles with a 30-day SLA.",
+        "name": "Recruitment Agency for Singapore Companies — Singapore, India & Global Hiring",
+        "description": "MutualCS provides specialist recruitment for Singapore companies hiring in Singapore, India, or globally. Tech, APAC delivery, and leadership roles with a 30-day SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
-        "serviceType": "GCC Recruitment for Singapore Companies",
-        "areaServed": [{ "@type": "Country", "name": "India" }]
+        "serviceType": "Permanent Recruitment",
+        "areaServed": [
+          { "@type": "Country", "name": "Singapore" },
+          { "@type": "Country", "name": "India" },
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "Japan" }
+        ]
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",

@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display, JetBrains_Mono, Kanit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { WhatsAppButton } from '@/components/landing/whatsapp-button'
 import './globals.css'
 
 const inter = Inter({ 
@@ -26,8 +27,8 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: 'Mutual Consulting Services | Best GCC Recruitment Agency in India | 2-Week Closures',
-  description: 'India\'s fastest recruitment agency for Global Capability Centers (GCCs). Hire top tech talent in AI, Cloud, Cybersecurity with 2-week average closures. Trusted by Fortune 500 GCCs in Bangalore, Hyderabad, and NCR.',
+  title: 'MutualCS | GCC Recruitment Agency for UAE & Global Companies | India Tech & Executive Search',
+  description: 'Specialist recruitment agency for GCCs — tech, AI/ML, and executive roles in India. Trusted by UAE, US, UK, and Singapore-headquartered companies. 30-day contractual SLA with fee-back guarantee.',
   keywords: [
     'GCC recruitment agency India',
     'Global Capability Center hiring',
@@ -44,7 +45,18 @@ export const metadata: Metadata = {
     'Hyderabad GCC recruitment',
     'NCR tech recruitment',
     'RPO services GCC',
-    'bulk hiring GCC India'
+    'bulk hiring GCC India',
+    'recruitment agency UAE',
+    'tech recruitment Dubai',
+    'India GCC recruitment UAE',
+    'executive search UAE',
+    'hire engineers India Dubai',
+    'GCC setup India UAE company',
+    'DIFC GCC India recruitment',
+    'Abu Dhabi GCC India hiring',
+    'recruitment agency for UAE companies in India',
+    'GenAI recruitment India',
+    'AI recruitment agency India',
   ],
   authors: [{ name: 'Mutual Consulting Services' }],
   creator: 'Mutual Consulting Services',
@@ -62,11 +74,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_IN',
+    locale: 'en_US',
     url: 'https://mutualcs.com',
     siteName: 'Mutual Consulting Services',
-    title: 'Mutual Consulting Services | Best GCC Recruitment Agency in India',
-    description: 'India\'s fastest recruitment agency for Global Capability Centers. Hire top tech talent with 2-week average closures. Trusted by Fortune 500 GCCs.',
+    title: 'MutualCS | GCC Recruitment Agency for UAE & Global Companies',
+    description: 'Specialist recruitment agency for GCCs — tech, AI/ML, and executive roles in India. Trusted by UAE, US, UK, and Singapore-headquartered companies. 30-day SLA, guaranteed.',
     images: [
       {
         url: 'https://mutualcs.com/og-image.png',
@@ -147,18 +159,22 @@ export default function RootLayout({
                 "Executive Search",
                 "RPO Services",
                 "AI/ML Hiring",
+                "GenAI Recruitment",
                 "Cloud Architect Recruitment",
-                "Cybersecurity Recruitment"
+                "Cybersecurity Recruitment",
+                "UAE India GCC Hiring",
+                "DIFC GCC Recruitment",
+                "India GCC Setup for UAE Companies"
               ],
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 20.5937,
-                  "longitude": 78.9629
-                },
-                "geoRadius": "3000"
-              },
+              "areaServed": [
+                { "@type": "Country", "name": "India" },
+                { "@type": "Country", "name": "United Arab Emirates" },
+                { "@type": "Country", "name": "United States" },
+                { "@type": "Country", "name": "United Kingdom" },
+                { "@type": "Country", "name": "Singapore" },
+                { "@type": "Country", "name": "Japan" },
+                { "@type": "Country", "name": "Saudi Arabia" }
+              ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "Recruitment Services",
@@ -236,6 +252,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} ${kanit.variable} font-sans antialiased`}>
         {children}
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>

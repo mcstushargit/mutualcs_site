@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "tech recruitment Pune GCC",
     "AI ML hiring Pune",
     "Global Capability Center recruitment Pune",
+    "UAE companies hiring Pune",
+    "US companies hiring engineers Pune",
+    "UK companies tech recruitment Pune",
+    "Japanese companies India GCC Pune",
+    "global company tech recruitment Pune",
   ],
 };
 
@@ -65,10 +70,12 @@ export default function PunePage() {
             Pune is India&apos;s fastest-growing Tier 2 GCC expansion hub. Fortune 500s are
             establishing and scaling GCCs here for cost arbitrage without compromising on engineering
             quality. MutualCS is the specialist tech recruiter that makes this work.
+            We hire for UAE, US, UK, Singapore, and Japanese companies — wherever their
+            Pune mandate comes from.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
+              href="/?loc=Pune#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
               Hire in Pune — speak to us today
@@ -92,6 +99,28 @@ export default function PunePage() {
               <div key={stat.label} className="py-8 px-6 first:pl-0 last:pr-0">
                 <div className="text-3xl font-display text-accent mb-1">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who Hires Here */}
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Who Hires Tech Talent Here</span>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Companies We Serve in Pune</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates — building India tech teams from Dubai and Abu Dhabi." },
+              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs — automotive, pharma, and enterprise tech companies." },
+              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and engineering roles — British firms with Pune development centres." },
+              { origin: "Singapore Companies", desc: "APAC delivery hub roles and engineering — SG-HQ firms using Pune for cost-effective scale." },
+              { origin: "Japanese Companies", desc: "R&D, embedded, and automotive tech — Japan&apos;s automotive and manufacturing giants with Pune GCCs." },
+            ].map((item) => (
+              <div key={item.origin} className="bg-card border border-border rounded-xl p-5">
+                <div className="font-semibold mb-1">{item.origin}</div>
+                <div className="text-sm text-muted-foreground">{item.desc}</div>
               </div>
             ))}
           </div>
@@ -165,7 +194,7 @@ export default function PunePage() {
                   <h3 className="font-semibold">{model.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{model.desc}</p>
-                <Link href="/#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                <Link href="/?loc=Pune#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
                   {model.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -184,7 +213,7 @@ export default function PunePage() {
             Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
           </p>
           <Link
-            href="/#contact"
+            href="/?loc=Pune#contact"
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-10 h-14 rounded-full font-semibold text-base transition-colors group"
           >
             Book a Free Hiring Audit
@@ -203,6 +232,20 @@ export default function PunePage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
         "geo": { "@type": "GeoCoordinates", "latitude": 18.5204, "longitude": 73.8567 },
         "areaServed": { "@type": "City", "name": "Pune" },
+        "serviceArea": [
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "Singapore" },
+          { "@type": "Country", "name": "Japan" }
+        ],
+        "knowsAbout": [
+          "UAE company India GCC hiring",
+          "US company Pune hiring",
+          "UK company India tech recruitment",
+          "Singapore company Pune GCC",
+          "Japanese company India engineering centre"
+        ],
         "priceRange": "16–28% placement fee",
         "parentOrganization": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" }
       })}} />

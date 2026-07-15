@@ -35,6 +35,10 @@ const faqs = [
   {
     question: "Can you help with high-volume hiring for new GCC setups?",
     answer: "Absolutely. We have extensive experience with greenfield GCC setups and can scale from 10 to 1,000+ hires without compromising on quality. Our RPO model is specifically designed for high-volume hiring, offering dedicated teams, real-time dashboards, and flexible capacity to match your ramp-up timelines."
+  },
+  {
+    question: "Do you work with UAE and Middle East companies hiring in India?",
+    answer: "Yes — and we're not limited to India hiring for UAE clients. If you are a UAE company that needs to hire in Dubai, Abu Dhabi, build an India GCC team, or place talent globally, MutualCS covers all three. The same 30-day contractual SLA and 3-month replacement guarantee apply regardless of where the role is based. See our UAE page for full details: mutualcs.com/uae"
   }
 ];
 

@@ -127,13 +127,23 @@ export function FeeCalculator() {
         <div className="bg-background border border-border rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
           <p className="text-muted-foreground leading-relaxed max-w-xl text-sm">{s.desc}</p>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-            <Link
-              href="/#contact"
+            <a
+              href="#contact"
+              onClick={() => {
+                const serviceMap: Record<ScenarioKey, string> = {
+                  tech: "GCC Fast Track",
+                  exec: "Executive / Leadership Search",
+                  rpo: "Embedded RPO",
+                };
+                window.dispatchEvent(
+                  new CustomEvent("prefill-contact", { detail: { serviceType: serviceMap[active] } })
+                );
+              }}
               className="inline-flex items-center gap-2 bg-accent text-accent-foreground hover:bg-accent/90 px-6 h-11 rounded-full font-semibold text-sm transition-colors group whitespace-nowrap"
             >
-              Discuss Your Mandate
+              Get an Exact Quote for This Model
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
             <Link
               href={s.link}
               className="inline-flex items-center gap-2 border border-border hover:border-accent text-muted-foreground hover:text-accent px-6 h-11 rounded-full text-sm transition-colors whitespace-nowrap"

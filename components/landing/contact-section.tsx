@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -51,6 +51,30 @@ export function ContactSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // Prefill from URL params (location pages link here with ?loc= / ?service=)
+  // and from same-page widgets via the "prefill-contact" event (fee calculator).
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const loc = params.get("loc");
+    const service = params.get("service");
+    setFormData((prev) => ({
+      ...prev,
+      ...(loc && gccCities.includes(loc) ? { city: loc } : {}),
+      ...(service && serviceTypes.includes(service) ? { serviceType: service } : {}),
+    }));
+
+    const handlePrefill = (e: Event) => {
+      const detail = (e as CustomEvent).detail as { serviceType?: string; city?: string };
+      setFormData((prev) => ({
+        ...prev,
+        ...(detail.serviceType && serviceTypes.includes(detail.serviceType) ? { serviceType: detail.serviceType } : {}),
+        ...(detail.city && gccCities.includes(detail.city) ? { city: detail.city } : {}),
+      }));
+    };
+    window.addEventListener("prefill-contact", handlePrefill);
+    return () => window.removeEventListener("prefill-contact", handlePrefill);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -133,6 +157,18 @@ export function ContactSection() {
                 </div>
               </a>
 
+              <a href={"https://wa.me/917042477535?text=" + encodeURIComponent("Hi MutualCS — I'd like to discuss a hiring mandate.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <svg viewBox="0 0 32 32" className="w-5 h-5 fill-accent" aria-hidden="true">
+                    <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.257.59 4.46 1.712 6.404L3.2 28.8l6.564-1.683a12.74 12.74 0 0 0 6.24 1.623h.005c7.058 0 12.79-5.74 12.79-12.8 0-3.42-1.33-6.633-3.75-9.05a12.71 12.71 0 0 0-9.045-3.69zm0 23.383h-.004a10.6 10.6 0 0 1-5.404-1.48l-.388-.23-3.896.999 1.04-3.797-.253-.39a10.58 10.58 0 0 1-1.628-5.685c0-5.868 4.775-10.643 10.647-10.643 2.844 0 5.516 1.109 7.526 3.12a10.58 10.58 0 0 1 3.115 7.53c0 5.868-4.775 10.576-10.755 10.576zm5.838-7.93c-.32-.16-1.892-.933-2.185-1.04-.293-.107-.507-.16-.72.16-.213.32-.826 1.04-1.013 1.253-.187.214-.373.24-.693.08-.32-.16-1.351-.498-2.573-1.587-.951-.848-1.593-1.896-1.78-2.216-.186-.32-.02-.493.14-.652.144-.144.32-.374.48-.56.16-.187.214-.32.32-.534.107-.213.054-.4-.026-.56-.08-.16-.72-1.734-.987-2.374-.26-.623-.523-.539-.72-.549l-.613-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667s1.146 3.093 1.306 3.307c.16.213 2.256 3.444 5.466 4.83.764.33 1.36.527 1.825.674.767.244 1.465.21 2.016.127.615-.092 1.893-.774 2.16-1.52.266-.747.266-1.387.186-1.52-.08-.134-.293-.214-.613-.374z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground">WhatsApp us</div>
+                  <div className="font-semibold">Chat with our team directly</div>
+                </div>
+              </a>
+
               <a href="https://linkedin.com/company/mutualcs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <Linkedin className="w-5 h-5 text-accent" />
@@ -159,6 +195,12 @@ export function ContactSection() {
                 <span>No Obligation</span>
               </div>
             </div>
+
+            {/* Time zone coverage */}
+            <p className="mt-6 text-sm text-muted-foreground">
+              <span className="text-foreground font-medium">Global coverage:</span>{" "}
+              GST (UAE) · IST (India) · GMT (UK) · EST (US) — we work on your time zone.
+            </p>
           </div>
 
           {/* Right - Form */}

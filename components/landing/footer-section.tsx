@@ -11,25 +11,33 @@ const footerLinks = {
     { name: "Embedded RPO", href: "#contact" },
   ],
   industries: [
-    { name: "AI & Machine Learning", href: "#industries" },
-    { name: "Cloud Computing", href: "#industries" },
-    { name: "Cybersecurity", href: "#industries" },
-    { name: "FinTech", href: "#industries" },
-    { name: "HealthTech", href: "#industries" },
+    { name: "AI & Machine Learning", href: "/ai-ml-hiring" },
+    { name: "Cloud & Platform Engineering", href: "/tech-recruitment" },
+    { name: "Cybersecurity", href: "/tech-recruitment" },
+    { name: "FinTech & BFSI", href: "/gcc-recruitment" },
+    { name: "Executive Leadership", href: "/executive-search" },
   ],
-  locations: [
-    { name: "Bengaluru", href: "#" },
-    { name: "Hyderabad", href: "#" },
-    { name: "Delhi NCR", href: "#" },
-    { name: "Pune", href: "#" },
-    { name: "Chennai", href: "#" },
+  indiaLocations: [
+    { name: "Bengaluru", href: "/bengaluru" },
+    { name: "Hyderabad", href: "/hyderabad" },
+    { name: "NCR (Gurgaon / Noida)", href: "/ncr" },
+    { name: "Pune", href: "/pune" },
+  ],
+  globalLocations: [
+    { name: "UAE & Gulf", href: "/uae" },
+    { name: "United States", href: "/united-states" },
+    { name: "United Kingdom", href: "/united-kingdom" },
+    { name: "Singapore", href: "/singapore" },
+    { name: "Japan", href: "/japan" },
+    { name: "Middle East", href: "/middle-east" },
   ],
   company: [
-    { name: "About Us", href: "#" },
-    { name: "Careers", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "All Resources & Guides", href: "/resources" },
+    { name: "GCC Recruitment", href: "/gcc-recruitment" },
+    { name: "Executive Search", href: "/executive-search" },
+    { name: "Embedded RPO", href: "/rpo" },
+    { name: "Salary Guide 2026", href: "/resources/gcc-salary-guide" },
+    { name: "What is a GCC?", href: "/resources/what-is-gcc" },
   ],
 };
 
@@ -38,9 +46,9 @@ export function FooterSection() {
     <footer className="relative py-16 lg:py-24 border-t border-border">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main footer content */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-7 gap-12 lg:gap-8 mb-16">
           {/* Brand column */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <div className="flex items-center gap-1 mb-6">
               <span className="text-2xl font-display">Mutual</span>
               <span className="text-2xl font-display text-accent">CS</span>
@@ -95,7 +103,7 @@ export function FooterSection() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Industries</h4>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Specialisms</h4>
             <ul className="space-y-3">
               {footerLinks.industries.map((link) => (
                 <li key={link.name}>
@@ -106,11 +114,11 @@ export function FooterSection() {
               ))}
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Locations</h4>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">India Hubs</h4>
             <ul className="space-y-3">
-              {footerLinks.locations.map((link) => (
+              {footerLinks.indiaLocations.map((link) => (
                 <li key={link.name}>
                   <a href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {link.name}
@@ -119,9 +127,22 @@ export function FooterSection() {
               ))}
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Global Markets</h4>
+            <ul className="space-y-3">
+              {footerLinks.globalLocations.map((link) => (
+                <li key={link.name}>
+                  <a href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Resources</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -137,10 +158,7 @@ export function FooterSection() {
         {/* SEO keywords section */}
         <div className="border-t border-border pt-8 mb-8">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            <strong className="text-muted-foreground">GCC Recruitment Services:</strong> Best recruitment agency for GCC companies in India | Global Capability Center hiring solutions | 
-            GCC staffing Bangalore Hyderabad NCR | Tech recruitment for captive centers | RPO services for multinational corporations | 
-            Fortune 500 GCC recruitment partner | AI ML cloud cybersecurity hiring | Fast recruitment company India | 
-            Bulk hiring solutions for GCCs | Executive search for Global Capability Centers | Tech talent acquisition India
+            <strong className="text-muted-foreground">Recruitment Services:</strong> Specialist recruitment agency for UAE companies hiring in India, UAE & globally | GCC recruitment Bengaluru Hyderabad NCR Pune | Tech recruitment Dubai Abu Dhabi | Executive search UAE | India GCC setup for UAE US UK Singapore Japan companies | AI ML GenAI hiring India | Embedded RPO for Global Capability Centers | 30-day contractual SLA with fee-back guarantee | Permanent placement only — no staffing or contracting
           </p>
         </div>
         

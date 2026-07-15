@@ -1,20 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Globe, CheckCircle, Building2 } from "lucide-react";
+import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GCC Recruitment for US Companies in India | MutualCS",
+  title: "Recruitment Agency for US Companies | Hire in US, India & Globally | MutualCS",
   description:
-    "MutualCS helps US-headquartered companies build and scale their India GCCs. AI, Cloud, Platform Engineering, and executive search — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for US companies. We find tech, AI/ML, and executive talent in the US, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
   keywords: [
+    "recruitment agency United States",
+    "tech recruitment US companies",
+    "hire talent USA",
+    "executive search United States",
+    "recruitment agency for US companies",
     "GCC recruitment US companies India",
     "hire tech talent India from USA",
     "India GCC setup US company",
     "Global Capability Center recruitment United States",
     "US company India tech hiring",
     "offshore GCC hiring America",
+    "AI ML recruitment United States",
+    "permanent placement USA",
+    "talent acquisition US",
   ],
+  alternates: {
+    canonical: "https://mutualcs.com/united-states",
+  },
+  openGraph: {
+    title: "Recruitment Agency for US Companies | Hire in US, India & Globally | MutualCS",
+    description:
+      "MutualCS finds tech, AI/ML, and executive talent for US companies — in the US, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+    url: "https://mutualcs.com/united-states",
+    locale: "en_US",
+  },
 };
+
+const whereWeHire = [
+  {
+    flag: "🇺🇸",
+    location: "United States",
+    desc: "Find permanent tech and leadership talent across New York, San Francisco, Seattle, Austin, and beyond.",
+    tags: ["New York", "San Francisco", "Seattle", "Austin", "Boston"],
+    link: "/tech-recruitment",
+  },
+  {
+    flag: "🇮🇳",
+    location: "India (GCC & Tech Hubs)",
+    desc: "Build or scale your India GCC with vetted AI/ML, cloud, and leadership talent from Bengaluru, Hyderabad, Pune, and NCR.",
+    tags: ["Bengaluru", "Hyderabad", "Pune", "NCR", "Chennai"],
+    link: "/gcc-recruitment",
+  },
+  {
+    flag: "🌐",
+    location: "Global",
+    desc: "UAE, UK, Singapore, Japan, Europe — permanent placement wherever your team needs to grow.",
+    tags: ["UAE", "United Kingdom", "Singapore", "Japan", "Europe"],
+    link: "/tech-recruitment",
+  },
+];
 
 const challenges = [
   {
@@ -71,26 +113,25 @@ export default function UnitedStatesPage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-sm font-mono text-accent mb-6">
             <Globe className="w-4 h-4" />
-            GCC Recruitment · United States
+            Recruitment Agency · United States &amp; Global
           </div>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
-            Building Your India GCC
+            Hire Anywhere.
             <br />
-            <span className="text-accent">from the US.</span>
+            <span className="text-accent">United States. India. Global.</span>
             <br />
-            Done in 30 Days.
+            30 Days. Guaranteed.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Over 700 US companies have established GCCs in India — from Fortune 500 enterprises to
-            Series B startups. MutualCS is the specialist recruitment partner that fills your
-            India tech roles with a 30-day SLA and a contractual fee-back guarantee.
+            MutualCS is the recruitment partner for US companies hiring in the US, building India
+            GCC teams, or placing talent globally — one agency, one SLA, wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
+              href="/?loc=United%20States#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Talk to us about your India GCC
+              Tell us where you need to hire
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -122,12 +163,43 @@ export default function UnitedStatesPage() {
         </div>
       </section>
 
+      {/* Where We Hire */}
+      <section className="py-24 border-b border-border">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
+          <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
+          <p className="text-muted-foreground mb-12 max-w-2xl">
+            US. India. UAE. UK. Singapore. Japan. You tell us where the role is — we find the talent.
+            The SLA and guarantee apply regardless of location.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {whereWeHire.map((item) => (
+              <div key={item.location} className="bg-card border border-border rounded-2xl p-8 hover:border-accent/40 transition-colors group">
+                <div className="text-4xl mb-4">{item.flag}</div>
+                <h3 className="font-semibold text-lg mb-3">{item.location}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">{item.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="text-xs font-mono text-accent bg-accent/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                      <MapPin className="w-2.5 h-2.5" />{tag}
+                    </span>
+                  ))}
+                </div>
+                <Link href={item.link} className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                  Learn more <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Challenges */}
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
-          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What US Companies Face</span>
+          <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help US Companies With</span>
           <h2 className="text-4xl font-display tracking-tight mb-12">
-            Hiring for an India GCC from Across Time Zones
+            Tech and Executive Hiring — In the US, India, or Anywhere
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
@@ -187,7 +259,7 @@ export default function UnitedStatesPage() {
                   <h3 className="font-semibold">{model.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{model.desc}</p>
-                <Link href="/#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                <Link href="/?loc=United%20States#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
                   {model.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -200,16 +272,16 @@ export default function UnitedStatesPage() {
       <section className="py-24 bg-accent">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">
-            Ready to Build Your India GCC Team?
+            Tell Us Where You Need to Hire.
           </h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            Tell us what you&apos;re hiring for. We&apos;ll come back with a plan — timeline, approach, and the right engagement model.
+            In the US, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
           <Link
-            href="/#contact"
+            href="/?loc=United%20States#contact"
             className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group"
           >
-            Book a Free GCC Hiring Audit
+            Book a Free Hiring Audit
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -218,11 +290,20 @@ export default function UnitedStatesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "GCC Recruitment for US Companies in India",
-        "description": "MutualCS helps US-headquartered companies build and scale India GCCs. AI, Cloud, Platform Engineering, and executive search with a 30-day SLA.",
+        "name": "Recruitment Agency for US Companies — US, India & Global Hiring",
+        "description": "MutualCS provides specialist recruitment for US companies hiring in the US, India, or globally. Tech, AI/ML, and executive roles with a 30-day contractual SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
-        "serviceType": "GCC Recruitment for US Companies",
-        "areaServed": [{ "@type": "Country", "name": "India" }],
+        "serviceType": "Permanent Recruitment",
+        "areaServed": [
+          { "@type": "Country", "name": "United States" },
+          { "@type": "City", "name": "New York" },
+          { "@type": "City", "name": "San Francisco" },
+          { "@type": "Country", "name": "India" },
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "Singapore" },
+          { "@type": "Country", "name": "Japan" }
+        ],
         "audience": { "@type": "Audience", "audienceType": "US-headquartered multinational corporations" }
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

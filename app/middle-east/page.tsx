@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     "Middle East India Global Capability Center",
     "hire tech talent India UAE",
     "DIFC GCC India recruitment",
+    "ADGM GCC recruitment India",
+    "Abu Dhabi GCC India hiring",
+    "recruitment agency Middle East",
+    "tech recruitment Gulf companies India",
+    "recruitment agency Dubai GCC",
+    "Gulf company India office hiring",
+    "executive search Middle East",
   ],
 };
 
@@ -86,7 +93,7 @@ export default function MiddleEastPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/#contact"
+              href="/?loc=Middle%20East#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
               Talk to us about your India GCC
@@ -180,7 +187,7 @@ export default function MiddleEastPage() {
                   <h3 className="font-semibold">{model.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{model.desc}</p>
-                <Link href="/#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
+                <Link href="/?loc=Middle%20East#contact" className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all">
                   {model.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -195,7 +202,7 @@ export default function MiddleEastPage() {
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
             Tell us what you&apos;re hiring for. We&apos;ll respond with a tailored plan within 4 hours.
           </p>
-          <Link href="/#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
+          <Link href="/?loc=Middle%20East#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
             Book a Free GCC Hiring Audit
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
@@ -208,7 +215,14 @@ export default function MiddleEastPage() {
         "description": "MutualCS helps UAE, Saudi Arabia, and wider Middle East companies build India GCCs. Tech, BFSI, and leadership roles with a 30-day SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "serviceType": "GCC Recruitment for Middle East Companies",
-        "areaServed": [{ "@type": "Country", "name": "India" }]
+        "areaServed": [
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "Saudi Arabia" },
+          { "@type": "Country", "name": "Qatar" },
+          { "@type": "Country", "name": "Bahrain" },
+          { "@type": "Country", "name": "Kuwait" },
+          { "@type": "Country", "name": "India" }
+        ]
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
