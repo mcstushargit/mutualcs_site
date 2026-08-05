@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 2. Send the requester the guide link.
-    await resend.emails.send({
+    const { data: guideData, error: guideError } = await resend.emails.send({
       from: fromEmail,
       to: body.email,
       replyTo: 'connect@mutualcs.com',
@@ -126,7 +126,18 @@ export async function POST(request: NextRequest) {
       `,
     });
 
-    return NextResponse.json({ success: true }, { status: 200 });
+    // The requester's email is the one that matters to them. If Resend rejected
+    // it, say so rather than reporting success, and surface the reason.
+    if (guideError) {
+      console.error('[send-guide] Resend guide-email error:', guideError);
+      return NextResponse.json(
+        { error: 'Guide email rejected', details: guideError },
+        { status: 502 }
+      );
+    }
+
+    console.log('[send-guide] sent, id:', guideData?.id, 'to:', body.email);
+    return NextResponse.json({ success: true, id: guideData?.id }, { status: 200 });
   } catch (error) {
     console.error('[send-guide] Error:', error);
     return NextResponse.json(
