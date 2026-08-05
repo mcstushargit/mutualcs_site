@@ -22,13 +22,31 @@ export function SalaryGuideForm() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/send-guide", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error("Failed to send guide");
+
+      setIsSubmitted(true);
+    } catch (err) {
+      setError(
+        "We could not send the guide just now. Please try again, or email connect@mutualcs.com and we will send it across."
+      );
+      console.error("Salary guide form error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -37,18 +55,25 @@ export function SalaryGuideForm() {
         <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-8 h-8 text-accent" />
         </div>
-        <h3 className="text-2xl font-display mb-4">Guide Sent to Your Email</h3>
-        <p className="text-muted-foreground mb-8">
-          Check your inbox, the GCC Tech Salary Guide 2026 is on its way.
-          If you&apos;d like to discuss your GCC hiring mandate, our team is available for a quick call.
+        <h3 className="text-2xl font-display mb-4">Check Your Inbox</h3>
+        <p className="text-muted-foreground mb-6">
+          We have emailed you a link to the GCC Salary Benchmarks for India 2026.
+          If it has not arrived in a minute or two, check your spam folder.
         </p>
         <Link
-          href="/#contact"
-          className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
+          href="/resources/gcc-salary-benchmarks-india-2026"
+          className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group mb-4"
         >
-          Book a GCC Hiring Audit
+          Read the Benchmarks Now
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
         </Link>
+        <p className="text-sm text-muted-foreground">
+          Setting bands for a live role?{" "}
+          <Link href="/#contact" className="text-accent hover:underline font-medium">
+            Tell us the role and we will send the current market range
+          </Link>
+          .
+        </p>
       </div>
     );
   }
@@ -61,6 +86,12 @@ export function SalaryGuideForm() {
           Enter your details and we&apos;ll email you the guide immediately.
         </p>
       </div>
+
+      {error && (
+        <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+          {error}
+        </div>
+      )}
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-2">Full Name *</label>
