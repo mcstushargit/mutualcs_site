@@ -3,17 +3,36 @@ import Link from "next/link";
 import { ArrowRight, Search, CheckCircle, Building2, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Executive Search | CXO, VP & Country Head Recruitment | MutualCS",
+  title: "Executive Search Firm | Outsource Your CXO & Leadership Hiring | MutualCS",
   description:
-    "MutualCS places CXOs, VPs, Country Heads, and CHROs for high-growth companies and GCCs globally. Retained executive search with a 30-day SLA and contractual accountability.",
+    "Retained executive search for companies hiring CXOs, VPs, Country Heads, and CHROs. Contractual 60-day shortlist SLA, 20% fee back if missed, 3-month replacement guarantee. Global mandates.",
   keywords: [
-    "executive search GCC India",
-    "CXO search tech company global",
-    "VP Engineering search retained",
-    "Country Head GCC recruitment",
-    "CHRO executive search global",
-    "C-suite headhunting permanent placement",
+    "executive search firm",
+    "retained executive search firm",
+    "outsource executive hiring",
+    "CXO hiring consultants",
+    "C-suite recruitment firm",
+    "how to hire a CTO",
+    "how to hire a CFO",
+    "executive search firm India",
+    "executive search firm UAE",
+    "leadership hiring partner",
+    "board level recruitment firm",
+    "hire a Country Head",
+    "CHRO search firm",
+    "executive search fees",
+    "confidential succession search",
+    "replace an executive confidentially",
+    "VP Engineering search firm",
+    "GCC leadership hiring partner",
   ],
+  alternates: { canonical: "https://mutualcs.com/executive-search" },
+  openGraph: {
+    title: "Executive Search Firm | Outsource Your CXO & Leadership Hiring | MutualCS",
+    description:
+      "Retained executive search with a contractual SLA. CXO, VP, Country Head, and CHRO mandates worldwide.",
+    url: "https://mutualcs.com/executive-search",
+  },
 };
 
 const whyExecSearch = [

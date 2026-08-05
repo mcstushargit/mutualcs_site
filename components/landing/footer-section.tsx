@@ -33,6 +33,8 @@ const footerLinks = {
   ],
   company: [
     { name: "All Resources & Guides", href: "/resources" },
+    { name: "What a CXO Hire Costs", href: "/resources/cost-to-hire-cxo" },
+    { name: "For Candidates", href: "/candidates" },
     { name: "GCC Recruitment", href: "/gcc-recruitment" },
     { name: "Executive Search", href: "/executive-search" },
     { name: "Embedded RPO", href: "/rpo" },

@@ -27,8 +27,8 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: 'MutualCS | GCC Recruitment Agency for UAE & Global Companies | India Tech & Executive Search',
-  description: 'Specialist recruitment agency for GCCs — tech, AI/ML, and executive roles in India. Trusted by UAE, US, UK, and Singapore-headquartered companies. 30-day contractual SLA with fee-back guarantee.',
+  title: 'MutualCS | Executive Search & GCC Hiring Partner for Employers | CXO to Engineer',
+  description: 'Retained executive search and specialist tech hiring for companies building leadership teams and GCCs. CXO, VP, and Country Head mandates across UAE, India, US, UK, and Singapore. Contractual SLA with fee-back guarantee.',
   keywords: [
     'GCC recruitment agency India',
     'Global Capability Center hiring',
@@ -57,6 +57,16 @@ export const metadata: Metadata = {
     'recruitment agency for UAE companies in India',
     'GenAI recruitment India',
     'AI recruitment agency India',
+    'executive search firm',
+    'retained executive search',
+    'outsource executive hiring',
+    'CXO hiring consultants',
+    'how to hire a CTO',
+    'C-suite recruitment firm',
+    'leadership hiring partner',
+    'executive search firm UAE',
+    'board level recruitment',
+    'confidential succession search',
   ],
   authors: [{ name: 'Mutual Consulting Services' }],
   creator: 'Mutual Consulting Services',

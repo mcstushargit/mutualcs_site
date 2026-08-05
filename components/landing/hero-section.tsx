@@ -37,7 +37,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-accent font-semibold">
             <span className="w-8 h-px bg-accent" />
-            Tech &amp; Executive Search · Global · Permanent
+            For Employers · Executive Search &amp; Tech Hiring · Global
           </span>
         </div>
 
@@ -60,10 +60,10 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Permanent tech recruitment and executive search — from Staff Engineers to CXOs —
-            for{" "}
-            <span className="text-foreground font-semibold">high-growth companies and GCCs, globally.</span>{" "}
-            We fill the roles your team can&apos;t. 30-day SLA for tech roles, 60-day for leadership — miss it, get 20% back.
+            We are the retained search partner for{" "}
+            <span className="text-foreground font-semibold">companies hiring leadership and senior technology talent</span>{" "}
+            — CXOs, VPs, Country Heads, and the engineers beneath them. Globally, permanent only.
+            30-day SLA for tech roles, 60-day for leadership — miss it, get 20% back.
           </p>
 
           {/* CTAs */}
@@ -83,10 +83,10 @@ export function HeroSection() {
               </a>
             </Button>
             <a
-              href="/resources/gcc-salary-guide"
+              href="/resources/cost-to-hire-cxo"
               className="inline-flex items-center justify-center h-14 px-8 text-base rounded-full border-2 border-foreground/20 hover:border-accent/60 hover:bg-accent/10 hover:text-accent bg-white/60 backdrop-blur-sm transition-all font-medium"
             >
-              Download Salary Guide 2026
+              What Does a CXO Hire Cost?
             </a>
           </div>
         </div>

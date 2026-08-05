@@ -21,12 +21,19 @@ export const metadata: Metadata = {
 
 const guides = [
   {
+    title: "What Does It Cost to Hire a CXO?",
+    desc: "Executive search fees explained — the three pricing models, the true cost of a failed C-suite hire, and what to demand in writing before you engage a firm.",
+    href: "/resources/cost-to-hire-cxo",
+    tag: "For Boards & CEOs",
+    icon: Users,
+    featured: true,
+  },
+  {
     title: "GCC Tech Salary Guide India 2026",
     desc: "AI/ML, Cloud, Platform Engineering & Cybersecurity salary benchmarks by city and experience band. Updated quarterly.",
     href: "/resources/gcc-salary-guide",
     tag: "Salary Data",
     icon: TrendingUp,
-    featured: true,
   },
   {
     title: "GCC Salary Benchmarks India 2026 — Detailed",

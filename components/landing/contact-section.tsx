@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, Phone, Mail, Linkedin, CheckCircle, Clock } from "lucide-react";
+import { ArrowRight, Phone, Mail, Linkedin, CheckCircle, Clock, Briefcase } from "lucide-react";
 
 const hiringVolumes = [
   "1-5 hires",
@@ -227,9 +227,19 @@ export function ContactSection() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-1">Book Your Free GCC Hiring Audit</h3>
+                  <h3 className="text-xl font-semibold mb-1">Book Your Free Hiring Audit</h3>
                   <p className="text-sm text-muted-foreground">
-                    Tell us what you&apos;re hiring for. Our team will contact you within 4 hours.
+                    Tell us what you&apos;re hiring for. Our team will contact you within 4 business hours.
+                  </p>
+                </div>
+
+                {/* Candidate deflection — protects lead quality */}
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-accent/5 border border-accent/20">
+                  <Briefcase className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <span className="text-foreground font-medium">This form is for companies with a hiring mandate.</span>{" "}
+                    Looking for a role yourself? We&apos;re a retained search firm, not a job board —{" "}
+                    <a href="/candidates" className="text-accent hover:underline font-medium">see how we work with candidates</a>.
                   </p>
                 </div>
 

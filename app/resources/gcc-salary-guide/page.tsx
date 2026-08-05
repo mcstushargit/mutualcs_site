@@ -4,9 +4,9 @@ import { CheckCircle, FileText } from "lucide-react";
 import { SalaryGuideForm } from "@/components/landing/salary-guide-form";
 
 export const metadata: Metadata = {
-  title: "GCC Tech Salary Guide India 2026 — Free Download | MutualCS",
+  title: "GCC Salary Benchmarks India 2026 — Budgeting Guide for Employers | MutualCS",
   description:
-    "Free download: GCC Tech Salary Guide India 2026. AI/ML, Cloud, Platform Engineering & Cybersecurity salary benchmarks by city. Used by GCC talent leads and CHROs.",
+    "For hiring managers and CHROs: what you need to budget to win AI/ML, Cloud, and Cybersecurity talent in India's GCC market in 2026. Benchmarks by city and experience band.",
   keywords: [
     "GCC tech salary guide India 2026",
     "AI ML engineer salary India GCC",
@@ -46,7 +46,7 @@ export default function GccSalaryGuidePage() {
             <div>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-accent mb-6">
                 <span className="w-8 h-px bg-accent" />
-                Free Resource — May 2026
+                For Employers &amp; CHROs — 2026 Edition
               </span>
               <h1 className="text-5xl lg:text-6xl font-display tracking-tight mb-6 leading-[0.95]">
                 GCC Tech Salary
@@ -83,6 +83,14 @@ export default function GccSalaryGuidePage() {
                   Updated quarterly. Used by talent acquisition leads at Fortune 500 GCCs.
                 </p>
               </div>
+
+              {/* Candidate deflection */}
+              <p className="text-xs text-muted-foreground leading-relaxed mt-6">
+                This guide is written for employers setting compensation bands. If you&apos;re a
+                professional benchmarking your own salary, it may still be useful — but note that
+                MutualCS is a retained search firm engaged by companies, not a job board.{" "}
+                <Link href="/candidates" className="text-accent hover:underline">How we work with candidates →</Link>
+              </p>
             </div>
 
             {/* Right - Gate form (client component) */}
