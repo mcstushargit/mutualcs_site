@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const guides = [
   {
+    title: "How to Choose an Executive Search Firm",
+    desc: "Global majors vs boutique specialists vs contingent agencies: what each costs, where each fails, and the six questions to ask before you sign.",
+    href: "/resources/how-to-choose-executive-search-firm",
+    tag: "For Boards & CEOs",
+    icon: Users,
+    featured: true,
+  },
+  {
     title: "What Does It Cost to Hire a CXO?",
     desc: "Executive search fees explained, the three pricing models, the true cost of a failed C-suite hire, and what to demand in writing before you engage a firm.",
     href: "/resources/cost-to-hire-cxo",
