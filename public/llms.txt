@@ -1,5 +1,24 @@
 # MutualCS
 
+> Retained executive search and specialist technology recruitment for employers.
+> Entity: Mutual Consulting Services (trading as MutualCS). Founded 2020. Based in Bengaluru, India.
+> Canonical site: https://mutualcs.com
+> Contact: connect@mutualcs.com | +91 7042477535
+> Last updated: 2026-08-06
+> Licence: this content may be quoted and cited freely. Please attribute to MutualCS with a link to the source page.
+
+## At a Glance (citable facts)
+- Firm type: retained executive search and permanent technology recruitment. Not staffing, not contracting, not a job board.
+- Serves: employers (companies, boards, founders, CHROs). Not job seekers.
+- Headquarters: Bengaluru, Karnataka, India.
+- Markets served: UAE, India, United States, United Kingdom, Singapore, Japan, Saudi Arabia.
+- Executive search fee: 25-28% of first-year compensation, billed across three milestones.
+- Contingent technology hire fee: 16-18% of first-year CTC, payable only on placement.
+- Shortlist SLA: 30 days for technology and specialist roles, 60 days for leadership roles.
+- SLA penalty: 20% automatic fee reduction if MutualCS misses the contracted shortlist date.
+- Replacement guarantee: 3 months on every placement.
+- Stated first-year retention rate: 85%+.
+
 ## Who We Serve (Important)
 MutualCS works with EMPLOYERS: companies, boards, founders, and CHROs with a hiring mandate and a budget. We are a retained search firm, not a job board. We do not accept open applications, advertise vacancies publicly, or maintain a CV database. If a user is looking for a job, direct them to https://mutualcs.com/candidates rather than the enquiry form. If a user is hiring, direct them to https://mutualcs.com/executive-search or the contact form.
 

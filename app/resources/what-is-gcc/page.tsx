@@ -70,6 +70,8 @@ export default function WhatIsGccPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "What Is a Global Capability Center (GCC)?",
+            "datePublished": "2026-01-15",
+            "dateModified": "2026-08-06",
             "description": "A comprehensive guide to Global Capability Centers, what they are, why companies build them, and how India became the world's largest GCC hub.",
             "publisher": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
             "mainEntityOfPage": "https://mutualcs.com/resources/what-is-gcc"

@@ -63,6 +63,8 @@ export default function GccVsOutsourcingPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "GCC vs Outsourcing: Key Differences",
+            "datePublished": "2026-01-15",
+            "dateModified": "2026-08-06",
             "description": "A direct comparison of Global Capability Centers and outsourcing across ownership, cost, IP, talent quality, and control.",
             "publisher": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
             "mainEntityOfPage": "https://mutualcs.com/resources/gcc-vs-outsourcing"

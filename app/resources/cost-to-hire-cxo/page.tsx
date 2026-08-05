@@ -245,6 +245,8 @@ export default function CostToHireCxoPage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "What Does It Cost to Hire a CXO? Executive Search Fees Explained",
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-08-06",
         "description": "Executive search fee models, the true cost of a failed C-suite hire, and how to budget a CXO mandate.",
         "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "publisher": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },

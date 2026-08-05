@@ -145,6 +145,7 @@ export default function HowToBuildGccIndiaPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+        "dateModified": "2026-08-06",
             "mainEntity": faqs.map((f) => ({
               "@type": "Question",
               "name": f.q,

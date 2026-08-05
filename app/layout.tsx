@@ -134,6 +134,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <head>
+        {/* Machine-readable summary for AI crawlers and answer engines */}
+        <link rel="alternate" type="text/plain" href="https://mutualcs.com/llms.txt" title="llms.txt" />
         {/* Organization, enriched for GEO/LLM entity recognition */}
         <script
           type="application/ld+json"
@@ -153,12 +155,28 @@ export default function RootLayout({
                 "addressLocality": "Bengaluru",
                 "addressRegion": "Karnataka"
               },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "email": "hello@mutualcs.com",
-                "availableLanguage": "English"
+              "slogan": "Retained executive search and specialist tech hiring, with a contractual SLA.",
+              "knowsLanguage": ["English", "Hindi"],
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "Employers, boards, founders, and CHROs hiring senior technology and leadership talent"
               },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "sales",
+                  "email": "connect@mutualcs.com",
+                  "telephone": "+91-7042477535",
+                  "availableLanguage": ["English", "Hindi"],
+                  "areaServed": ["AE", "IN", "US", "GB", "SG", "JP", "SA"]
+                },
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "customer service",
+                  "email": "connect@mutualcs.com",
+                  "availableLanguage": "English"
+                }
+              ],
               "sameAs": [
                 "https://www.linkedin.com/company/mutualcs"
               ],
