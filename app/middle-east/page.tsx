@@ -5,7 +5,7 @@ import { ArrowRight, Globe, CheckCircle, Building2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "GCC Recruitment for Middle East Companies in India | MutualCS",
   description:
-    "MutualCS helps UAE, Saudi Arabia, and wider Middle East companies build India GCCs. Tech, BFSI, and leadership roles — 30-day SLA with contractual fee-back guarantee.",
+    "MutualCS helps UAE, Saudi Arabia, and wider Middle East companies build India GCCs. Tech, BFSI, and leadership roles, 30-day SLA with contractual fee-back guarantee.",
   keywords: [
     "GCC recruitment Middle East companies India",
     "UAE company India GCC hiring",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const challenges = [
   {
     heading: "Vision 2030 and digital transformation mandates",
-    body: "Saudi and UAE government-linked entities are racing to build technology capability. India offers the deepest tech talent pool for this transformation — we help you access it fast.",
+    body: "Saudi and UAE government-linked entities are racing to build technology capability. India offers the deepest tech talent pool for this transformation, we help you access it fast.",
   },
   {
     heading: "Arabic–English bilingual leadership",
@@ -89,7 +89,7 @@ export default function MiddleEastPage() {
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             UAE, Saudi Arabia, Qatar, and Bahrain-headquartered enterprises are fast-tracking
             their India GCCs as part of regional digital transformation programmes.
-            MutualCS delivers the tech talent to make that happen — with accountability built in.
+            MutualCS delivers the tech talent to make that happen, with accountability built in.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

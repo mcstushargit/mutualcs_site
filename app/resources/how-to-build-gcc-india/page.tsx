@@ -58,13 +58,13 @@ const steps = [
     n: "04",
     title: "Hire the founding leadership team",
     duration: "Month 2–4",
-    body: "The most critical step — and the one most companies underestimate. The Country Head, VP Engineering, and CHRO set the culture, hiring bar, and operating model for everything that follows. A wrong leadership hire at founding costs 12–18 months. Use a specialist GCC recruiter with a contractual SLA.",
+    body: "The most critical step. And the one most companies underestimate. The Country Head, VP Engineering, and CHRO set the culture, hiring bar, and operating model for everything that follows. A wrong leadership hire at founding costs 12–18 months. Use a specialist GCC recruiter with a contractual SLA.",
     checklist: [
       "Country Head / Site Director (reports to global CXO)",
       "VP Engineering or Engineering Director",
       "CHRO or Head of People",
       "Finance Controller (for entity compliance)",
-      "Start searches in parallel — don't sequence them",
+      "Start searches in parallel, don't sequence them",
     ],
   },
   {
@@ -84,7 +84,7 @@ const steps = [
     n: "06",
     title: "Culture, compliance, and operational maturity",
     duration: "Month 6–12",
-    body: "GCCs that succeed long-term invest early in culture — not just process. Establish a cadence with HQ (all-hands, town halls, leadership visits). Set up India-specific compliance: PF, ESI, gratuity, professional tax, payroll. Build a local finance and legal function as headcount grows past 50.",
+    body: "GCCs that succeed long-term invest early in culture, not just process. Establish a cadence with HQ (all-hands, town halls, leadership visits). Set up India-specific compliance: PF, ESI, gratuity, professional tax, payroll. Build a local finance and legal function as headcount grows past 50.",
     checklist: [
       "Regular HQ leadership visibility in India (quarterly minimum)",
       "India entity payroll, PF/ESI, compliance calendar",
@@ -106,11 +106,11 @@ const faqs = [
   },
   {
     q: "Which Indian city is best for a GCC?",
-    a: "Bengaluru for AI/ML, deep tech, and product engineering — the deepest talent pool. Hyderabad for a strong talent market at 10–15% lower cost than Bengaluru. Pune for automotive, manufacturing, and embedded systems GCCs. NCR (Gurgaon/Noida) for BFSI, consulting, and enterprise tech. Chennai for manufacturing, Japanese company GCCs, and automotive. Most companies above 200 people end up in 2 cities.",
+    a: "Bengaluru for AI/ML, deep tech, and product engineering, the deepest talent pool. Hyderabad for a strong talent market at 10–15% lower cost than Bengaluru. Pune for automotive, manufacturing, and embedded systems GCCs. NCR (Gurgaon/Noida) for BFSI, consulting, and enterprise tech. Chennai for manufacturing, Japanese company GCCs, and automotive. Most companies above 200 people end up in 2 cities.",
   },
   {
     q: "Should I hire a Country Head first or set up the legal entity first?",
-    a: "Start both in parallel — don't sequence them. Legal entity formation takes 4–8 weeks and is largely handled by lawyers and CAs. Country Head search takes 60–90 days. If you wait for the entity before starting the search, you add 3 months to your timeline for no reason. The Country Head can join once the entity is ready.",
+    a: "Start both in parallel, don't sequence them. Legal entity formation takes 4–8 weeks and is largely handled by lawyers and CAs. Country Head search takes 60–90 days. If you wait for the entity before starting the search, you add 3 months to your timeline for no reason. The Country Head can join once the entity is ready.",
   },
   {
     q: "What is the most common GCC setup mistake?",
@@ -128,7 +128,7 @@ export default function HowToBuildGccIndiaPage() {
             "@context": "https://schema.org",
             "@type": "HowTo",
             "name": "How to Build a GCC in India",
-            "description": "Step-by-step guide to setting up a Global Capability Center in India — from legal entity formation to founding team hiring and operational scaling.",
+            "description": "Step-by-step guide to setting up a Global Capability Center in India, from legal entity formation to founding team hiring and operational scaling.",
             "totalTime": "P12M",
             "step": steps.map((s, i) => ({
               "@type": "HowToStep",
@@ -195,7 +195,7 @@ export default function HowToBuildGccIndiaPage() {
             How to Build a GCC in India
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-            A practical guide to setting up a Global Capability Center — from the business case and legal entity
+            A practical guide to setting up a Global Capability Center, from the business case and legal entity
             to founding team hiring, city selection, and reaching operational maturity.
           </p>
 

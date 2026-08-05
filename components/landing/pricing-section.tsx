@@ -10,7 +10,7 @@ const tiers = [
     fee: "16–18%",
     feeLabel: "of first-year CTC on placement",
     highlight: false,
-    guarantee: "30-day SLA — 20% fee reduction if missed",
+    guarantee: "30-day SLA, 20% fee reduction if missed",
     features: [
       "30-day time-to-shortlist SLA",
       "20% fee reduction if SLA missed",
@@ -26,7 +26,7 @@ const tiers = [
   {
     name: "Executive & Retained Search",
     tier: "Tier 2",
-    description: "For senior and executive roles — VP Engineering, CHRO, CISO, Country Head, or any mandate open 60+ days.",
+    description: "For senior and executive roles, VP Engineering, CHRO, CISO, Country Head, or any mandate open 60+ days.",
     fee: "25–28%",
     feeLabel: "of first-year CTC, split across milestones",
     highlight: true,
@@ -80,7 +80,7 @@ export function PricingSection() {
             <span className="text-accent">With MutualCS</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl">
-            Every model is built around accountability — not just success fees.
+            Every model is built around accountability, not just success fees.
             Pick the one that matches your hiring stage, then upgrade as you grow.
           </p>
         </div>

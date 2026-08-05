@@ -4,16 +4,16 @@ import Link from "next/link";
 import { MapPin, Globe, ArrowRight } from "lucide-react";
 
 const indiaLocations = [
-  { city: "Bengaluru", href: "/bengaluru", count: "1,600+", description: "India's largest GCC hub — AI, Cloud, and Platform Engineering talent" },
+  { city: "Bengaluru", href: "/bengaluru", count: "1,600+", description: "India's largest GCC hub. AI, Cloud, and Platform Engineering talent" },
   { city: "Hyderabad", href: "/hyderabad", count: "700+", description: "Fast-growing tech corridor with major MNC and BFSI presence" },
-  { city: "NCR", href: "/ncr", count: "500+", description: "Gurgaon, Noida, Delhi — BFSI, fintech, and enterprise tech GCCs" },
-  { city: "Pune", href: "/pune", count: "400+", description: "Strong engineering talent — automotive, embedded, and IT focus" },
+  { city: "NCR", href: "/ncr", count: "500+", description: "Gurgaon, Noida, Delhi, BFSI, fintech, and enterprise tech GCCs" },
+  { city: "Pune", href: "/pune", count: "400+", description: "Strong engineering talent. Automotive, embedded, and IT focus" },
 ];
 
 const globalLocations = [
   { name: "UAE & Gulf", href: "/uae", flag: "🇦🇪", desc: "Hiring in UAE or building an India GCC from Dubai or Abu Dhabi" },
   { name: "United States", href: "/united-states", flag: "🇺🇸", desc: "US companies hiring in the US, India, or globally" },
-  { name: "United Kingdom", href: "/united-kingdom", flag: "🇬🇧", desc: "UK companies — BFSI, fintech, and tech hiring across markets" },
+  { name: "United Kingdom", href: "/united-kingdom", flag: "🇬🇧", desc: "UK companies, BFSI, fintech, and tech hiring across markets" },
   { name: "Singapore", href: "/singapore", flag: "🇸🇬", desc: "Singapore companies hiring for APAC delivery and India GCCs" },
   { name: "Japan", href: "/japan", flag: "🇯🇵", desc: "Japanese companies building India R&D and tech capability" },
   { name: "Middle East", href: "/middle-east", flag: "🌍", desc: "Saudi Arabia, Qatar, Bahrain, and Kuwait GCC recruitment" },
@@ -36,7 +36,7 @@ export function LocationsSection() {
             India Tech Hubs. Global Client Markets.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We place talent in India's major GCC cities — and work with companies headquartered across UAE, US, UK, Singapore, and Japan. Wherever the role is, the SLA is the same.
+            We place talent in India's major GCC cities. And work with companies headquartered across UAE, US, UK, Singapore, and Japan. Wherever the role is, the SLA is the same.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export function LocationsSection() {
           </div>
           <div>
             <div className="text-4xl lg:text-5xl font-display text-accent mb-2">30 Days</div>
-            <div className="text-sm text-muted-foreground">SLA — any location, contractual</div>
+            <div className="text-sm text-muted-foreground">SLA. Any location, contractual</div>
           </div>
         </div>
 

@@ -13,7 +13,7 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Gradient background — diagonal sweep from white to warm amber */}
+      {/* Gradient background, diagonal sweep from white to warm amber */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -21,7 +21,7 @@ export function HeroSection() {
             "linear-gradient(135deg, oklch(0.99 0.006 82) 0%, oklch(0.93 0.045 60) 100%)",
         }}
       />
-      {/* Radial accent bloom — top right */}
+      {/* Radial accent bloom, top right */}
       <div className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full pointer-events-none pulse-glow"
         style={{ background: "radial-gradient(circle, oklch(0.88 0.12 55) 0%, transparent 70%)" }}
       />
@@ -61,9 +61,9 @@ export function HeroSection() {
             }`}
           >
             We are the retained search partner for{" "}
-            <span className="text-foreground font-semibold">companies hiring leadership and senior technology talent</span>{" "}
-            — CXOs, VPs, Country Heads, and the engineers beneath them. Globally, permanent only.
-            30-day SLA for tech roles, 60-day for leadership — miss it, get 20% back.
+            <span className="text-foreground font-semibold">companies hiring leadership and senior technology talent</span>:
+            CXOs, VPs, Country Heads, and the engineers beneath them. Globally, permanent only.
+            30-day SLA for tech roles, 60-day for leadership. Miss it and you get 20% back.
           </p>
 
           {/* CTAs */}
@@ -92,7 +92,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Stats bar — natural flow so it never overlaps content */}
+      {/* Stats bar, natural flow so it never overlaps content */}
       <div
         className={`relative z-10 bg-accent transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"

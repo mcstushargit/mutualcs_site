@@ -4,7 +4,7 @@ import { CheckCircle, FileText } from "lucide-react";
 import { SalaryGuideForm } from "@/components/landing/salary-guide-form";
 
 export const metadata: Metadata = {
-  title: "GCC Salary Benchmarks India 2026 — Budgeting Guide for Employers | MutualCS",
+  title: "GCC Salary Benchmarks India 2026, Budgeting Guide for Employers | MutualCS",
   description:
     "For hiring managers and CHROs: what you need to budget to win AI/ML, Cloud, and Cybersecurity talent in India's GCC market in 2026. Benchmarks by city and experience band.",
   keywords: [
@@ -21,7 +21,7 @@ const whatsInside = [
   "Cloud Architect & DevOps salary benchmarks across GCC tiers",
   "Platform Engineering and SRE compensation ranges for 2026",
   "Cybersecurity specialist salary data for BFSI and tech GCCs",
-  "GenAI & LLM Architect salary bands — a new role category for 2026",
+  "GenAI & LLM Architect salary bands. A new role category for 2026",
   "Variable compensation and equity structures for senior hires",
   "Notice period benchmarks and joining bonus norms",
   "How GCC salaries compare to product companies and IT services firms",
@@ -46,7 +46,7 @@ export default function GccSalaryGuidePage() {
             <div>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-accent mb-6">
                 <span className="w-8 h-px bg-accent" />
-                For Employers &amp; CHROs — 2026 Edition
+                For Employers &amp; CHROs, 2026 Edition
               </span>
               <h1 className="text-5xl lg:text-6xl font-display tracking-tight mb-6 leading-[0.95]">
                 GCC Tech Salary
@@ -87,7 +87,7 @@ export default function GccSalaryGuidePage() {
               {/* Candidate deflection */}
               <p className="text-xs text-muted-foreground leading-relaxed mt-6">
                 This guide is written for employers setting compensation bands. If you&apos;re a
-                professional benchmarking your own salary, it may still be useful — but note that
+                professional benchmarking your own salary, it may still be useful, but note that
                 MutualCS is a retained search firm engaged by companies, not a job board.{" "}
                 <Link href="/candidates" className="text-accent hover:underline">How we work with candidates →</Link>
               </p>
@@ -106,7 +106,7 @@ export default function GccSalaryGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "GCC Tech Salary Guide India 2026",
-        "description": "Salary benchmarks for AI/ML, Cloud, Platform Engineering, and Cybersecurity roles across India's top GCC cities — Bengaluru, Hyderabad, Pune, and NCR.",
+        "description": "Salary benchmarks for AI/ML, Cloud, Platform Engineering, and Cybersecurity roles across India's top GCC cities, Bengaluru, Hyderabad, Pune, and NCR.",
         "datePublished": "2026-01-01",
         "dateModified": "2026-05-01",
         "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },

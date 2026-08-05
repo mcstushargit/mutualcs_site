@@ -5,7 +5,7 @@ import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react"
 export const metadata: Metadata = {
   title: "Recruitment Agency for Japanese Companies | Hire in Japan, India & Globally | MutualCS",
   description:
-    "MutualCS is the specialist recruitment partner for Japanese companies. We find tech, R&D, and executive talent in Japan, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for Japanese companies. We find tech, R&D, and executive talent in Japan, India, or anywhere globally, 30-day SLA with fee-back guarantee.",
   keywords: [
     "recruitment agency Japan",
     "tech recruitment Japanese companies",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recruitment Agency for Japanese Companies | Hire in Japan, India & Globally | MutualCS",
     description:
-      "MutualCS finds tech, R&D, and executive talent for Japanese companies — in Japan, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+      "MutualCS finds tech, R&D, and executive talent for Japanese companies in Japan, India, or globally. 30-day SLA, contractual fee-back guarantee.",
     url: "https://mutualcs.com/japan",
     locale: "en_JP",
   },
@@ -38,7 +38,7 @@ const whereWeHire = [
   {
     flag: "🇯🇵",
     location: "Japan",
-    desc: "Find talent in Tokyo, Osaka, Nagoya, and across Japan — tech, R&D, automotive, and digital transformation roles.",
+    desc: "Find talent in Tokyo, Osaka, Nagoya, and across Japan, tech, R&D, automotive, and digital transformation roles.",
     tags: ["Tokyo", "Osaka", "Nagoya", "Fukuoka"],
     link: "/tech-recruitment",
   },
@@ -52,7 +52,7 @@ const whereWeHire = [
   {
     flag: "🌐",
     location: "Global",
-    desc: "UAE, US, UK, Singapore, Europe — permanent placement wherever your team needs to grow.",
+    desc: "UAE, US, UK, Singapore, Europe, permanent placement wherever your team needs to grow.",
     tags: ["UAE", "United States", "United Kingdom", "Singapore", "Europe"],
     link: "/tech-recruitment",
   },
@@ -60,8 +60,8 @@ const whereWeHire = [
 
 const challenges = [
   {
-    heading: "Quality over speed — without sacrificing speed",
-    body: "Japanese companies are known for precision in hiring. We align to your quality bar while still delivering shortlists in 30 days — these are not competing priorities with the right process.",
+    heading: "Quality over speed, without sacrificing speed",
+    body: "Japanese companies are known for precision in hiring. We align to your quality bar while still delivering shortlists in 30 days, these are not competing priorities with the right process.",
   },
   {
     heading: "Cross-cultural fit for Japan–India teams",
@@ -123,7 +123,7 @@ export default function JapanPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             MutualCS is the recruitment partner for Japanese companies hiring in Japan, building
-            India GCC teams, or placing talent globally — one agency, one SLA, wherever the role is.
+            India GCC teams, or placing talent globally, one agency, one SLA, wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -167,7 +167,7 @@ export default function JapanPage() {
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
           <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            Japan. India. UAE. US. UK. Singapore. You tell us where the role is — we find the talent.
+            Japan. India. UAE. US. UK. Singapore. You tell us where the role is, we find the talent.
             The SLA and guarantee apply regardless of location.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -195,7 +195,7 @@ export default function JapanPage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help Japanese Companies With</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring — In Japan, India, or Anywhere</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring in Japan, India, or Anywhere</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
               <div key={item.heading} className="border-l-2 border-accent/30 pl-6">
@@ -265,7 +265,7 @@ export default function JapanPage() {
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Tell Us Where You Need to Hire.</h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            In Japan, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
+            In Japan, India, or globally, we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
           <Link href="/?loc=Japan#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
             Book a Free Hiring Audit
@@ -276,7 +276,7 @@ export default function JapanPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Recruitment Agency for Japanese Companies — Japan, India & Global Hiring",
+        "name": "Recruitment Agency for Japanese Companies, Japan, India & Global Hiring",
         "description": "MutualCS provides specialist recruitment for Japanese companies hiring in Japan, India, or globally. Tech, R&D, and leadership roles with a 30-day SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "serviceType": "Permanent Recruitment",
@@ -303,7 +303,7 @@ export default function JapanPage() {
           {
             "@type": "Question",
             "name": "Does MutualCS specialise in Japanese GCC hiring in India?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS recruits for Japanese GCCs with an understanding of specific cultural and technical requirements — including cross-cultural communication skills and Japanese business protocols. We have placed engineering, product, and leadership talent for Japanese automotive and technology GCCs in Bengaluru and Pune." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS recruits for Japanese GCCs with an understanding of specific cultural and technical requirements. Including cross-cultural communication skills and Japanese business protocols. We have placed engineering, product, and leadership talent for Japanese automotive and technology GCCs in Bengaluru and Pune." }
           }
         ]
       })}} />

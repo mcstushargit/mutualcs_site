@@ -6,7 +6,7 @@ const differentiators = [
   {
     metric: "Tiered",
     label: "SLA Guarantee",
-    description: "30-day shortlist SLA for tech roles. 60-day for leadership and executive mandates. Tiered by role complexity — contractual in both cases. No competitor backs their speed claim this way."
+    description: "30-day shortlist SLA for tech roles. 60-day for leadership and executive mandates. Tiered by role complexity, contractual in both cases. No competitor backs their speed claim this way."
   },
   {
     metric: "85%+",
@@ -16,7 +16,7 @@ const differentiators = [
   {
     metric: "20%",
     label: "Fee Back if SLA Missed",
-    description: "Miss the SLA window due to our delays — 20% fee reduction, regardless of role level. Contractual — not goodwill."
+    description: "Miss the SLA window due to our delays, 20% fee reduction, regardless of role level. Contractual, not goodwill."
   },
   {
     metric: "200+",
@@ -26,12 +26,12 @@ const differentiators = [
 ];
 
 const benefits = [
-  "GCC specialist — tech roles, leadership roles, C-suite search",
+  "GCC specialist, tech roles, leadership roles, C-suite search",
   "Founder-accountable: every shortlist reviewed by our leadership",
-  "Tiered SLA: 30 days for tech roles, 60 days for leadership — both contractual",
+  "Tiered SLA: 30 days for tech roles, 60 days for leadership, both contractual",
   "Passive candidate headhunting for hard-to-fill mandates",
   "Executive search for VP, CHRO, CISO, Country Head roles",
-  "Hiring across all major India GCC hubs — Bengaluru, Hyderabad, Pune, NCR, Chennai",
+  "Hiring across all major India GCC hubs, Bengaluru, Hyderabad, Pune, NCR, Chennai",
   "Background verification and offer management included",
   "3-month replacement guarantee on every placement"
 ];
@@ -57,7 +57,7 @@ export function WhyUsSection() {
             Accountable. Specialist. <span className="text-accent">Founder-Led.</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We cover the full GCC hiring spectrum — from niche AI/ML engineering to
+            We cover the full GCC hiring spectrum, from niche AI/ML engineering to
             VP and C-suite leadership. One partner. One accountability standard.
           </p>
         </div>
@@ -89,53 +89,18 @@ export function WhyUsSection() {
           ))}
         </div>
 
-        {/* Benefits + Testimonial */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div>
-            <h3 className="text-2xl lg:text-3xl font-display mb-8">
-              From Niche Tech to the C-Suite — We&apos;ve Got It Covered
-            </h3>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {benefits.map((benefit) => (
-                <div key={benefit} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 shrink-0" />
-                  <span className="text-sm text-muted-foreground">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Testimonials */}
-          <div className="space-y-6">
-            <div className="bg-white border border-border rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-lg lg:text-xl font-display leading-relaxed mb-6 text-balance">
-                &ldquo;We were setting up our India GCC from our US HQ with no local presence. MutualCS built our entire founding engineering team — 14 hires across AI, Cloud, and Platform — in under 90 days. The SLA accountability was exactly what we needed managing remotely.&rdquo;
-              </blockquote>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center">
-                  <span className="text-lg font-display text-accent font-semibold">JM</span>
-                </div>
-                <div>
-                  <div className="font-semibold">James Mitchell</div>
-                  <div className="text-sm text-muted-foreground">VP Engineering, US-headquartered Fintech GCC</div>
-                </div>
+        {/* Benefits */}
+        <div>
+          <h3 className="text-2xl lg:text-3xl font-display mb-8">
+            From Niche Tech to the C-Suite
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {benefits.map((benefit) => (
+              <div key={benefit} className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <span className="text-sm text-muted-foreground">{benefit}</span>
               </div>
-            </div>
-            <div className="bg-white border border-border rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-lg lg:text-xl font-display leading-relaxed mb-6 text-balance">
-                &ldquo;MutualCS placed our AI Architect, three ML Engineers, and our VP of Engineering — all within 60 days.
-                Having one specialist partner across both tech and leadership made a real difference.&rdquo;
-              </blockquote>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center">
-                  <span className="text-lg font-display text-accent font-semibold">SK</span>
-                </div>
-                <div>
-                  <div className="font-semibold">Sarah Koh</div>
-                  <div className="text-sm text-muted-foreground">Head of Engineering, Singapore-headquartered Enterprise SaaS GCC</div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react"
 export const metadata: Metadata = {
   title: "Recruitment Agency for Singapore Companies | Hire in Singapore, India & Globally | MutualCS",
   description:
-    "MutualCS is the specialist recruitment partner for Singapore companies. We find tech, AI/ML, and executive talent in Singapore, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for Singapore companies. We find tech, AI/ML, and executive talent in Singapore, India, or anywhere globally, 30-day SLA with fee-back guarantee.",
   keywords: [
     "recruitment agency Singapore",
     "tech recruitment Singapore companies",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recruitment Agency for Singapore Companies | Hire in Singapore, India & Globally | MutualCS",
     description:
-      "MutualCS finds tech, AI/ML, and executive talent for Singapore companies — in Singapore, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+      "MutualCS finds tech, AI/ML, and executive talent for Singapore companies in Singapore, India, or globally. 30-day SLA, contractual fee-back guarantee.",
     url: "https://mutualcs.com/singapore",
     locale: "en_SG",
   },
@@ -38,7 +38,7 @@ const whereWeHire = [
   {
     flag: "🇸🇬",
     location: "Singapore",
-    desc: "Find talent locally in Singapore — fintech, APAC delivery, and engineering roles for your Singapore operations.",
+    desc: "Find talent locally in Singapore, fintech, APAC delivery, and engineering roles for your Singapore operations.",
     tags: ["Singapore", "Marina Bay", "Changi", "Jurong"],
     link: "/tech-recruitment",
   },
@@ -52,7 +52,7 @@ const whereWeHire = [
   {
     flag: "🌐",
     location: "Global",
-    desc: "UAE, US, UK, Japan, Europe — permanent placement wherever your team needs to grow.",
+    desc: "UAE, US, UK, Japan, Europe, permanent placement wherever your team needs to grow.",
     tags: ["UAE", "United States", "United Kingdom", "Japan", "Europe"],
     link: "/tech-recruitment",
   },
@@ -61,7 +61,7 @@ const whereWeHire = [
 const challenges = [
   {
     heading: "APAC delivery hub strategy",
-    body: "Singapore companies use India as their APAC engineering and operations hub. We hire for the India centre while understanding the APAC delivery context — not just the job description.",
+    body: "Singapore companies use India as their APAC engineering and operations hub. We hire for the India centre while understanding the APAC delivery context, not just the job description.",
   },
   {
     heading: "Cross-border leadership",
@@ -123,7 +123,7 @@ export default function SingaporePage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             MutualCS is the recruitment partner for Singapore companies hiring in Singapore,
-            building India GCC teams, or placing talent globally — one agency, one SLA,
+            building India GCC teams, or placing talent globally, one agency, one SLA,
             wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -168,7 +168,7 @@ export default function SingaporePage() {
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
           <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            Singapore. India. UAE. US. UK. Japan. You tell us where the role is — we find the talent.
+            Singapore. India. UAE. US. UK. Japan. You tell us where the role is, we find the talent.
             The SLA and guarantee apply regardless of location.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -196,7 +196,7 @@ export default function SingaporePage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help Singapore Companies With</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring — In Singapore, India, or Anywhere</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech and Executive Hiring in Singapore, India, or Anywhere</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
               <div key={item.heading} className="border-l-2 border-accent/30 pl-6">
@@ -266,7 +266,7 @@ export default function SingaporePage() {
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl lg:text-5xl font-display text-accent-foreground mb-6">Tell Us Where You Need to Hire.</h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            In Singapore, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
+            In Singapore, India, or globally, we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
           <Link href="/?loc=Singapore#contact" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-accent px-10 h-14 rounded-full font-semibold transition-colors group">
             Book a Free Hiring Audit
@@ -277,7 +277,7 @@ export default function SingaporePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Recruitment Agency for Singapore Companies — Singapore, India & Global Hiring",
+        "name": "Recruitment Agency for Singapore Companies, Singapore, India & Global Hiring",
         "description": "MutualCS provides specialist recruitment for Singapore companies hiring in Singapore, India, or globally. Tech, APAC delivery, and leadership roles with a 30-day SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "serviceType": "Permanent Recruitment",
@@ -302,7 +302,7 @@ export default function SingaporePage() {
           {
             "@type": "Question",
             "name": "Does MutualCS place Indian diaspora from Singapore into India GCC roles?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS has experience placing Singapore-based Indian professionals into GCC leadership roles in India — particularly for Country Head, CTO, and VP Engineering positions where APAC exposure and Singapore headquarters alignment are valued." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. MutualCS has experience placing Singapore-based Indian professionals into GCC leadership roles in India, particularly for Country Head, CTO, and VP Engineering positions where APAC exposure and Singapore headquarters alignment are valued." }
           }
         ]
       })}} />

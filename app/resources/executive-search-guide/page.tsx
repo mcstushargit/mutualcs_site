@@ -20,17 +20,17 @@ const steps = [
   {
     n: "01",
     title: "Mandate briefing",
-    body: "A senior search consultant meets with the hiring team to build a complete mandate brief — role scope, reporting structure, salary band, key competencies, and cultural context. For confidential searches, we also agree on disclosure protocols.",
+    body: "A senior search consultant meets with the hiring team to build a complete mandate brief, role scope, reporting structure, salary band, key competencies, and cultural context. For confidential searches, we also agree on disclosure protocols.",
   },
   {
     n: "02",
     title: "Market mapping",
-    body: "We map every plausible candidate in the relevant talent pool — by company, title, tenure, and publicly available signals. For a VP Engineering mandate, this typically surfaces 80–150 individuals globally.",
+    body: "We map every plausible candidate in the relevant talent pool, by company, title, tenure, and publicly available signals. For a VP Engineering mandate, this typically surfaces 80–150 individuals globally.",
   },
   {
     n: "03",
     title: "Direct outreach",
-    body: "We approach candidates individually and confidentially. We never post the role publicly without client approval. Most executive candidates are not actively looking — the conversation is about whether the opportunity is compelling enough to move.",
+    body: "We approach candidates individually and confidentially. We never post the role publicly without client approval. Most executive candidates are not actively looking, the conversation is about whether the opportunity is compelling enough to move.",
   },
   {
     n: "04",
@@ -40,19 +40,19 @@ const steps = [
   {
     n: "05",
     title: "Shortlist delivery",
-    body: "We present 4–6 candidates with full research dossiers — career narrative, our assessment, reference notes, and salary expectations. Our 30-day shortlist SLA starts from mandate signature.",
+    body: "We present 4–6 candidates with full research dossiers, career narrative, our assessment, reference notes, and salary expectations. Our 30-day shortlist SLA starts from mandate signature.",
   },
   {
     n: "06",
     title: "Client interviews & offer",
-    body: "We manage interview logistics, candidate feedback loops, and offer structuring. Executive offers frequently involve equity, sign-on, and relocation — we advise on all of it.",
+    body: "We manage interview logistics, candidate feedback loops, and offer structuring. Executive offers frequently involve equity, sign-on, and relocation, we advise on all of it.",
   },
 ];
 
 const faqs = [
   {
     q: "What is the difference between retained and contingent executive search?",
-    a: "Retained search means you pay a portion of the fee upfront (typically 33% on mandate signing), guaranteeing the recruiter's exclusive focus on your mandate. Contingent means you pay only on successful placement — but the recruiter is working multiple mandates simultaneously. For C-suite and VP mandates, retained is strongly preferred because it secures dedicated senior attention and enables confidential approaches to passive candidates.",
+    a: "Retained search means you pay a portion of the fee upfront (typically 33% on mandate signing), guaranteeing the recruiter's exclusive focus on your mandate. Contingent means you pay only on successful placement, but the recruiter is working multiple mandates simultaneously. For C-suite and VP mandates, retained is strongly preferred because it secures dedicated senior attention and enables confidential approaches to passive candidates.",
   },
   {
     q: "How much does executive search cost in India?",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "Can executive search firms find candidates who aren't looking?",
-    a: "Yes — this is the core value proposition of executive search. The best leaders for your role are almost never actively job-hunting. Search firms maintain relationships with senior professionals over years, and approach them directly when a mandate matches their profile. This is fundamentally different from job board sourcing or LinkedIn Easy Apply responses.",
+    a: "Yes, this is the core value proposition of executive search. The best leaders for your role are almost never actively job-hunting. Search firms maintain relationships with senior professionals over years, and approach them directly when a mandate matches their profile. This is fundamentally different from job board sourcing or LinkedIn Easy Apply responses.",
   },
   {
     q: "When should I use executive search vs post a job?",
@@ -139,9 +139,9 @@ export default function ExecutiveSearchGuidePage() {
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            <strong>Executive search</strong> (retained headhunting) is a dedicated, confidential search for senior leadership — CXO, VP, Country Head, and Board mandates.
+            <strong>Executive search</strong> (retained headhunting) is a dedicated, confidential search for senior leadership, CXO, VP, Country Head, and Board mandates.
             Fee: <strong>25–28% of first-year CTC</strong> split across milestones. Timeline: <strong>30-day shortlist SLA</strong>, 45–90 days to signed offer.
-            Passive candidates only — roles are never posted publicly without client approval.
+            Passive candidates only, roles are never posted publicly without client approval.
           </p>
         </div>
       </div>
@@ -154,19 +154,19 @@ export default function ExecutiveSearchGuidePage() {
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
             Fees, timelines, process, and when to use retained headhunting
-            vs contingent recruitment — explained clearly.
+            vs contingent recruitment, explained clearly.
           </p>
 
           <section className="mb-16">
             <h2 className="text-3xl font-display tracking-tight mb-6">What Is Executive Search?</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Executive search — also called retained search or headhunting — is the process of
+              Executive search. Also called retained search or headhunting. Is the process of
               identifying and recruiting senior leaders who are not actively looking for a new role.
               It differs from standard recruitment in three fundamental ways:
             </p>
             <div className="space-y-4 mb-6">
               {[
-                { title: "Passive-only sourcing", body: "Executive search firms approach candidates directly. They never post jobs on boards or wait for applications. The best leaders are rarely looking — they need to be found." },
+                { title: "Passive-only sourcing", body: "Executive search firms approach candidates directly. They never post jobs on boards or wait for applications. The best leaders are rarely looking, they need to be found." },
                 { title: "Retained model", body: "The client pays a portion of the fee upfront, securing the recruiter's exclusive commitment to the mandate. This is structurally different from contingent (pay-on-placement only) recruitment." },
                 { title: "Confidentiality by default", body: "Mandates are handled confidentially. The client company is not disclosed until the candidate has expressed genuine interest. Succession searches are handled without the incumbent's knowledge." },
               ].map((item) => (
@@ -219,7 +219,7 @@ export default function ExecutiveSearchGuidePage() {
               </div>
               <div className="p-6">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  The milestone model aligns incentives throughout the search — we are not paid in full until you have accepted the candidate.
+                  The milestone model aligns incentives throughout the search, we are not paid in full until you have accepted the candidate.
                   The 20% SLA fee-back applies to executive contingent mandates (VP and Director level).
                 </p>
               </div>

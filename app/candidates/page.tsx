@@ -114,7 +114,7 @@ export default function CandidatesPage() {
         <div className="max-w-[900px] mx-auto px-6 text-center">
           <p className="text-sm font-mono text-accent tracking-widest uppercase mb-4">Hiring, not job hunting?</p>
           <h2 className="text-3xl lg:text-4xl font-display tracking-tight mb-6">
-            You&apos;re on the wrong page — and we&apos;d love to help.
+            You&apos;re on the wrong page. And we&apos;d love to help.
           </h2>
           <Link
             href="/executive-search"

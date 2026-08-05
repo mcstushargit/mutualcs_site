@@ -69,8 +69,8 @@ export default function HyderabadPage() {
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             The Cyberabad corridor is becoming India&apos;s fastest-growing GCC hub. MutualCS is
             the specialist GCC tech recruiter placing AI, Cloud, and Platform Engineering talent
-            here — with a 30-day SLA and a 20% fee-back guarantee.
-            We hire for UAE, US, UK, Singapore, and Japanese companies — wherever their
+            here, with a 30-day SLA and a 20% fee-back guarantee.
+            We hire for UAE, US, UK, Singapore, and Japanese companies, wherever their
             Hyderabad mandate comes from.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -78,7 +78,7 @@ export default function HyderabadPage() {
               href="/?loc=Hyderabad#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Hire in Hyderabad — speak to us today
+              Hire in Hyderabad, speak to us today
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -112,11 +112,11 @@ export default function HyderabadPage() {
           <h2 className="text-4xl font-display tracking-tight mb-12">Companies We Serve in Hyderabad</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates — building India tech teams from Dubai and Abu Dhabi." },
-              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs — pharma, BFSI, and enterprise tech companies." },
-              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles — British banks and professional services firms." },
-              { origin: "Singapore Companies", desc: "APAC delivery hub roles, fintech, and engineering — SG-HQ firms leveraging Hyderabad&apos;s talent depth." },
-              { origin: "Japanese Companies", desc: "R&D, embedded systems, and manufacturing tech — automotive and electronics conglomerates scaling here." },
+              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates, building India tech teams from Dubai and Abu Dhabi." },
+              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs, pharma, BFSI, and enterprise tech companies." },
+              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles, British banks and professional services firms." },
+              { origin: "Singapore Companies", desc: "APAC delivery hub roles, fintech, and engineering, SG-HQ firms leveraging Hyderabad&apos;s talent depth." },
+              { origin: "Japanese Companies", desc: "R&D, embedded systems, and manufacturing tech. Automotive and electronics conglomerates scaling here." },
             ].map((item) => (
               <div key={item.origin} className="bg-card border border-border rounded-xl p-5">
                 <div className="font-semibold mb-1">{item.origin}</div>
@@ -134,17 +134,17 @@ export default function HyderabadPage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Challenge</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                Hyderabad&apos;s GCC Momentum Is Accelerating — And So Is the Competition for Talent
+                Hyderabad&apos;s GCC Momentum Is Accelerating. And So Is the Competition for Talent
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With major Fortune 500s anchoring GCCs in the Cyberabad corridor — and more arriving
-                every quarter — the competition for proven AI, Cloud, and Platform Engineering talent is
+                With major Fortune 500s anchoring GCCs in the Cyberabad corridor. And more arriving
+                every quarter, the competition for proven AI, Cloud, and Platform Engineering talent is
                 intensifying fast. Generalist recruiters lack the depth to source passive candidates here.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 MutualCS is a GCC-only tech recruiter. We know Hyderabad&apos;s talent pools, salary
                 benchmarks, and the companies actively hiring passive talent. We bring you shortlisted,
-                interview-ready candidates — not CV dumps.
+                interview-ready candidates, not CV dumps.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Our 30-day SLA is contractual. Miss it due to our delays? You get 20% of the fee back.
@@ -210,7 +210,7 @@ export default function HyderabadPage() {
             Hiring GCC Tech Talent in Hyderabad?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
+            Tell us the role. We&apos;ll tell you if we can fill it in 30 days. And what it will cost.
           </p>
           <Link
             href="/?loc=Hyderabad#contact"
@@ -226,7 +226,7 @@ export default function HyderabadPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MutualCS — GCC Recruitment Hyderabad",
+        "name": "MutualCS, GCC Recruitment Hyderabad",
         "description": "Specialist GCC tech recruitment agency in Hyderabad. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
         "url": "https://mutualcs.com/hyderabad",
         "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },

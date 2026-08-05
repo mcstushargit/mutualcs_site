@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     q: "How long does it take to hire a Cloud Architect for a GCC?",
-    a: "Via generalist agencies or job boards, hiring a senior Cloud Architect in India typically takes 60-90 days — the best candidates are passive and not actively applying. MutualCS delivers a shortlist of 4-6 interview-ready Cloud Architects within 30 days through active headhunting, with a contractual 20% fee reduction if we miss the SLA.",
+    a: "Via generalist agencies or job boards, hiring a senior Cloud Architect in India typically takes 60-90 days, the best candidates are passive and not actively applying. MutualCS delivers a shortlist of 4-6 interview-ready Cloud Architects within 30 days through active headhunting, with a contractual 20% fee reduction if we miss the SLA.",
   },
   {
     q: "What certifications should a Cloud Architect have for a GCC?",
-    a: "AWS Solutions Architect Professional, Google Professional Cloud Architect, or Azure Solutions Architect Expert are the gold standard certifications. For GCC roles, hands-on production experience matters more than certifications alone — look for candidates who have architected systems at scale, not just passed exams.",
+    a: "AWS Solutions Architect Professional, Google Professional Cloud Architect, or Azure Solutions Architect Expert are the gold standard certifications. For GCC roles, hands-on production experience matters more than certifications alone, look for candidates who have architected systems at scale, not just passed exams.",
   },
   {
     q: "What is the difference between a Cloud Architect and a DevOps Engineer for GCC hiring?",
@@ -41,12 +41,12 @@ const faqs = [
 ];
 
 const jdChecklist = [
-  "Specify the primary cloud provider (AWS/GCP/Azure) and any secondary platforms — generic 'cloud experience' attracts poor-fit candidates",
-  "State whether the role is hands-on or primarily advisory — architects who want to stay technical will not take purely governance roles",
-  "Include the scale: number of services, data volumes, request throughput — good architects evaluate problem complexity before applying",
-  "Name the tech stack the GCC uses (Kubernetes, Terraform, Helm, Istio, etc.) — specificity filters out generalists",
+  "Specify the primary cloud provider (AWS/GCP/Azure) and any secondary platforms, generic 'cloud experience' attracts poor-fit candidates",
+  "State whether the role is hands-on or primarily advisory. Architects who want to stay technical will not take purely governance roles",
+  "Include the scale: number of services, data volumes, request throughput, good architects evaluate problem complexity before applying",
+  "Name the tech stack the GCC uses (Kubernetes, Terraform, Helm, Istio, etc.), specificity filters out generalists",
   "State reporting structure: does this role report to a VP Engineering in India or a CTO in the US/UK?",
-  "Include salary band — cloud architects are in demand and will not waste time on undisclosed salaries",
+  "Include salary band, cloud architects are in demand and will not waste time on undisclosed salaries",
 ];
 
 export default function HireCloudArchitectPage() {
@@ -62,12 +62,12 @@ export default function HireCloudArchitectPage() {
         </div>
       </div>
 
-      {/* Quick Answer — AEO featured snippet target */}
+      {/* Quick Answer. AEO featured snippet target */}
       <div className="border-b border-border bg-accent/5">
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            To hire a Cloud Architect for a GCC in India: write a specific JD naming the cloud provider, tech stack, and scale; source passively via LinkedIn and GCC networks (the best candidates are not applying); budget Rs 30–65 LPA for senior roles; and expect a 30–60 day process from mandate to offer. Generalist agencies take 60–90 days — specialist GCC recruiters cut this to 30.
+            To hire a Cloud Architect for a GCC in India: write a specific JD naming the cloud provider, tech stack, and scale; source passively via LinkedIn and GCC networks (the best candidates are not applying); budget Rs 30–65 LPA for senior roles; and expect a 30–60 day process from mandate to offer. Generalist agencies take 60–90 days, specialist GCC recruiters cut this to 30.
           </p>
         </div>
       </div>
@@ -88,8 +88,8 @@ export default function HireCloudArchitectPage() {
             <h2 className="text-3xl font-display tracking-tight mb-6">What a GCC Cloud Architect Actually Does</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               In a GCC context, a Cloud Architect is not a generic infrastructure engineer. They own the
-              cloud strategy for the India center — often coordinating with a global platform team at
-              the parent company — and are responsible for:
+              cloud strategy for the India center, often coordinating with a global platform team at
+              the parent company. And are responsible for:
             </p>
             <ul className="space-y-3 mb-6">
               {[
@@ -109,7 +109,7 @@ export default function HireCloudArchitectPage() {
             <div className="bg-card border border-border rounded-xl p-5">
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">GCC-specific nuance:</strong> A GCC Cloud Architect often needs to navigate
-                dual governance — local India cloud cost and compliance requirements, plus parent company
+                dual governance, local India cloud cost and compliance requirements, plus parent company
                 architecture review boards in the US or EU. Candidates from domestic product companies
                 may not have this experience; look for those who have worked in GCCs or MNCs with strong
                 global engineering governance.
@@ -139,14 +139,14 @@ export default function HireCloudArchitectPage() {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Senior Cloud Architects are predominantly passive candidates. They are not checking Naukri or
               applying to job ads. They are deep in production systems at Google, Microsoft, AWS Professional
-              Services, or existing GCCs — and they respond selectively to credible, specific outreach.
+              Services, or existing GCCs. And they respond selectively to credible, specific outreach.
             </p>
             <div className="grid md:grid-cols-2 gap-5 mb-6">
               {[
                 { source: "Current GCC engineering teams", note: "The best GCC Cloud Architects come from other GCCs. They understand the governance model, the dual-reporting, and the global-scale requirements." },
                 { source: "Cloud provider PSO teams", note: "AWS Professional Services, Google Cloud Consulting, and Azure FastTrack Engineers have deep expertise and often want to move to a product-side or GCC role." },
-                { source: "Platform engineering leads at unicorns", note: "Engineers who have built cloud platforms for Swiggy, CRED, PhonePe, or Razorpay have the scale experience GCCs need — they may be open to the stability of a GCC role." },
-                { source: "LinkedIn passive outreach", note: "Works only when the message is specific — naming the cloud provider, stack, and scale. Generic 'exciting opportunity' messages get ignored by senior architects." },
+                { source: "Platform engineering leads at unicorns", note: "Engineers who have built cloud platforms for Swiggy, CRED, PhonePe, or Razorpay have the scale experience GCCs need, they may be open to the stability of a GCC role." },
+                { source: "LinkedIn passive outreach", note: "Works only when the message is specific, naming the cloud provider, stack, and scale. Generic 'exciting opportunity' messages get ignored by senior architects." },
               ].map((item) => (
                 <div key={item.source} className="border border-border rounded-xl p-5">
                   <h3 className="font-semibold text-sm mb-2">{item.source}</h3>
@@ -158,7 +158,7 @@ export default function HireCloudArchitectPage() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">MutualCS approach:</strong> We maintain active networks at target GCCs, cloud
                 provider teams, and high-scale product companies in Bengaluru, Hyderabad, and Pune. When you
-                give us a Cloud Architect mandate, we know who to call — not who to email a JD to.
+                give us a Cloud Architect mandate, we know who to call, not who to email a JD to.
               </p>
             </div>
           </section>
@@ -216,7 +216,7 @@ export default function HireCloudArchitectPage() {
             Hiring a Cloud Architect for Your GCC?
           </h2>
           <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
-            Tell us the mandate — cloud provider, scale, seniority level — and we&apos;ll come back
+            Tell us the mandate, cloud provider, scale, seniority level. And we&apos;ll come back
             within 4 hours with a plan and current market availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -236,7 +236,7 @@ export default function HireCloudArchitectPage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "How to Hire a Cloud Architect for Your GCC in India",
-        "description": "A complete guide to hiring Cloud Architects for Global Capability Centers in India — JD writing, sourcing, salary benchmarks, and process.",
+        "description": "A complete guide to hiring Cloud Architects for Global Capability Centers in India, JD writing, sourcing, salary benchmarks, and process.",
         "datePublished": "2026-05-01",
         "dateModified": "2026-05-07",
         "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },

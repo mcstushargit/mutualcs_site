@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "How fast can MutualCS fill positions for our GCC?",
-    answer: "It depends on the role. For tech and specialist roles, our SLA is 30 days to first shortlist — backed by a contractual 20% fee reduction if we miss it. For leadership and executive mandates (VP, CXO, Country Head), we commit to a 60-day shortlist SLA, which reflects the deeper market mapping and passive headhunting these roles require. Most tech mandates see a qualified shortlist within 7 business days. Both SLAs are contractual — not promises."
+    answer: "It depends on the role. For tech and specialist roles, our SLA is 30 days to first shortlist, backed by a contractual 20% fee reduction if we miss it. For leadership and executive mandates (VP, CXO, Country Head), we commit to a 60-day shortlist SLA, which reflects the deeper market mapping and passive headhunting these roles require. Most tech mandates see a qualified shortlist within 7 business days. Both SLAs are contractual, not promises."
   },
   {
     question: "What industries and roles do you specialize in?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "What locations do you cover for GCC recruitment?",
-    answer: "We recruit for GCCs globally, with deep specialisation in India's major talent hubs — Bengaluru, Hyderabad, Pune, NCR, Chennai, and Mumbai. For companies building India GCCs from the US, UK, Europe, Singapore, Japan, or the Middle East, we provide end-to-end talent acquisition from requirement to onboarding."
+    answer: "We recruit for GCCs globally, with deep specialisation in India's major talent hubs, Bengaluru, Hyderabad, Pune, NCR, Chennai, and Mumbai. For companies building India GCCs from the US, UK, Europe, Singapore, Japan, or the Middle East, we provide end-to-end talent acquisition from requirement to onboarding."
   },
   {
     question: "What are your pricing models?",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     question: "Do you work with UAE and Middle East companies hiring in India?",
-    answer: "Yes — and we're not limited to India hiring for UAE clients. If you are a UAE company that needs to hire in Dubai, Abu Dhabi, build an India GCC team, or place talent globally, MutualCS covers all three. The same 30-day contractual SLA and 3-month replacement guarantee apply regardless of where the role is based. See our UAE page for full details: mutualcs.com/uae"
+    answer: "Yes. And we're not limited to India hiring for UAE clients. If you are a UAE company that needs to hire in Dubai, Abu Dhabi, build an India GCC team, or place talent globally, MutualCS covers all three. The same 30-day contractual SLA and 3-month replacement guarantee apply regardless of where the role is based. See our UAE page for full details: mutualcs.com/uae"
   }
 ];
 

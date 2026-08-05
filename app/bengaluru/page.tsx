@@ -68,10 +68,10 @@ export default function BengaluruPage() {
             Done in 30 Days.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Bengaluru hosts over 35% of India&apos;s GCCs — and the talent war here is fierce.
+            Bengaluru hosts over 35% of India&apos;s GCCs. And the talent war here is fierce.
             MutualCS is the specialist GCC tech recruiter that fills AI, Cloud, and Platform
             Engineering roles with a 30-day SLA and a 20% fee-back guarantee.
-            We hire for UAE, US, UK, Singapore, and Japanese companies — wherever their
+            We hire for UAE, US, UK, Singapore, and Japanese companies, wherever their
             Bengaluru mandate comes from.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -79,7 +79,7 @@ export default function BengaluruPage() {
               href="/?loc=Bengaluru#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Hire in Bengaluru — speak to us today
+              Hire in Bengaluru, speak to us today
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -113,11 +113,11 @@ export default function BengaluruPage() {
           <h2 className="text-4xl font-display tracking-tight mb-12">Companies We Serve in Bengaluru</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates — building India tech teams from Dubai and Abu Dhabi." },
-              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs — from Fortune 500s to Series B tech companies." },
-              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles — British banks and fintechs with large Bengaluru footprints." },
-              { origin: "Singapore Companies", desc: "APAC delivery hub roles, fintech, and engineering — SG-HQ firms using Bengaluru as their India base." },
-              { origin: "Japanese Companies", desc: "R&D, embedded, and manufacturing tech roles — automotive and tech conglomerates scaling India capability." },
+              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates, building India tech teams from Dubai and Abu Dhabi." },
+              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs, from Fortune 500s to Series B tech companies." },
+              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles, British banks and fintechs with large Bengaluru footprints." },
+              { origin: "Singapore Companies", desc: "APAC delivery hub roles, fintech, and engineering, SG-HQ firms using Bengaluru as their India base." },
+              { origin: "Japanese Companies", desc: "R&D, embedded, and manufacturing tech roles. Automotive and tech conglomerates scaling India capability." },
             ].map((item) => (
               <div key={item.origin} className="bg-card border border-border rounded-xl p-5">
                 <div className="font-semibold mb-1">{item.origin}</div>
@@ -135,15 +135,15 @@ export default function BengaluruPage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Challenge</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                Bengaluru&apos;s GCC Talent Market Is Competitive — And Getting Harder
+                Bengaluru&apos;s GCC Talent Market Is Competitive. And Getting Harder
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 With 1,600+ GCCs competing for a finite pool of AI, Cloud, and Platform Engineering talent,
                 roles that generalist recruiters promise to fill in &quot;2 weeks&quot; routinely sit open for
-                60–90 days. The candidates you want are passive — they are not on job boards.
+                60–90 days. The candidates you want are passive, they are not on job boards.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                MutualCS focuses only on GCC tech roles. We know Bengaluru&apos;s talent landscape — by
+                MutualCS focuses only on GCC tech roles. We know Bengaluru&apos;s talent landscape, by
                 company, by tech stack, and by salary band. When you give us a mandate, we already
                 know who to call.
               </p>
@@ -212,7 +212,7 @@ export default function BengaluruPage() {
             Hiring GCC Tech Talent in Bengaluru?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
+            Tell us the role. We&apos;ll tell you if we can fill it in 30 days. And what it will cost.
           </p>
           <Link
             href="/?loc=Bengaluru#contact"
@@ -228,7 +228,7 @@ export default function BengaluruPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MutualCS — GCC Recruitment Bengaluru",
+        "name": "MutualCS, GCC Recruitment Bengaluru",
         "description": "Specialist GCC tech recruitment agency in Bengaluru. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
         "url": "https://mutualcs.com/bengaluru",
         "telephone": "+91-80-0000-0000",
@@ -260,7 +260,7 @@ export default function BengaluruPage() {
           {
             "@type": "Question",
             "name": "How many GCCs are in Bengaluru?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Bengaluru hosts over 1,600 active Global Capability Centers — more than 35% of all GCCs in India. Major employers include Goldman Sachs, JPMorgan, Google, Microsoft, Walmart Global Tech, Boeing, and hundreds of mid-size MNCs across BFSI, tech, and manufacturing sectors." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Bengaluru hosts over 1,600 active Global Capability Centers, more than 35% of all GCCs in India. Major employers include Goldman Sachs, JPMorgan, Google, Microsoft, Walmart Global Tech, Boeing, and hundreds of mid-size MNCs across BFSI, tech, and manufacturing sectors." }
           },
           {
             "@type": "Question",
@@ -270,7 +270,7 @@ export default function BengaluruPage() {
           {
             "@type": "Question",
             "name": "How long does GCC tech hiring take in Bengaluru?",
-            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS delivers a curated shortlist of 4–6 interview-ready candidates within 30 days of mandate signature — backed by a contractual 20% fee reduction if we miss the SLA due to our delays. The industry average for senior GCC tech roles via generalist recruiters in Bengaluru is 60–90 days." }
+            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS delivers a curated shortlist of 4–6 interview-ready candidates within 30 days of mandate signature, backed by a contractual 20% fee reduction if we miss the SLA due to our delays. The industry average for senior GCC tech roles via generalist recruiters in Bengaluru is 60–90 days." }
           },
           {
             "@type": "Question",

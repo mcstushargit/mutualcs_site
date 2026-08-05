@@ -77,8 +77,7 @@ export default function AiMlHiringPage() {
             30-Day SLA.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            42% of GCCs report a critical AI/GenAI talent shortage. The candidates you need are passive —
-            they are at Google, Microsoft, and leading AI startups — and they are not actively looking.
+            42% of GCCs report a critical AI/GenAI talent shortage. The candidates you need are passive, they are at Google, Microsoft, and leading AI startups. And they are not actively looking.
             MutualCS finds them, screens them, and delivers a shortlist in 30 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -106,22 +105,20 @@ export default function AiMlHiringPage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Challenge</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                The AI Talent Shortage Is Real — and GCCs Are Bearing the Brunt of It
+                The AI Talent Shortage Is Real. And GCCs Are Bearing the Brunt of It
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                India graduates thousands of data scientists annually, but experienced AI Engineers —
-                those who have shipped production ML systems, worked with LLM infrastructure, or
-                led GenAI projects — are scarce and in demand from every direction simultaneously.
+                India graduates thousands of data scientists annually, but experienced AI Engineers, those who have shipped production ML systems, worked with LLM infrastructure, or
+                led GenAI projects. Are scarce and in demand from every direction simultaneously.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 GCCs face a specific disadvantage: they often cannot match the equity compensation of
-                product startups, so they must win on other dimensions — interesting problems, global
+                product startups, so they must win on other dimensions. Interesting problems, global
                 exposure, leadership access. A specialist recruiter knows how to position your GCC
                 correctly for this audience.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Generalist recruiters flood AI candidates with irrelevant JDs. Our targeted outreach
-                — with a relevant brief and honest positioning — gets responses where others get silence.
+                Generalist recruiters flood AI candidates with irrelevant JDs. Our targeted outreach, with a relevant brief and honest positioning, gets responses where others get silence.
               </p>
             </div>
 
@@ -192,10 +189,10 @@ export default function AiMlHiringPage() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              "GCC-only recruitment — we speak the same language as your hiring managers",
+              "GCC-only recruitment, we speak the same language as your hiring managers",
               "30-day SLA with 20% fee-back guarantee on all AI/ML mandates",
               "Pre-built passive candidate networks in AI/ML across Bengaluru, Hyderabad, and Pune",
-              "Founder-reviewed shortlists — every AI candidate screened by our leadership",
+              "Founder-reviewed shortlists, every AI candidate screened by our leadership",
             ].map((point) => (
               <div key={point} className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-accent mt-0.5 shrink-0" />
@@ -213,7 +210,7 @@ export default function AiMlHiringPage() {
             Hiring an AI or ML Engineer for Your GCC?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the role. We&apos;ll tell you whether we can fill it in 30 days — and give you
+            Tell us the role. We&apos;ll tell you whether we can fill it in 30 days. And give you
             current salary benchmarks for that role in your city.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -282,7 +279,7 @@ export default function AiMlHiringPage() {
           {
             "@type": "Question",
             "name": "Why is AI/ML hiring so difficult for GCCs compared to product companies?",
-            "acceptedAnswer": { "@type": "Answer", "text": "GCCs face a positioning challenge: they often cannot match the equity compensation or brand recognition of AI-native startups. The best AI talent is passive and selective. GCCs win when they can articulate the interesting problems, global exposure, and career growth available — something a specialist recruiter with GCC experience can communicate effectively." }
+            "acceptedAnswer": { "@type": "Answer", "text": "GCCs face a positioning challenge: they often cannot match the equity compensation or brand recognition of AI-native startups. The best AI talent is passive and selective. GCCs win when they can articulate the interesting problems, global exposure, and career growth available, something a specialist recruiter with GCC experience can communicate effectively." }
           },
           {
             "@type": "Question",

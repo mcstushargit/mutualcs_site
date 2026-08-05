@@ -5,7 +5,7 @@ import { ArrowRight, Globe, CheckCircle, Building2, MapPin } from "lucide-react"
 export const metadata: Metadata = {
   title: "Recruitment Agency for US Companies | Hire in US, India & Globally | MutualCS",
   description:
-    "MutualCS is the specialist recruitment partner for US companies. We find tech, AI/ML, and executive talent in the US, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for US companies. We find tech, AI/ML, and executive talent in the US, India, or anywhere globally, 30-day SLA with fee-back guarantee.",
   keywords: [
     "recruitment agency United States",
     "tech recruitment US companies",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recruitment Agency for US Companies | Hire in US, India & Globally | MutualCS",
     description:
-      "MutualCS finds tech, AI/ML, and executive talent for US companies — in the US, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+      "MutualCS finds tech, AI/ML, and executive talent for US companies in the US, India, or globally. 30-day SLA, contractual fee-back guarantee.",
     url: "https://mutualcs.com/united-states",
     locale: "en_US",
   },
@@ -52,7 +52,7 @@ const whereWeHire = [
   {
     flag: "🌐",
     location: "Global",
-    desc: "UAE, UK, Singapore, Japan, Europe — permanent placement wherever your team needs to grow.",
+    desc: "UAE, UK, Singapore, Japan, Europe, permanent placement wherever your team needs to grow.",
     tags: ["UAE", "United Kingdom", "Singapore", "Japan", "Europe"],
     link: "/tech-recruitment",
   },
@@ -65,7 +65,7 @@ const challenges = [
   },
   {
     heading: "High technical bar from parent company",
-    body: "US tech companies set global hiring standards. We calibrate every search against your parent-company bar — not the Indian market average.",
+    body: "US tech companies set global hiring standards. We calibrate every search against your parent-company bar, not the Indian market average.",
   },
   {
     heading: "Speed to hire for a greenfield GCC",
@@ -124,7 +124,7 @@ export default function UnitedStatesPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             MutualCS is the recruitment partner for US companies hiring in the US, building India
-            GCC teams, or placing talent globally — one agency, one SLA, wherever the role is.
+            GCC teams, or placing talent globally, one agency, one SLA, wherever the role is.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -169,7 +169,7 @@ export default function UnitedStatesPage() {
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
           <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            US. India. UAE. UK. Singapore. Japan. You tell us where the role is — we find the talent.
+            US. India. UAE. UK. Singapore. Japan. You tell us where the role is, we find the talent.
             The SLA and guarantee apply regardless of location.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -199,7 +199,7 @@ export default function UnitedStatesPage() {
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">What We Help US Companies With</span>
           <h2 className="text-4xl font-display tracking-tight mb-12">
-            Tech and Executive Hiring — In the US, India, or Anywhere
+            Tech and Executive Hiring in the US, India, or Anywhere
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {challenges.map((item) => (
@@ -275,7 +275,7 @@ export default function UnitedStatesPage() {
             Tell Us Where You Need to Hire.
           </h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            In the US, India, or globally — we&apos;ll respond with a tailored plan within 4 business hours.
+            In the US, India, or globally, we&apos;ll respond with a tailored plan within 4 business hours.
           </p>
           <Link
             href="/?loc=United%20States#contact"
@@ -290,7 +290,7 @@ export default function UnitedStatesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Recruitment Agency for US Companies — US, India & Global Hiring",
+        "name": "Recruitment Agency for US Companies, US, India & Global Hiring",
         "description": "MutualCS provides specialist recruitment for US companies hiring in the US, India, or globally. Tech, AI/ML, and executive roles with a 30-day contractual SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "serviceType": "Permanent Recruitment",
@@ -310,9 +310,9 @@ export default function UnitedStatesPage() {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "How do US companies set up GCCs in India?", "acceptedAnswer": { "@type": "Answer", "text": "US companies setting up a GCC in India typically start by registering a Private Limited Company (Pvt Ltd), which takes 4–8 weeks. The next step is hiring a founding leadership team — Country Head, VP Engineering — which MutualCS specialises in. A fully operational GCC with 20–50 people takes 6–9 months from decision to live." } },
+          { "@type": "Question", "name": "How do US companies set up GCCs in India?", "acceptedAnswer": { "@type": "Answer", "text": "US companies setting up a GCC in India typically start by registering a Private Limited Company (Pvt Ltd), which takes 4–8 weeks. The next step is hiring a founding leadership team, Country Head, VP Engineering, which MutualCS specialises in. A fully operational GCC with 20–50 people takes 6–9 months from decision to live." } },
           { "@type": "Question", "name": "What cities in India are best for US companies building GCCs?", "acceptedAnswer": { "@type": "Answer", "text": "Bengaluru is the top choice for US tech companies due to the depth of engineering talent, strong startup ecosystem, and established GCC infrastructure. Hyderabad is preferred for BFSI and pharmaceutical GCCs. Pune is growing for automotive and embedded systems. NCR (Gurgaon/Noida) suits companies with existing India offices and BFSI verticals." } },
-          { "@type": "Question", "name": "How much does it cost to hire tech talent in an India GCC vs the US?", "acceptedAnswer": { "@type": "Answer", "text": "Senior engineers in India earn approximately 20–30% of equivalent US compensation while delivering comparable technical output for most roles. This cost advantage compounds at scale — a 100-person India GCC engineering team costs roughly what 20–25 US-based engineers would cost." } }
+          { "@type": "Question", "name": "How much does it cost to hire tech talent in an India GCC vs the US?", "acceptedAnswer": { "@type": "Answer", "text": "Senior engineers in India earn approximately 20–30% of equivalent US compensation while delivering comparable technical output for most roles. This cost advantage compounds at scale. A 100-person India GCC engineering team costs roughly what 20–25 US-based engineers would cost." } }
         ]
       })}} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

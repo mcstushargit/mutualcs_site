@@ -26,18 +26,18 @@ const cityLinks = [
 const whySpecialist = [
   {
     heading: "Generalists send 50 CVs. We send 5 shortlisted candidates.",
-    body: "Volume is the enemy of quality. GCCs hiring AI/ML or Platform Engineering leads want a recruiter who understands the role deeply — not one who spams profiles."
+    body: "Volume is the enemy of quality. GCCs hiring AI/ML or Platform Engineering leads want a recruiter who understands the role deeply, not one who spams profiles."
   },
   {
     heading: "We only work on GCC tech mandates.",
     body: "Not IT. Not BPO. Not finance. This means our entire network, all our sourcing processes, and every benchmark we use is calibrated specifically for GCC tech hiring."
   },
   {
-    heading: "The SLA is contractual — not a marketing claim.",
-    body: "V3Staffing says '10 days' — that is marketing. Our 30-day SLA is written into the engagement terms. Miss it due to our delays? You receive a 20% fee reduction. No competitor does this."
+    heading: "The SLA is contractual, not a marketing claim.",
+    body: "V3Staffing says '10 days', that is marketing. Our 30-day SLA is written into the engagement terms. Miss it due to our delays? You receive a 20% fee reduction. No competitor does this."
   },
   {
-    heading: "Founder-reviewed shortlists. You talk to our experts — not an account manager.",
+    heading: "Founder-reviewed shortlists. You talk to our experts, not an account manager.",
     body: "Every shortlist goes through our leadership team. Clients dealing with accountable, senior individuals get better outcomes than those dealing with a team of generalist BDMs."
   }
 ];
@@ -72,8 +72,7 @@ export default function GccRecruitmentPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             MutualCS is the specialist recruitment partner for Global Capability Centers.
-            We fill AI, Cloud, Cybersecurity, and Platform Engineering roles in 30 days —
-            with a contractual fee-back guarantee if we miss the SLA.
+            We fill AI, Cloud, Cybersecurity, and Platform Engineering roles in 30 days, with a contractual fee-back guarantee if we miss the SLA.
           </p>
 
           {/* Inline quick-form */}
@@ -142,12 +141,12 @@ export default function GccRecruitmentPage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Context</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                What Is a GCC — and Why Does Hiring for One Require a Specialist?
+                What Is a GCC. And Why Does Hiring for One Require a Specialist?
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 A Global Capability Center (GCC) is a wholly-owned offshore or nearshore entity set up by
                 a multinational corporation to handle technology, operations, and R&amp;D functions.
-                India is the world's largest GCC hub — 1,800+ centres employing 1.9 million professionals,
+                India is the world's largest GCC hub, 1,800+ centres employing 1.9 million professionals,
                 growing at 15–20% annually. We know this market from the inside.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -198,7 +197,7 @@ export default function GccRecruitmentPage() {
               {
                 step: "03",
                 heading: "Interviews within 5 business days",
-                body: "Client commits to interview slots within 5 business days of shortlist delivery. SLA clock pauses during client-side delays — this protects both parties."
+                body: "Client commits to interview slots within 5 business days of shortlist delivery. SLA clock pauses during client-side delays, this protects both parties."
               },
               {
                 step: "04",
@@ -208,7 +207,7 @@ export default function GccRecruitmentPage() {
               {
                 step: "05",
                 heading: "Miss it? You get 20% back.",
-                body: "If we miss the 30-day window due to our delays — not client delays — you receive a 20% reduction on the placement fee. Contractual, not a goodwill gesture."
+                body: "If we miss the 30-day window due to our own delays (not client delays), you receive a 20% reduction on the placement fee. That is contractual, not a goodwill gesture."
               },
               {
                 step: "06",
@@ -261,7 +260,7 @@ export default function GccRecruitmentPage() {
             Ready to Fill Your GCC Tech Role?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the mandate. We&apos;ll come back within 4 hours with a plan — including
+            Tell us the mandate. We&apos;ll come back within 4 hours with a plan. Including
             timeline, approach, and which engagement model fits best.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -289,11 +288,11 @@ export default function GccRecruitmentPage() {
             "@type": "FAQPage",
             "mainEntity": [
               { "@type": "Question", "name": "What is a Global Capability Center (GCC)?", "acceptedAnswer": { "@type": "Answer", "text": "A Global Capability Center (GCC) is a wholly-owned offshore or nearshore entity established by a multinational corporation to handle technology development, R&D, data analytics, and operations. Unlike outsourcing, a GCC is fully owned and controlled by the parent company. India hosts 1,800+ GCCs employing 1.9 million professionals." } },
-              { "@type": "Question", "name": "How long does GCC recruitment take with MutualCS?", "acceptedAnswer": { "@type": "Answer", "text": "Our contractual shortlist SLA is 30 days — we present 4–6 interview-ready candidates within 30 days of mandate signature. For most roles, the initial shortlist is delivered within 7 business days. If we miss the SLA due to our delays, you receive a 20% fee reduction." } },
-              { "@type": "Question", "name": "What is the difference between a GCC and outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "A GCC is a wholly-owned captive entity — you own it, you control it, and your employees work exclusively for your company. Outsourcing means engaging a third-party vendor whose employees work across multiple clients. GCCs offer full IP ownership, cultural alignment, and long-term cost efficiency; outsourcing offers flexibility without capital commitment." } },
+              { "@type": "Question", "name": "How long does GCC recruitment take with MutualCS?", "acceptedAnswer": { "@type": "Answer", "text": "Our contractual shortlist SLA is 30 days. We present 4–6 interview-ready candidates within 30 days of mandate signature. For most roles, the initial shortlist is delivered within 7 business days. If we miss the SLA due to our delays, you receive a 20% fee reduction." } },
+              { "@type": "Question", "name": "What is the difference between a GCC and outsourcing?", "acceptedAnswer": { "@type": "Answer", "text": "A GCC is a wholly-owned captive entity, you own it, you control it, and your employees work exclusively for your company. Outsourcing means engaging a third-party vendor whose employees work across multiple clients. GCCs offer full IP ownership, cultural alignment, and long-term cost efficiency; outsourcing offers flexibility without capital commitment." } },
               { "@type": "Question", "name": "What fees does MutualCS charge for GCC recruitment?", "acceptedAnswer": { "@type": "Answer", "text": "Contingent hire: 16–18% of the placed candidate's first-year CTC, payable on successful placement. Executive and retained search: 25–28% across three milestones. Embedded RPO: monthly retainer plus per-hire fee. All contingent placements include a 30-day SLA with 20% fee-back if missed." } },
               { "@type": "Question", "name": "Which India cities does MutualCS recruit in?", "acceptedAnswer": { "@type": "Answer", "text": "We recruit across all major India GCC hubs: Bengaluru, Hyderabad, Pune, NCR (Gurgaon/Noida), Chennai, and Mumbai. We also recruit for GCC roles in the US, UK, Singapore, Japan, and the Middle East." } },
-              { "@type": "Question", "name": "Can MutualCS help set up a greenfield GCC from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We specialize in founding team hires — Country Head, Site Director, VP Engineering, CHRO — and can scale from the first 5 hires to 100+ as your GCC grows. Our Embedded RPO model is specifically designed for this ramp-up phase." } }
+              { "@type": "Question", "name": "Can MutualCS help set up a greenfield GCC from scratch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We specialize in founding team hires, Country Head, Site Director, VP Engineering, CHRO. And can scale from the first 5 hires to 100+ as your GCC grows. Our Embedded RPO model is specifically designed for this ramp-up phase." } }
             ]
           })
         }}

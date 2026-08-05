@@ -14,7 +14,7 @@ const services = [
   {
     icon: Zap,
     title: "Contingent Hire",
-    description: "Permanent placement with a hard SLA. Pay 16–18% of first-year CTC on placement — and get 20% back if we miss 30 days. Any company, any country.",
+    description: "Permanent placement with a hard SLA. Pay 16–18% of first-year CTC on placement. And get 20% back if we miss 30 days. Any company, any country.",
     features: ["30-Day SLA Guarantee", "20% Fee Reduction if SLA Missed", "Exclusive/Semi-Exclusive Mandate", "Pre-Vetted Shortlist in 7 Days"],
     tier: "Tier 1",
     link: "/tech-recruitment"
@@ -22,15 +22,15 @@ const services = [
   {
     icon: Search,
     title: "Executive & Retained Search",
-    description: "For CXO, VP, and Country Head mandates globally. Fee split across milestones. Passive headhunting, confidential searches, structured assessment. 60-day shortlist SLA — the only executive search firm that commits contractually.",
-    features: ["25–28% of First-Year CTC", "60-Day Shortlist SLA — Contractual", "Passive Candidate Headhunting", "3-Month Replacement Guarantee"],
+    description: "For CXO, VP, and Country Head mandates globally. Fee split across milestones. Passive headhunting, confidential searches, structured assessment. 60-day shortlist SLA, the only executive search firm that commits contractually.",
+    features: ["25–28% of First-Year CTC", "60-Day Shortlist SLA, Contractual", "Passive Candidate Headhunting", "3-Month Replacement Guarantee"],
     tier: "Tier 2",
     link: "/executive-search"
   },
   {
     icon: Building,
     title: "Embedded RPO",
-    description: "We become your de facto recruitment team. A dedicated embedded recruiter who knows your culture, tech stack, and hiring bar — for any company building at scale.",
+    description: "We become your de facto recruitment team. A dedicated embedded recruiter who knows your culture, tech stack, and hiring bar, for any company building at scale.",
     features: ["Monthly Retainer", "Per-Hire Fee on Success", "Predictable Monthly Recurring Model", "Ideal for 8–20+ Hires/Year"],
     tier: "Tier 3",
     link: "#contact"
@@ -38,7 +38,7 @@ const services = [
   {
     icon: Brain,
     title: "AI/ML & GenAI Hiring",
-    description: "Specialists for the roles nobody else can fill — AI Engineers, ML Scientists, GenAI Architects, LLM & MLOps specialists for companies at the frontier.",
+    description: "Specialists for the roles nobody else can fill. AI Engineers, ML Scientists, GenAI Architects, LLM & MLOps specialists for companies at the frontier.",
     features: ["AI/ML Engineers", "GenAI & LLM Architects", "Data Science Leads", "MLOps Specialists"],
     link: "/ai-ml-hiring"
   },
@@ -52,7 +52,7 @@ const services = [
   {
     icon: Briefcase,
     title: "Executive Leadership Search",
-    description: "Board-level to VP search — CTO, CHRO, CISO, Head of Product, Country Head, and GCC Site Directors. Global mandates, full discretion.",
+    description: "Board-level to VP search, CTO, CHRO, CISO, Head of Product, Country Head, and GCC Site Directors. Global mandates, full discretion.",
     features: ["VP Engineering & CTO", "CHRO & People Leaders", "Head of Product & Innovation", "Country Heads & GCC Directors"],
     link: "/executive-search"
   }
@@ -74,7 +74,7 @@ export function ServicesSection() {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Three engagement models built around accountability, not just success fees.
-            Three specialist practice areas — from niche tech to board-level executive search.
+            Three specialist practice areas, from niche tech to board-level executive search.
             Permanent placement, globally.
           </p>
         </div>

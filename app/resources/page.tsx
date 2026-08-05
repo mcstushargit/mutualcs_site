@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const guides = [
   {
     title: "What Does It Cost to Hire a CXO?",
-    desc: "Executive search fees explained — the three pricing models, the true cost of a failed C-suite hire, and what to demand in writing before you engage a firm.",
+    desc: "Executive search fees explained, the three pricing models, the true cost of a failed C-suite hire, and what to demand in writing before you engage a firm.",
     href: "/resources/cost-to-hire-cxo",
     tag: "For Boards & CEOs",
     icon: Users,
@@ -36,15 +36,15 @@ const guides = [
     icon: TrendingUp,
   },
   {
-    title: "GCC Salary Benchmarks India 2026 — Detailed",
-    desc: "Role-by-role compensation data across Bengaluru, Hyderabad, Pune, and NCR — including GenAI premiums.",
+    title: "GCC Salary Benchmarks India 2026, Detailed",
+    desc: "Role-by-role compensation data across Bengaluru, Hyderabad, Pune, and NCR. Including GenAI premiums.",
     href: "/resources/gcc-salary-benchmarks-india-2026",
     tag: "Salary Data",
     icon: TrendingUp,
   },
   {
     title: "What is a GCC? Complete Guide",
-    desc: "Global Capability Centers explained — structure, benefits, costs, and how they differ from outsourcing.",
+    desc: "Global Capability Centers explained, structure, benefits, costs, and how they differ from outsourcing.",
     href: "/resources/what-is-gcc",
     tag: "Fundamentals",
     icon: BookOpen,
@@ -58,28 +58,28 @@ const guides = [
   },
   {
     title: "GCC vs Outsourcing",
-    desc: "Cost, control, and quality compared — when to build a captive center and when to outsource.",
+    desc: "Cost, control, and quality compared, when to build a captive center and when to outsource.",
     href: "/resources/gcc-vs-outsourcing",
     tag: "Comparison",
     icon: BookOpen,
   },
   {
     title: "GCC vs BPO",
-    desc: "Differences in scope, talent, and economics — and why the two models attract different talent pools.",
+    desc: "Differences in scope, talent, and economics. And why the two models attract different talent pools.",
     href: "/resources/gcc-vs-bpo",
     tag: "Comparison",
     icon: BookOpen,
   },
   {
     title: "Executive Search Guide",
-    desc: "How retained search works — fees, timelines, milestone structures, and what to expect from a search partner.",
+    desc: "How retained search works, fees, timelines, milestone structures, and what to expect from a search partner.",
     href: "/resources/executive-search-guide",
     tag: "Hiring Playbook",
     icon: Users,
   },
   {
     title: "How to Hire AI/ML Engineers",
-    desc: "Sourcing, screening, and closing AI/ML talent — process, costs, timelines, and common mistakes.",
+    desc: "Sourcing, screening, and closing AI/ML talent, process, costs, timelines, and common mistakes.",
     href: "/resources/how-to-hire-ai-ml-engineers",
     tag: "Hiring Playbook",
     icon: Users,
@@ -121,7 +121,7 @@ export default function ResourcesPage() {
             <span className="text-accent">Hire Smarter.</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Salary benchmarks, GCC setup guides, and role-specific hiring playbooks — written
+            Salary benchmarks, GCC setup guides, and role-specific hiring playbooks, written
             from 500+ placements, not theory. All free.
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function ResourcesPage() {
             Prefer to Just Talk to a Specialist?
           </h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
-            Tell us what you&apos;re hiring for — in UAE, India, or globally. We&apos;ll respond within 4 business hours.
+            Tell us what you&apos;re hiring for in UAE, India, or globally. We&apos;ll respond within 4 business hours.
           </p>
           <Link
             href="/#contact"

@@ -5,7 +5,7 @@ import { ArrowRight, MapPin, CheckCircle, Building2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "GCC Recruitment NCR (Gurgaon/Noida) | Tech Hiring Specialist | MutualCS",
   description:
-    "MutualCS is the specialist GCC tech recruitment agency in NCR — Gurgaon, Noida, and Delhi. We fill AI, Cloud, BFSI, and Platform Engineering roles in 30 days with a fee-back guarantee.",
+    "MutualCS is the specialist GCC tech recruitment agency in NCR, Gurgaon, Noida, and Delhi. We fill AI, Cloud, BFSI, and Platform Engineering roles in 30 days with a fee-back guarantee.",
   keywords: [
     "GCC recruitment NCR",
     "GCC hiring Gurgaon",
@@ -36,8 +36,8 @@ const roles = [
 
 const gccStats = [
   { value: "500+", label: "active GCCs in NCR (Gurgaon + Noida)" },
-  { value: "Top 3", label: "India GCC hub — after Bengaluru & Hyderabad" },
-  { value: "BFSI", label: "dominant sector — Citi, AmEx, EY, Deloitte GCCs" },
+  { value: "Top 3", label: "India GCC hub. After Bengaluru & Hyderabad" },
+  { value: "BFSI", label: "dominant sector, Citi, AmEx, EY, Deloitte GCCs" },
   { value: "30 Days", label: "our SLA for NCR mandates" },
 ];
 
@@ -60,7 +60,7 @@ export default function NcrPage() {
         <div className="relative max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-2 text-sm font-mono text-accent mb-6">
             <MapPin className="w-4 h-4" />
-            NCR — Gurgaon · Noida · Delhi
+            NCR, Gurgaon · Noida · Delhi
           </div>
           <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6 leading-[0.95]">
             GCC Tech Hiring
@@ -70,10 +70,10 @@ export default function NcrPage() {
             Done in 30 Days.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            NCR hosts 500+ GCCs — India&apos;s third-largest hub — with particular depth in BFSI,
+            NCR hosts 500+ GCCs. India&apos;s third-largest hub, with particular depth in BFSI,
             consulting, and enterprise technology. MutualCS fills AI, Cloud, and Platform Engineering
             roles with a 30-day SLA and a 20% fee-back guarantee.
-            We hire for UAE, US, UK, Singapore, and Japanese companies — wherever their
+            We hire for UAE, US, UK, Singapore, and Japanese companies, wherever their
             NCR mandate comes from.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -81,7 +81,7 @@ export default function NcrPage() {
               href="/?loc=NCR%20(Gurgaon%2FNoida)#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Hire in NCR — speak to us today
+              Hire in NCR, speak to us today
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -115,11 +115,11 @@ export default function NcrPage() {
           <h2 className="text-4xl font-display tracking-tight mb-12">Companies We Serve in NCR</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates — building India tech teams from Dubai and Abu Dhabi." },
-              { origin: "US Companies", desc: "AI/ML, cloud, and enterprise tech for India GCCs — BFSI and consulting majors concentrated in Gurgaon." },
-              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles — British banks and financial institutions with NCR GCCs." },
-              { origin: "Singapore Companies", desc: "APAC delivery hub roles and engineering — SG-HQ firms tapping NCR&apos;s BFSI and enterprise tech talent." },
-              { origin: "Japanese Companies", desc: "R&D, automotive tech, and enterprise software — Japanese companies with Noida and NCR centres." },
+              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates, building India tech teams from Dubai and Abu Dhabi." },
+              { origin: "US Companies", desc: "AI/ML, cloud, and enterprise tech for India GCCs, BFSI and consulting majors concentrated in Gurgaon." },
+              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and RegTech roles, British banks and financial institutions with NCR GCCs." },
+              { origin: "Singapore Companies", desc: "APAC delivery hub roles and engineering, SG-HQ firms tapping NCR&apos;s BFSI and enterprise tech talent." },
+              { origin: "Japanese Companies", desc: "R&D, automotive tech, and enterprise software, Japanese companies with Noida and NCR centres." },
             ].map((item) => (
               <div key={item.origin} className="bg-card border border-border rounded-xl p-5">
                 <div className="font-semibold mb-1">{item.origin}</div>
@@ -137,7 +137,7 @@ export default function NcrPage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Market</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                NCR&apos;s GCC Talent Market Is Deep — Particularly for BFSI and Enterprise Tech
+                NCR&apos;s GCC Talent Market Is Deep, Particularly for BFSI and Enterprise Tech
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Gurgaon (Gurugram) is home to the India GCCs of Citibank, American Express, EY, Deloitte,
@@ -145,13 +145,13 @@ export default function NcrPage() {
                 HCL parent companies, Samsung, Adobe, and telecom-sector MNCs.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Unlike Bengaluru — which skews heavily toward product and deep tech — NCR has particular
+                Unlike Bengaluru, which skews heavily toward product and deep tech, NCR has particular
                 strength in BFSI technology, enterprise software, ERP, and consulting delivery GCCs.
                 Knowing this distinction matters when sourcing and positioning candidates.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 MutualCS has active networks in both Gurgaon and Noida corridors. When you give us a
-                mandate, we know which companies to target for passive candidates — and we do it in 30 days.
+                mandate, we know which companies to target for passive candidates. And we do it in 30 days.
               </p>
             </div>
             <div>
@@ -214,7 +214,7 @@ export default function NcrPage() {
             Hiring GCC Tech Talent in NCR?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
+            Tell us the role. We&apos;ll tell you if we can fill it in 30 days. And what it will cost.
           </p>
           <Link
             href="/?loc=NCR%20(Gurgaon%2FNoida)#contact"
@@ -230,7 +230,7 @@ export default function NcrPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MutualCS — GCC Recruitment NCR",
+        "name": "MutualCS, GCC Recruitment NCR",
         "description": "Specialist GCC tech recruitment agency in NCR (Gurgaon, Noida, Delhi). AI, Cloud, BFSI, and Platform Engineering roles filled in 30 days with a contractual fee-back guarantee.",
         "url": "https://mutualcs.com/ncr",
         "address": { "@type": "PostalAddress", "addressLocality": "Gurgaon", "addressRegion": "Haryana", "addressCountry": "IN" },

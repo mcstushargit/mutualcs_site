@@ -44,7 +44,7 @@ const scenarios: Record<ScenarioKey, {
     guaranteeLabel: "replacement guarantee",
     extra: "Retained",
     extraLabel: "milestone-based model",
-    desc: "CXO, VP, Country Head, CHRO — retained search with full discretion. Fee split: 33% mandate / 33% shortlist / 33% acceptance. Leadership mandates require deeper market mapping — our 60-day SLA reflects that reality.",
+    desc: "CXO, VP, Country Head, CHRO, retained search with full discretion. Fee split: 33% mandate / 33% shortlist / 33% acceptance. Leadership mandates require deeper market mapping, our 60-day SLA reflects that reality.",
     link: "/executive-search",
     linkLabel: "Executive Search details",
   },
@@ -58,7 +58,7 @@ const scenarios: Record<ScenarioKey, {
     guaranteeLabel: "hires/year capacity",
     extra: "Predictable",
     extraLabel: "monthly recurring model",
-    desc: "One recruiter embedded in your hiring process full-time — your culture, your hiring bar, your tools. Scales without agency markup per head.",
+    desc: "One recruiter embedded in your hiring process full-time, your culture, your hiring bar, your tools. Scales without agency markup per head.",
     link: "/rpo",
     linkLabel: "Embedded RPO details",
   },
@@ -87,7 +87,7 @@ export function FeeCalculator() {
             <span className="text-accent">Actually Cost?</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Pick your hiring scenario — every number is contractual, not estimated.
+            Pick your hiring scenario, every number is contractual, not estimated.
           </p>
         </div>
 

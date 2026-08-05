@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the main difference between a GCC and a BPO?",
-    a: "A GCC (Global Capability Center) is a wholly-owned subsidiary of the parent company — your employees, your IP, your culture. A BPO (Business Process Outsourcing) uses a third-party vendor whose staff work across multiple clients simultaneously. The core difference is ownership and control: GCCs are captive, BPOs are shared.",
+    a: "A GCC (Global Capability Center) is a wholly-owned subsidiary of the parent company, your employees, your IP, your culture. A BPO (Business Process Outsourcing) uses a third-party vendor whose staff work across multiple clients simultaneously. The core difference is ownership and control: GCCs are captive, BPOs are shared.",
   },
   {
     q: "Is a GCC more expensive than a BPO?",
@@ -29,27 +29,27 @@ const faqs = [
   },
   {
     q: "Who owns the IP in a GCC vs a BPO?",
-    a: "In a GCC, all intellectual property created by employees belongs entirely to the parent company — there is no ambiguity. In a BPO arrangement, IP ownership depends entirely on the contract terms, and disputes are common, particularly when the vendor uses shared tooling, shared codebase, or rotates staff. For any technology or product work, IP clarity is a major reason companies choose GCCs.",
+    a: "In a GCC, all intellectual property created by employees belongs entirely to the parent company, there is no ambiguity. In a BPO arrangement, IP ownership depends entirely on the contract terms, and disputes are common, particularly when the vendor uses shared tooling, shared codebase, or rotates staff. For any technology or product work, IP clarity is a major reason companies choose GCCs.",
   },
   {
     q: "Can a company transition from BPO to GCC?",
     a: "Yes, and this is one of the most common GCC origin stories. A company starts with a BPO arrangement to test India delivery, then transitions to a wholly-owned GCC once they are confident in the talent model and know what roles they need. MutualCS specialises in founding team hires for exactly these transitions.",
   },
   {
-    q: "Which is better for AI and engineering work — GCC or BPO?",
-    a: "For any work involving proprietary technology, AI model development, core product engineering, or sensitive data — GCC is unambiguously better. BPOs are structurally unsuitable for IP-sensitive technology work because staff work across clients, vendor margins incentivise volume over quality, and long-term talent retention is difficult. Top AI and engineering talent in India strongly prefer GCC roles over BPO roles.",
+    q: "Which is better for AI and engineering work, GCC or BPO?",
+    a: "For any work involving proprietary technology, AI model development, core product engineering, or sensitive data, GCC is unambiguously better. BPOs are structurally unsuitable for IP-sensitive technology work because staff work across clients, vendor margins incentivise volume over quality, and long-term talent retention is difficult. Top AI and engineering talent in India strongly prefer GCC roles over BPO roles.",
   },
 ];
 
 const comparison = [
   { dimension: "Ownership", gcc: "100% owned by parent company", bpo: "Third-party vendor" },
   { dimension: "Employees", gcc: "On parent company payroll", bpo: "Vendor's employees, shared across clients" },
-  { dimension: "IP ownership", gcc: "Fully owned by parent", bpo: "Governed by contract — often disputed" },
+  { dimension: "IP ownership", gcc: "Fully owned by parent", bpo: "Governed by contract, often disputed" },
   { dimension: "Upfront cost", gcc: "High (entity setup, infrastructure, hiring)", bpo: "Low (no capital required)" },
-  { dimension: "Ongoing cost", gcc: "Lower at scale — no vendor margin", bpo: "Higher — vendor margin of 25–40% built in" },
-  { dimension: "Control", gcc: "Full — you manage hiring, culture, processes", bpo: "Limited — governed by SLAs and SOWs" },
+  { dimension: "Ongoing cost", gcc: "Lower at scale, no vendor margin", bpo: "Higher, vendor margin of 25–40% built in" },
+  { dimension: "Control", gcc: "Full, you manage hiring, culture, processes", bpo: "Limited, governed by SLAs and SOWs" },
   { dimension: "Talent quality", gcc: "Hire to your standards; top talent prefers GCCs", bpo: "Vendor controls hiring; attrition is high" },
-  { dimension: "Data security", gcc: "Highest — your systems, your access controls", bpo: "Risk of shared infrastructure and staff rotation" },
+  { dimension: "Data security", gcc: "Highest, your systems, your access controls", bpo: "Risk of shared infrastructure and staff rotation" },
   { dimension: "Scalability", gcc: "Scale 5 to 5,000 in the same legal entity", bpo: "Renegotiate contracts at each scale point" },
   { dimension: "Best for", gcc: "Tech, AI/ML, product, R&D, core operations", bpo: "Commoditised processes, short-term flex work" },
 ];
@@ -67,12 +67,12 @@ export default function GccVsBpoPage() {
         </div>
       </div>
 
-      {/* Quick Answer — AEO featured snippet target */}
+      {/* Quick Answer. AEO featured snippet target */}
       <div className="border-b border-border bg-accent/5">
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            A <strong>GCC (Global Capability Center)</strong> is a wholly-owned offshore subsidiary — your employees, your IP, your culture. A <strong>BPO (Business Process Outsourcing)</strong> is a third-party vendor whose staff work across multiple clients. GCCs cost more to set up but are cheaper at scale, offer full IP ownership, and attract significantly better tech talent. BPOs suit short-term or commoditised work with no capital commitment.
+            A <strong>GCC (Global Capability Center)</strong> is a wholly-owned offshore subsidiary, your employees, your IP, your culture. A <strong>BPO (Business Process Outsourcing)</strong> is a third-party vendor whose staff work across multiple clients. GCCs cost more to set up but are cheaper at scale, offer full IP ownership, and attract significantly better tech talent. BPOs suit short-term or commoditised work with no capital commitment.
           </p>
         </div>
       </div>
@@ -86,20 +86,19 @@ export default function GccVsBpoPage() {
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
             Companies building an India delivery strategy face an early strategic choice: build a
             wholly-owned Global Capability Center or engage a Business Process Outsourcing vendor.
-            This guide explains the structural differences — and when each model is right.
+            This guide explains the structural differences. And when each model is right.
           </p>
 
           <section className="mb-16">
             <h2 className="text-3xl font-display tracking-tight mb-6">The Core Structural Difference</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              The distinction is simple but consequential. A GCC is yours — a wholly-owned Private
+              The distinction is simple but consequential. A GCC is yours. A wholly-owned Private
               Limited Company (or branch) registered in India, with employees on your payroll, working
               exclusively on your products and services, under your management and culture.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               A BPO is a vendor relationship. You contract with a third-party company (Infosys BPM,
-              Wipro, WNS, EXL, etc.) who deploys their own employees — who also work for other clients —
-              to deliver a defined scope of work. You get outputs; you do not get a team.
+              Wipro, WNS, EXL, etc.) who deploys their own employees, who also work for other clients, to deliver a defined scope of work. You get outputs; you do not get a team.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This structural difference cascades into everything: IP ownership, talent quality, cost
@@ -135,10 +134,10 @@ export default function GccVsBpoPage() {
             <h2 className="text-3xl font-display tracking-tight mb-6">When a GCC Is the Right Choice</h2>
             <div className="space-y-4">
               {[
-                { title: "Technology and engineering work", body: "Any work involving proprietary software, AI/ML models, core product development, or platform engineering belongs in a GCC. BPO vendors are structurally unsuitable — shared staff, shared infrastructure, and a vendor margin that deprioritises quality." },
+                { title: "Technology and engineering work", body: "Any work involving proprietary software, AI/ML models, core product development, or platform engineering belongs in a GCC. BPO vendors are structurally unsuitable, shared staff, shared infrastructure, and a vendor margin that deprioritises quality." },
                 { title: "Long-term cost efficiency", body: "If your India delivery will involve 50+ people over a 5-year horizon, GCC economics win. You eliminate the vendor margin (25–40%) and gain direct cost control. Most companies that model the NPV find GCCs 40–60% cheaper at scale." },
                 { title: "IP-sensitive work", body: "Anything you intend to patent, productise, or protect cannot sit in a BPO. Full-stop." },
-                { title: "Talent quality requirements", body: "Senior AI engineers, cloud architects, and engineering leads actively avoid BPO roles. If you need top-quartile tech talent, only a GCC can attract them — the employer brand, the work quality, and the career path all require a captive structure." },
+                { title: "Talent quality requirements", body: "Senior AI engineers, cloud architects, and engineering leads actively avoid BPO roles. If you need top-quartile tech talent, only a GCC can attract them, the employer brand, the work quality, and the career path all require a captive structure." },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-4 border-l-2 border-accent/30 pl-5">
                   <CheckCircle className="w-4 h-4 text-accent mt-1 shrink-0" />
@@ -155,7 +154,7 @@ export default function GccVsBpoPage() {
             <h2 className="text-3xl font-display tracking-tight mb-6">When a BPO Makes Sense</h2>
             <div className="space-y-4">
               {[
-                { title: "Short-term or experimental work", body: "Testing whether India delivery works for your business — without committing capital to entity formation — is a valid BPO use case. Many GCCs start with a BPO arrangement before transitioning to captive." },
+                { title: "Short-term or experimental work", body: "Testing whether India delivery works for your business, without committing capital to entity formation. Is a valid BPO use case. Many GCCs start with a BPO arrangement before transitioning to captive." },
                 { title: "Commoditised, well-defined processes", body: "Claims processing, data entry, rule-based support queues, and other volume-driven processes with clear SOPs and low IP sensitivity are well-suited to BPO." },
                 { title: "Flex capacity for seasonal work", body: "Work that spikes seasonally and does not require deep institutional knowledge is a legitimate BPO use case." },
               ].map((item) => (
@@ -190,7 +189,7 @@ export default function GccVsBpoPage() {
             Building a GCC? We Fill the Roles.
           </h2>
           <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
-            From founding Country Head to your 50th engineer — MutualCS is the specialist
+            From founding Country Head to your 50th engineer, MutualCS is the specialist
             recruitment partner for GCC builds globally.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -210,7 +209,7 @@ export default function GccVsBpoPage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "GCC vs BPO: Key Differences Explained",
-        "description": "A complete comparison of Global Capability Centers and Business Process Outsourcing — ownership, IP, cost, talent, and when to choose each model.",
+        "description": "A complete comparison of Global Capability Centers and Business Process Outsourcing, ownership, IP, cost, talent, and when to choose each model.",
         "datePublished": "2026-05-01",
         "dateModified": "2026-05-07",
         "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },

@@ -5,7 +5,7 @@ import { ArrowRight, Globe, CheckCircle, Building2, Clock, ShieldCheck, MapPin }
 export const metadata: Metadata = {
   title: "Recruitment Agency for UAE Companies | Hire in UAE, India & Globally | MutualCS",
   description:
-    "MutualCS is the specialist recruitment partner for UAE companies. We find tech, AI/ML, and executive talent in UAE, India, or anywhere globally — 30-day SLA with fee-back guarantee.",
+    "MutualCS is the specialist recruitment partner for UAE companies. We find tech, AI/ML, and executive talent in UAE, India, or anywhere globally, 30-day SLA with fee-back guarantee.",
   keywords: [
     "recruitment agency UAE",
     "tech recruitment Dubai",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recruitment Agency for UAE Companies | Hire in UAE, India & Globally | MutualCS",
     description:
-      "MutualCS finds tech, AI/ML, and executive talent for UAE companies — in UAE, India, or globally. 30-day SLA, contractual fee-back guarantee.",
+      "MutualCS finds tech, AI/ML, and executive talent for UAE companies in UAE, India, or globally. 30-day SLA, contractual fee-back guarantee.",
     url: "https://mutualcs.com/uae",
     locale: "en_AE",
   },
@@ -44,7 +44,7 @@ const whereWeHire = [
   {
     flag: "🇦🇪",
     location: "UAE & Middle East",
-    desc: "Find local talent in Dubai, Abu Dhabi, and across the Gulf — engineers, BFSI professionals, and senior leaders already in-market.",
+    desc: "Find local talent in Dubai, Abu Dhabi, and across the Gulf, engineers, BFSI professionals, and senior leaders already in-market.",
     tags: ["Dubai", "Abu Dhabi", "Sharjah", "Riyadh", "Doha"],
     link: "/middle-east",
   },
@@ -58,7 +58,7 @@ const whereWeHire = [
   {
     flag: "🌐",
     location: "Global",
-    desc: "Permanent placement across the US, UK, Singapore, Japan, and Europe — wherever your team needs to be built.",
+    desc: "Permanent placement across the US, UK, Singapore, Japan, and Europe, wherever your team needs to be built.",
     tags: ["United States", "United Kingdom", "Singapore", "Japan", "Europe"],
     link: "/tech-recruitment",
   },
@@ -103,7 +103,7 @@ const differentiators = [
   {
     icon: Clock,
     title: "30-Day Shortlist SLA",
-    desc: "Contractual. Miss it and you receive a 20% fee reduction automatically — no chasing required.",
+    desc: "Contractual. Miss it and you receive a 20% fee reduction automatically, no chasing required.",
   },
   {
     icon: ShieldCheck,
@@ -113,7 +113,7 @@ const differentiators = [
   {
     icon: Building2,
     title: "Permanent Placement Only",
-    desc: "We don't do contracting or staffing. Every mandate is a permanent hire — better quality, longer retention.",
+    desc: "We don't do contracting or staffing. Every mandate is a permanent hire, better quality, longer retention.",
   },
   {
     icon: Globe,
@@ -125,7 +125,7 @@ const differentiators = [
 const faqs = [
   {
     q: "Can MutualCS find talent for roles based in UAE, not just India?",
-    a: "Yes — we recruit for permanent roles wherever they are based. If you need to hire an AI Engineer in Dubai, a VP Engineering in Abu Dhabi, or a Cybersecurity lead in Riyadh, we find and place them. We are not limited to India hiring. UAE-based roles, India GCC roles, and international placements are all within scope.",
+    a: "Yes, we recruit for permanent roles wherever they are based. If you need to hire an AI Engineer in Dubai, a VP Engineering in Abu Dhabi, or a Cybersecurity lead in Riyadh, we find and place them. We are not limited to India hiring. UAE-based roles, India GCC roles, and international placements are all within scope.",
   },
   {
     q: "What locations does MutualCS recruit for?",
@@ -133,7 +133,7 @@ const faqs = [
   },
   {
     q: "How do UAE companies hire tech talent through MutualCS?",
-    a: "We manage the full cycle — market mapping, headhunting (not job boards), technical screening, and offer management. For tech and specialist roles the contractual SLA is 30 days to first shortlist, whether the role is based in Dubai or Bengaluru. The success fee is 16–18% of the hire's first-year CTC.",
+    a: "We manage the full cycle, market mapping, headhunting (not job boards), technical screening, and offer management. For tech and specialist roles the contractual SLA is 30 days to first shortlist, whether the role is based in Dubai or Bengaluru. The success fee is 16–18% of the hire's first-year CTC.",
   },
   {
     q: "Does MutualCS recruit for DIFC and ADGM-regulated entities?",
@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "Can MutualCS help build an India GCC for a UAE company?",
-    a: "Yes. For greenfield India GCC setups, our Embedded RPO model deploys a dedicated recruiter into your hiring process — from the first 5 hires to 50+. But this is one of three paths we support. If you want to hire locally in UAE or internationally instead, those mandates work the same way.",
+    a: "Yes. For greenfield India GCC setups, our Embedded RPO model deploys a dedicated recruiter into your hiring process, from the first 5 hires to 50+. But this is one of three paths we support. If you want to hire locally in UAE or internationally instead, those mandates work the same way.",
   },
   {
     q: "What does it cost to hire through MutualCS from UAE?",
@@ -179,7 +179,7 @@ export default function UAEPage() {
             30 Days. Guaranteed.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            MutualCS is the recruitment partner for UAE companies who need to hire — in UAE,
+            MutualCS is the recruitment partner for UAE companies who need to hire in UAE,
             build an India team, or place talent anywhere globally. One agency, one SLA,
             wherever the role needs to be.
           </p>
@@ -226,7 +226,7 @@ export default function UAEPage() {
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Where We Hire</span>
           <h2 className="text-4xl font-display tracking-tight mb-4">We Follow Your Hiring Wherever It Goes</h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-            UAE. India. US. UK. Singapore. Japan. You tell us where the role is — we find the talent.
+            UAE. India. US. UK. Singapore. Japan. You tell us where the role is, we find the talent.
             The SLA and guarantee apply regardless of location.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -272,7 +272,7 @@ export default function UAEPage() {
             </div>
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Roles We Fill</span>
-              <h2 className="text-3xl font-display tracking-tight mb-8">Tech to C-Suite — In Any Location</h2>
+              <h2 className="text-3xl font-display tracking-tight mb-8">Tech to C-Suite, in Any Location</h2>
               <ul className="space-y-3">
                 {roles.map((role) => (
                   <li key={role} className="flex items-center gap-3 text-muted-foreground">
@@ -307,7 +307,7 @@ export default function UAEPage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">Engagement Models</span>
-          <h2 className="text-4xl font-display tracking-tight mb-4">Transparent Pricing — Any Location</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-4">Transparent Pricing. Any Location</h2>
           <p className="text-muted-foreground mb-12">The same models apply whether you are hiring in Dubai, Bengaluru, or Singapore.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -396,7 +396,7 @@ export default function UAEPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Recruitment Agency for UAE Companies — UAE, India & Global Hiring",
+        "name": "Recruitment Agency for UAE Companies, UAE, India & Global Hiring",
         "description": "MutualCS provides specialist recruitment for UAE companies hiring in UAE, India, or globally. Tech, AI/ML, BFSI, and executive roles with a 30-day contractual SLA.",
         "provider": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
         "serviceType": "Permanent Recruitment",
@@ -416,7 +416,7 @@ export default function UAEPage() {
           "name": "Recruitment Services for UAE Companies",
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Contingent Tech Hire", "description": "16–18% success fee, 30-day SLA, tech and specialist roles in UAE, India, or globally" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executive Search", "description": "25–28% retained search, Country Head, VP, C-suite, CHRO — any location" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executive Search", "description": "25–28% retained search, Country Head, VP, C-suite, CHRO. Any location" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Embedded RPO", "description": "Dedicated recruiter, monthly retainer + per-hire, team build-outs in any market" } }
           ]
         }

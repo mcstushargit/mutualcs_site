@@ -160,7 +160,7 @@ export function FooterSection() {
         {/* SEO keywords section */}
         <div className="border-t border-border pt-8 mb-8">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            <strong className="text-muted-foreground">Recruitment Services:</strong> Specialist recruitment agency for UAE companies hiring in India, UAE & globally | GCC recruitment Bengaluru Hyderabad NCR Pune | Tech recruitment Dubai Abu Dhabi | Executive search UAE | India GCC setup for UAE US UK Singapore Japan companies | AI ML GenAI hiring India | Embedded RPO for Global Capability Centers | 30-day contractual SLA with fee-back guarantee | Permanent placement only — no staffing or contracting
+            <strong className="text-muted-foreground">Recruitment Services:</strong> Specialist recruitment agency for UAE companies hiring in India, UAE & globally | GCC recruitment Bengaluru Hyderabad NCR Pune | Tech recruitment Dubai Abu Dhabi | Executive search UAE | India GCC setup for UAE US UK Singapore Japan companies | AI ML GenAI hiring India | Embedded RPO for Global Capability Centers | 30-day contractual SLA with fee-back guarantee | Permanent placement only, no staffing or contracting
           </p>
         </div>
         
@@ -170,7 +170,7 @@ export function FooterSection() {
             &copy; {new Date().getFullYear()} Mutual Consulting Services. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Specialist GCC Recruitment Partner — Global
+            Specialist GCC Recruitment Partner, Global
           </p>
         </div>
       </div>

@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "What are GCC salaries in Hyderabad vs Bengaluru?",
-    a: "Hyderabad GCC salaries are typically 10–15% lower than Bengaluru at equivalent seniority and function. The gap narrows at leadership level (VP+) where total comp is negotiated individually. Hyderabad's lower cost of living partially offsets the salary difference — take-home purchasing power is often equivalent.",
+    a: "Hyderabad GCC salaries are typically 10–15% lower than Bengaluru at equivalent seniority and function. The gap narrows at leadership level (VP+) where total comp is negotiated individually. Hyderabad's lower cost of living partially offsets the salary difference, take-home purchasing power is often equivalent.",
   },
   {
     q: "How often should GCCs benchmark their compensation?",
@@ -112,7 +112,7 @@ export default function GccSalaryBenchmarksPage() {
         </div>
       </div>
 
-      {/* Quick Answer — AEO featured snippet target */}
+      {/* Quick Answer. AEO featured snippet target */}
       <div className="border-b border-border bg-accent/5">
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
@@ -130,7 +130,7 @@ export default function GccSalaryBenchmarksPage() {
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-4">
             Compensation data for engineering, AI/ML, cloud, and leadership roles across
-            Bengaluru, Hyderabad, Pune, and NCR — updated from MutualCS live placement
+            Bengaluru, Hyderabad, Pune, and NCR, updated from MutualCS live placement
             activity through May 2026.
           </p>
           <p className="text-sm text-muted-foreground mb-12">
@@ -141,8 +141,7 @@ export default function GccSalaryBenchmarksPage() {
             <h2 className="text-3xl font-display tracking-tight mb-4">Software Engineering</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Engineering benchmarks cover full-stack, backend, and frontend engineers across
-              tier-1 GCCs (global Fortune 500 captives). Compensation varies by tech stack —
-              Rust, Go, and Kotlin specialists command 10–20% premiums over equivalent Java or Python
+              tier-1 GCCs (global Fortune 500 captives). Compensation varies by tech stack, Rust, Go, and Kotlin specialists command 10–20% premiums over equivalent Java or Python
               generalists at senior levels.
             </p>
             <SalaryTable
@@ -155,8 +154,8 @@ export default function GccSalaryBenchmarksPage() {
             <h2 className="text-3xl font-display tracking-tight mb-4">AI / ML Engineering</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               AI and ML compensation has moved faster than any other function since 2024. GenAI
-              specialists — engineers with hands-on experience fine-tuning LLMs, building RAG
-              pipelines, or deploying agentic systems — command a 20–35% premium over classical
+              specialists, engineers with hands-on experience fine-tuning LLMs, building RAG
+              pipelines, or deploying agentic systems, command a 20–35% premium over classical
               ML practitioners at the same experience level. Demand currently outpaces supply in
               all four cities.
             </p>
@@ -208,7 +207,7 @@ export default function GccSalaryBenchmarksPage() {
               {[
                 {
                   city: "Bengaluru",
-                  note: "The highest-paying GCC market in India. Home to 35%+ of all GCCs. Competition for senior engineers is most intense here — expect counter-offers and competing processes. Typical notice periods: 60–90 days (some up to 6 months for senior roles)."
+                  note: "The highest-paying GCC market in India. Home to 35%+ of all GCCs. Competition for senior engineers is most intense here, expect counter-offers and competing processes. Typical notice periods: 60–90 days (some up to 6 months for senior roles)."
                 },
                 {
                   city: "Hyderabad",
@@ -268,7 +267,7 @@ export default function GccSalaryBenchmarksPage() {
             Need a Role-Specific Salary Benchmark?
           </h2>
           <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
-            Tell us the role, city, seniority, and tech stack — we&apos;ll share live market
+            Tell us the role, city, seniority, and tech stack, we&apos;ll share live market
             data from recent placements within 4 hours. No obligation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -288,7 +287,7 @@ export default function GccSalaryBenchmarksPage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "GCC Salary Benchmarks India 2026",
-        "description": "Engineering, AI/ML, cloud, and leadership salary benchmarks for Global Capability Centers across Bengaluru, Hyderabad, Pune, and NCR — from MutualCS placement data.",
+        "description": "Engineering, AI/ML, cloud, and leadership salary benchmarks for Global Capability Centers across Bengaluru, Hyderabad, Pune, and NCR, from MutualCS placement data.",
         "datePublished": "2026-05-01",
         "dateModified": "2026-05-07",
         "author": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },

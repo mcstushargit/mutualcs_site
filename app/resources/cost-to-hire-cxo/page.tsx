@@ -29,7 +29,7 @@ const feeModels = [
     fee: "25–33%",
     basis: "of first-year total compensation",
     structure: "Split across three milestones: engagement, shortlist delivery, and candidate acceptance.",
-    bestFor: "CEO, CTO, CFO, CHRO, Country Head, Board — confidential and business-critical mandates.",
+    bestFor: "CEO, CTO, CFO, CHRO, Country Head, Board, confidential and business-critical mandates.",
     note: "Standard for C-suite. The retainer buys dedicated senior consultant time and guarantees the search is actually worked, not queued.",
   },
   {
@@ -53,7 +53,7 @@ const feeModels = [
 const hiddenCosts = [
   {
     label: "Vacancy cost",
-    detail: "An unfilled CXO seat costs the business daily in stalled decisions, drift, and deferred revenue — usually far more than the search fee itself.",
+    detail: "An unfilled CXO seat costs the business daily in stalled decisions, drift, and deferred revenue, usually far more than the search fee itself.",
   },
   {
     label: "Failed hire cost",
@@ -61,7 +61,7 @@ const hiddenCosts = [
   },
   {
     label: "Internal time cost",
-    detail: "A DIY C-suite search consumes senior leadership and board hours — the most expensive time in the company, spent on sourcing rather than running the business.",
+    detail: "A DIY C-suite search consumes senior leadership and board hours, the most expensive time in the company, spent on sourcing rather than running the business.",
   },
   {
     label: "Confidentiality risk",
@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: "Is an executive search firm worth the fee?",
-    a: "The comparison is not fee versus zero — it is fee versus the cost of the seat staying empty and the risk of a wrong hire. A vacant CXO role usually costs the business more per month than the entire search fee, and a failed executive hire commonly costs several times annual salary once severance, lost momentum, and re-hiring are included.",
+    a: "The comparison is not fee versus zero. It is fee versus the cost of the seat staying empty and the risk of a wrong hire. A vacant CXO role usually costs the business more per month than the entire search fee, and a failed executive hire commonly costs several times annual salary once severance, lost momentum, and re-hiring are included.",
   },
   {
     q: "How long does an executive search take?",
@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: "What guarantees should I expect from an executive search firm?",
-    a: "At minimum, a replacement guarantee if the hire exits within an agreed period. MutualCS provides a 3-month replacement guarantee on all placements plus a contractual shortlist SLA — miss the deadline and the client automatically receives a 20% fee reduction. Ask any firm to put both in writing before engaging.",
+    a: "At minimum, a replacement guarantee if the hire exits within an agreed period. MutualCS provides a 3-month replacement guarantee on all placements plus a contractual shortlist SLA, miss the deadline and the client automatically receives a 20% fee reduction. Ask any firm to put both in writing before engaging.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function CostToHireCxoPage() {
             <span className="text-accent">to Hire a CXO?</span>
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Executive search fees explained without the mystique — the three pricing models,
+            Executive search fees explained without the mystique, the three pricing models,
             what each is genuinely worth, and the costs most boards forget to count.
           </p>
         </div>
@@ -192,7 +192,7 @@ export default function CostToHireCxoPage() {
               { icon: TrendingDown, t: "A penalty for missing it", d: "MutualCS returns 20% of the fee automatically. Ask any firm what happens if they are late." },
               { icon: Calculator, t: "A replacement guarantee", d: "Minimum three months. Confirm whether it is a free re-search or a refund." },
               { icon: AlertTriangle, t: "Off-limits clarity", d: "Which companies can the firm not approach because they are existing clients? This shrinks your talent pool invisibly." },
-              { icon: Clock, t: "Named consultant", d: "Who actually runs the search — the partner who pitched, or a junior researcher?" },
+              { icon: Clock, t: "Named consultant", d: "Who actually runs the search, the partner who pitched, or a junior researcher?" },
               { icon: TrendingDown, t: "Reporting cadence", d: "Weekly written pipeline updates, or you find out at week six that nothing has happened." },
             ].map((item) => (
               <div key={item.t} className="border-l-2 border-accent/30 pl-6">
@@ -209,7 +209,7 @@ export default function CostToHireCxoPage() {
       <section className="py-20 border-b border-border">
         <div className="max-w-[1100px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">FAQ</span>
-          <h2 className="text-3xl lg:text-4xl font-display tracking-tight mb-12">Executive Search Costs — Answered</h2>
+          <h2 className="text-3xl lg:text-4xl font-display tracking-tight mb-12">Executive Search Costs. Answered</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {faqs.map((f) => (
               <div key={f.q} className="border-l-2 border-accent/30 pl-6">
@@ -229,7 +229,7 @@ export default function CostToHireCxoPage() {
           </h2>
           <p className="text-accent-foreground/80 mb-10 max-w-xl mx-auto">
             Tell us the role, the level, and the market. We&apos;ll come back with a fee, a timeline,
-            and the SLA in writing — within 4 business hours.
+            and the SLA in writing, within 4 business hours.
           </p>
           <Link
             href="/?service=Executive%20%2F%20Leadership%20Search#contact"

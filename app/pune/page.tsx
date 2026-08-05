@@ -70,7 +70,7 @@ export default function PunePage() {
             Pune is India&apos;s fastest-growing Tier 2 GCC expansion hub. Fortune 500s are
             establishing and scaling GCCs here for cost arbitrage without compromising on engineering
             quality. MutualCS is the specialist tech recruiter that makes this work.
-            We hire for UAE, US, UK, Singapore, and Japanese companies — wherever their
+            We hire for UAE, US, UK, Singapore, and Japanese companies, wherever their
             Pune mandate comes from.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -78,7 +78,7 @@ export default function PunePage() {
               href="/?loc=Pune#contact"
               className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-background px-8 h-12 rounded-full font-semibold text-sm transition-colors group"
             >
-              Hire in Pune — speak to us today
+              Hire in Pune, speak to us today
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -112,11 +112,11 @@ export default function PunePage() {
           <h2 className="text-4xl font-display tracking-tight mb-12">Companies We Serve in Pune</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates — building India tech teams from Dubai and Abu Dhabi." },
-              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs — automotive, pharma, and enterprise tech companies." },
-              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and engineering roles — British firms with Pune development centres." },
-              { origin: "Singapore Companies", desc: "APAC delivery hub roles and engineering — SG-HQ firms using Pune for cost-effective scale." },
-              { origin: "Japanese Companies", desc: "R&D, embedded, and automotive tech — Japan&apos;s automotive and manufacturing giants with Pune GCCs." },
+              { origin: "UAE & Gulf Companies", desc: "BFSI, fintech, and digital transformation mandates, building India tech teams from Dubai and Abu Dhabi." },
+              { origin: "US Companies", desc: "AI/ML, cloud, and platform engineering for India GCCs. Automotive, pharma, and enterprise tech companies." },
+              { origin: "UK Companies", desc: "BFSI compliance tech, fintech, and engineering roles, British firms with Pune development centres." },
+              { origin: "Singapore Companies", desc: "APAC delivery hub roles and engineering, SG-HQ firms using Pune for cost-effective scale." },
+              { origin: "Japanese Companies", desc: "R&D, embedded, and automotive tech, Japan&apos;s automotive and manufacturing giants with Pune GCCs." },
             ].map((item) => (
               <div key={item.origin} className="bg-card border border-border rounded-xl p-5">
                 <div className="font-semibold mb-1">{item.origin}</div>
@@ -134,12 +134,12 @@ export default function PunePage() {
             <div>
               <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">The Opportunity</span>
               <h2 className="text-4xl font-display tracking-tight mb-6">
-                Pune&apos;s GCC Expansion Needs Specialist Recruiters — Not Generalists
+                Pune&apos;s GCC Expansion Needs Specialist Recruiters, Not Generalists
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 GCCs expanding to Pune are chasing two things simultaneously: quality engineering talent
                 and 20–30% cost savings versus Bengaluru. The challenge is that Pune&apos;s tech talent
-                pool is deep but less mapped — passive candidates here require specialist outreach, not job board posts.
+                pool is deep but less mapped, passive candidates here require specialist outreach, not job board posts.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 MutualCS has built Pune-specific talent pipelines in AI/ML, Cloud, and Platform Engineering.
@@ -210,7 +210,7 @@ export default function PunePage() {
             Hiring GCC Tech Talent in Pune?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us the role. We&apos;ll tell you if we can fill it in 30 days — and what it will cost.
+            Tell us the role. We&apos;ll tell you if we can fill it in 30 days. And what it will cost.
           </p>
           <Link
             href="/?loc=Pune#contact"
@@ -226,7 +226,7 @@ export default function PunePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MutualCS — GCC Recruitment Pune",
+        "name": "MutualCS, GCC Recruitment Pune",
         "description": "Specialist GCC tech recruitment agency in Pune. AI, Cloud, Platform Engineering & Cybersecurity roles filled in 30 days with a contractual fee-back guarantee.",
         "url": "https://mutualcs.com/pune",
         "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
@@ -267,7 +267,7 @@ export default function PunePage() {
           {
             "@type": "Question",
             "name": "How does MutualCS recruit in Pune?",
-            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS has an active candidate network in Pune across GCCs and product companies. We source passively — reaching out to candidates who are not on job boards — and deliver a curated shortlist of 4–6 interview-ready profiles within 30 days of mandate signature, backed by our contractual fee-back guarantee." }
+            "acceptedAnswer": { "@type": "Answer", "text": "MutualCS has an active candidate network in Pune across GCCs and product companies. We source passively, reaching out to candidates who are not on job boards. And deliver a curated shortlist of 4–6 interview-ready profiles within 30 days of mandate signature, backed by our contractual fee-back guarantee." }
           }
         ]
       })}} />

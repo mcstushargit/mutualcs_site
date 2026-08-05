@@ -88,13 +88,13 @@ export const metadata: Metadata = {
     url: 'https://mutualcs.com',
     siteName: 'Mutual Consulting Services',
     title: 'MutualCS | GCC Recruitment Agency for UAE & Global Companies',
-    description: 'Specialist recruitment agency for GCCs — tech, AI/ML, and executive roles in India. Trusted by UAE, US, UK, and Singapore-headquartered companies. 30-day SLA, guaranteed.',
+    description: 'Specialist recruitment agency for GCCs, tech, AI/ML, and executive roles in India. Trusted by UAE, US, UK, and Singapore-headquartered companies. 30-day SLA, guaranteed.',
     images: [
       {
         url: 'https://mutualcs.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'MutualCS — India\'s fastest GCC recruitment agency. 30-day SLA.',
+        alt: 'MutualCS. India\'s fastest GCC recruitment agency. 30-day SLA.',
       },
     ],
   },
@@ -134,7 +134,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <head>
-        {/* Organization — enriched for GEO/LLM entity recognition */}
+        {/* Organization, enriched for GEO/LLM entity recognition */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -213,7 +213,7 @@ export default function RootLayout({
                       "@type": "Service",
                       "name": "Tech Recruitment",
                       "url": "https://mutualcs.com/tech-recruitment",
-                      "description": "Permanent tech hiring globally — engineers, architects, data scientists."
+                      "description": "Permanent tech hiring globally, engineers, architects, data scientists."
                     }
                   },
                   {
@@ -230,7 +230,7 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Embedded RPO",
-                      "description": "Recruitment Process Outsourcing — dedicated embedded recruiter for high-volume GCC hiring."
+                      "description": "Recruitment Process Outsourcing, dedicated embedded recruiter for high-volume GCC hiring."
                     }
                   }
                 ]
@@ -238,7 +238,7 @@ export default function RootLayout({
             })
           }}
         />
-        {/* WebSite — enables sitelinks search box in Google */}
+        {/* WebSite, enables sitelinks search box in Google */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -247,7 +247,7 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "MutualCS",
               "url": "https://mutualcs.com",
-              "description": "India's fastest GCC recruitment agency — specialist tech and executive search for Global Capability Centers.",
+              "description": "India's fastest GCC recruitment agency, specialist tech and executive search for Global Capability Centers.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {

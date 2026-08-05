@@ -4,28 +4,28 @@ const steps = [
   {
     number: "01",
     title: "We Dissect the Brief",
-    description: "Not a tick-box intake form. A working session where we map your tech stack, team topology, bar-setters, and dealbreakers — so we hunt for the right person, not a keyword match.",
+    description: "Not a tick-box intake form. A working session where we map your tech stack, team topology, bar-setters, and dealbreakers, so we hunt for the right person, not a keyword match.",
     output: "A signed-off search brief",
     duration: "Day 1"
   },
   {
     number: "02",
     title: "Active Market Mapping",
-    description: "We don't post job ads and wait. We headhunt — mapping target profiles across passive networks, referral chains, and competitor pools. You see the pipeline as it builds.",
+    description: "We don't post job ads and wait. We headhunt, mapping target profiles across passive networks, referral chains, and competitor pools. You see the pipeline as it builds.",
     output: "Live candidate pipeline",
     duration: "Day 2–7"
   },
   {
     number: "03",
     title: "Pre-Screened Shortlist",
-    description: "Every candidate is called, assessed on technical depth and culture fit, and benchmarked against your bar. You receive 4–6 interview-ready candidates — not a stack of CVs to sort through.",
+    description: "Every candidate is called, assessed on technical depth and culture fit, and benchmarked against your bar. You receive 4–6 interview-ready candidates, not a stack of CVs to sort through.",
     output: "4–6 interview-ready profiles",
     duration: "Day 8–14"
   },
   {
     number: "04",
     title: "Interview Velocity",
-    description: "We coordinate scheduling, prep candidates, and close feedback loops fast. Keeping momentum through this stage is where most agencies drop the ball — we don't.",
+    description: "We coordinate scheduling, prep candidates, and close feedback loops fast. Keeping momentum through this stage is where most agencies drop the ball, we don't.",
     output: "Feedback loop closed",
     duration: "Day 14–21"
   },
@@ -54,7 +54,7 @@ export function ProcessSection() {
             30 Days From Brief to Hired.<br />Here's Exactly How.
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            No black boxes. No agency theatre. Every shortlist is contractual — miss the 30-day SLA and you receive a{" "}
+            No black boxes. No agency theatre. Every shortlist is contractual, miss the 30-day SLA and you receive a{" "}
             <span className="text-foreground font-medium">20% fee reduction, automatically</span>.
           </p>
         </div>

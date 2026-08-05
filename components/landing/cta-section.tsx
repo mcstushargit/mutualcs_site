@@ -56,7 +56,7 @@ export function CtaSection() {
 
               <p className="text-lg text-accent-foreground/80 mb-10 leading-relaxed max-w-lg">
                 30-day SLA for tech roles. 60-day for leadership and executive mandates.
-                One partner, one accountability standard — contractual at every level.
+                One partner, one accountability standard, contractual at every level.
                 No competitor offers this.
               </p>
 
@@ -94,7 +94,7 @@ export function CtaSection() {
               </div>
             </div>
 
-            {/* Right — floating stat cards */}
+            {/* Right, floating stat cards */}
             <div className="hidden lg:flex flex-col gap-4 w-72">
               {[
                 { value: "200+", label: "Roles placed across India's top GCCs" },

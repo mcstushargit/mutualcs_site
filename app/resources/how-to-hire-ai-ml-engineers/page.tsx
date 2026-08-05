@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "How to Hire AI/ML Engineers: Process, Costs & Timeline | MutualCS",
   description:
-    "Learn how to hire AI/ML engineers — sourcing passive candidates, technical screening, salary benchmarks, and why top AI talent doesn't respond to job boards.",
+    "Learn how to hire AI/ML engineers, sourcing passive candidates, technical screening, salary benchmarks, and why top AI talent doesn't respond to job boards.",
   keywords: [
     "how to hire AI ML engineers",
     "AI engineer recruitment process",
@@ -24,8 +24,8 @@ const steps = [
   },
   {
     n: "02",
-    title: "Map passive talent — not job board responses",
-    body: "85%+ of senior AI/ML engineers are not actively job-hunting. Effective hiring means identifying engineers at GCCs, product companies, and research labs — then approaching them directly. Job board sourcing returns junior-to-mid talent, rarely principal-level or GenAI specialists.",
+    title: "Map passive talent, not job board responses",
+    body: "85%+ of senior AI/ML engineers are not actively job-hunting. Effective hiring means identifying engineers at GCCs, product companies, and research labs, then approaching them directly. Job board sourcing returns junior-to-mid talent, rarely principal-level or GenAI specialists.",
   },
   {
     n: "03",
@@ -34,25 +34,25 @@ const steps = [
   },
   {
     n: "04",
-    title: "Benchmark salary against market — not bands",
+    title: "Benchmark salary against market, not bands",
     body: "India's AI/ML market moved faster than most comp bands. A Staff ML Engineer in Bengaluru commands ₹50–80L+ in 2025; GenAI architects with LLM fine-tuning experience command a 20–30% premium. Outdated bands will lose candidates at offer.",
   },
   {
     n: "05",
-    title: "Move fast — AI talent gets 3–5 offers simultaneously",
+    title: "Move fast. AI talent gets 3–5 offers simultaneously",
     body: "Top AI/ML engineers don't sit in interview loops for 8 weeks. Compress to: phone screen → technical screen → final panel → offer within 15–21 days. MutualCS's 30-day shortlist SLA is designed around this reality.",
   },
   {
     n: "06",
     title: "Structure the offer around equity and mission",
-    body: "Senior AI/ML talent often weighs problem complexity and equity over base salary. ESOPs, RSUs, publication rights, and access to frontier models are part of the offer conversation — not afterthoughts.",
+    body: "Senior AI/ML talent often weighs problem complexity and equity over base salary. ESOPs, RSUs, publication rights, and access to frontier models are part of the offer conversation, not afterthoughts.",
   },
 ];
 
 const faqs = [
   {
     q: "Why is it so hard to hire AI and ML engineers in India?",
-    a: "India's AI/ML talent pool is deep in quantity but thin at the senior end. Most top-tier ML engineers are employed at GCCs of US tech giants, product companies, or have relocated abroad. The actively-applying pool skews junior. Senior ML engineers with production LLM or GenAI experience are rare — estimates put the number of engineers with genuine LLM fine-tuning experience in India under 5,000.",
+    a: "India's AI/ML talent pool is deep in quantity but thin at the senior end. Most top-tier ML engineers are employed at GCCs of US tech giants, product companies, or have relocated abroad. The actively-applying pool skews junior. Senior ML engineers with production LLM or GenAI experience are rare, estimates put the number of engineers with genuine LLM fine-tuning experience in India under 5,000.",
   },
   {
     q: "What is the typical salary for an AI/ML engineer in India in 2025?",
@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "What is the difference between an ML Engineer and a GenAI/LLM Architect?",
-    a: "An ML Engineer builds and maintains traditional machine learning systems — classification models, recommendation systems, time-series forecasting, and predictive pipelines. A GenAI or LLM Architect specialises in large language model infrastructure — fine-tuning, RAG pipelines, agent frameworks, prompt engineering at scale, and LLM evaluation. The roles overlap but require distinct skills and command different salary bands.",
+    a: "An ML Engineer builds and maintains traditional machine learning systems, classification models, recommendation systems, time-series forecasting, and predictive pipelines. A GenAI or LLM Architect specialises in large language model infrastructure, fine-tuning, RAG pipelines, agent frameworks, prompt engineering at scale, and LLM evaluation. The roles overlap but require distinct skills and command different salary bands.",
   },
   {
     q: "Should we use a recruiter or hire AI/ML engineers directly?",
@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: "What is an MLOps engineer and do we need one?",
-    a: "MLOps engineers build and maintain the infrastructure that takes ML models from experimentation to production — CI/CD pipelines for models, feature stores, model registries, drift monitoring, and retraining automation. You need one when: you have more than 2–3 models in production, your data scientists spend >30% of time on infrastructure, or you're experiencing model degradation without visibility. A good MLOps hire typically unlocks 3–5x more output from your ML team.",
+    a: "MLOps engineers build and maintain the infrastructure that takes ML models from experimentation to production, CI/CD pipelines for models, feature stores, model registries, drift monitoring, and retraining automation. You need one when: you have more than 2–3 models in production, your data scientists spend >30% of time on infrastructure, or you're experiencing model degradation without visibility. A good MLOps hire typically unlocks 3–5x more output from your ML team.",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function HireAiMlEngineersPage() {
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            <strong>Hiring AI/ML engineers</strong> requires passive headhunting — the best talent is not on job boards.
+            <strong>Hiring AI/ML engineers</strong> requires passive headhunting, the best talent is not on job boards.
             Expect <strong>₹30–120L+ CTC</strong> depending on seniority and GenAI specialisation.
             With a structured process: <strong>30-day shortlist SLA</strong>, 15–21 days to offer.
             MutualCS provides a 20% fee reduction if the SLA is missed.
@@ -181,13 +181,13 @@ export default function HireAiMlEngineersPage() {
           <section className="mb-16">
             <h2 className="text-3xl font-display tracking-tight mb-6">Why AI/ML Hiring Is Different</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              AI and ML engineering roles are among the hardest to fill in tech — not because the talent
+              AI and ML engineering roles are among the hardest to fill in tech, not because the talent
               doesn't exist, but because the best of it is invisible to standard sourcing methods.
               Three things make this market structurally different:
             </p>
             <div className="space-y-4 mb-6">
               {[
-                { title: "Senior talent is almost entirely passive", body: "Staff ML Engineers and GenAI Architects with production LLM experience are not on Naukri or LinkedIn Easy Apply. They are employed — at GCCs, product companies, or research institutions — and need to be approached directly." },
+                { title: "Senior talent is almost entirely passive", body: "Staff ML Engineers and GenAI Architects with production LLM experience are not on Naukri or LinkedIn Easy Apply. They are employed at GCCs, product companies, or research institutions, and need to be approached directly." },
                 { title: "Roles are highly specific", body: "An ML Engineer who works on recommendation systems is not interchangeable with one who fine-tunes LLMs. The brief needs to define framework, problem type, data scale, and production context before sourcing begins." },
                 { title: "Speed is a competitive advantage", body: "Senior AI/ML candidates hold 3–5 offers simultaneously. Companies that compress their process to under 21 days close significantly more candidates than those running 8-week loops." },
               ].map((item) => (
@@ -217,10 +217,10 @@ export default function HireAiMlEngineersPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-display tracking-tight mb-8">Salary Benchmarks — India 2025</h2>
+            <h2 className="text-3xl font-display tracking-tight mb-8">Salary Benchmarks. India 2025</h2>
             <div className="bg-card border border-border rounded-2xl overflow-hidden">
               <div className="p-6 border-b border-border">
-                <h3 className="font-semibold mb-1">AI/ML Engineer Salary Ranges — Bengaluru & Hyderabad</h3>
+                <h3 className="font-semibold mb-1">AI/ML Engineer Salary Ranges, Bengaluru & Hyderabad</h3>
                 <p className="text-sm text-muted-foreground">NCR and Pune typically run 10–15% lower. GenAI premium applies on top of base band.</p>
               </div>
               <div className="divide-y divide-border">
@@ -277,7 +277,7 @@ export default function HireAiMlEngineersPage() {
                   {[
                     "Strong employer brand in AI/ML community",
                     "Junior-to-mid roles with active applicant pools",
-                    "High volume (8+ roles/yr) — consider Embedded RPO instead",
+                    "High volume (8+ roles/yr), consider Embedded RPO instead",
                     "Internal recruiting team has AI/ML domain depth",
                     "Roles can tolerate a 60–90 day fill timeline",
                   ].map((point) => (

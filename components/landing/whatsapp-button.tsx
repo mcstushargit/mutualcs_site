@@ -2,7 +2,7 @@
 
 const WHATSAPP_URL =
   "https://wa.me/917042477535?text=" +
-  encodeURIComponent("Hi MutualCS — I'd like to discuss a hiring mandate.");
+  encodeURIComponent("Hi MutualCS. I'd like to discuss a hiring mandate.");
 
 export function WhatsAppButton() {
   return (

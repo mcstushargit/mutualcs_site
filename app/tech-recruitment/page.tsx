@@ -5,7 +5,7 @@ import { ArrowRight, Code2, CheckCircle, Building2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "Global Tech Recruitment | Permanent Placement · Any Country | MutualCS",
   description:
-    "MutualCS recruits permanent tech talent globally — engineers, architects, data scientists, and domain specialists. 30-day SLA, passive headhunting, no staffing.",
+    "MutualCS recruits permanent tech talent globally, engineers, architects, data scientists, and domain specialists. 30-day SLA, passive headhunting, no staffing.",
   keywords: [
     "global tech recruitment permanent",
     "hire engineers permanent any country",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 
 const whyPermanent = [
   {
-    heading: "Permanent only — no staffing",
-    body: "We don't do contract or body-shop placements. Every search is for a permanent hire, which means we care about long-term fit and retention — not just filling a seat.",
+    heading: "Permanent only, no staffing",
+    body: "We don't do contract or body-shop placements. Every search is for a permanent hire, which means we care about long-term fit and retention, not just filling a seat.",
   },
   {
     heading: "Passive candidates, not job boards",
-    body: "The engineers who fit your bar are not actively looking. We identify and approach them directly — senior engineers at top-tier companies who need a compelling reason to move.",
+    body: "The engineers who fit your bar are not actively looking. We identify and approach them directly, senior engineers at top-tier companies who need a compelling reason to move.",
   },
   {
     heading: "Global reach, deep talent networks",
@@ -58,23 +58,23 @@ const industries = [
 const techFaqs = [
   {
     q: "What is the difference between tech recruitment and staffing?",
-    a: "Tech recruitment (permanent placement) means placing full-time employees who join your team with equity, benefits, and long-term career intent. Staffing means placing temporary contractors. MutualCS does permanent placement only — because it produces better retention, deeper cultural fit, and stronger long-term outcomes.",
+    a: "Tech recruitment (permanent placement) means placing full-time employees who join your team with equity, benefits, and long-term career intent. Staffing means placing temporary contractors. MutualCS does permanent placement only, because it produces better retention, deeper cultural fit, and stronger long-term outcomes.",
   },
   {
     q: "What is MutualCS's fee for tech recruitment?",
-    a: "Our contingent hire fee is 16–18% of the placed candidate's first-year CTC, payable on successful placement. No upfront fee. If we miss our 30-day shortlist SLA, you receive 20% of the fee back — contractually, not as a goodwill gesture.",
+    a: "Our contingent hire fee is 16–18% of the placed candidate's first-year CTC, payable on successful placement. No upfront fee. If we miss our 30-day shortlist SLA, you receive 20% of the fee back. That is contractual, not a goodwill gesture.",
   },
   {
     q: "Can you hire for tech roles outside India?",
-    a: "Yes. While our network is deepest in India's engineering market, we recruit for permanent tech roles in any country — US, UK, Singapore, UAE, Europe, and more. We also place Indian diaspora talent in international markets and source local talent where needed.",
+    a: "Yes. While our network is deepest in India's engineering market, we recruit for permanent tech roles in any country, US, UK, Singapore, UAE, Europe, and more. We also place Indian diaspora talent in international markets and source local talent where needed.",
   },
   {
     q: "How do you find senior engineers who aren't on job boards?",
-    a: "We use direct outreach to passive candidates — senior engineers at top-tier companies who aren't actively looking. Our sourcing includes referral networks, alumni connections, community networks, and targeted LinkedIn outreach. We do not use Naukri, Indeed, or similar job boards for senior technical hires.",
+    a: "We use direct outreach to passive candidates, senior engineers at top-tier companies who aren't actively looking. Our sourcing includes referral networks, alumni connections, community networks, and targeted LinkedIn outreach. We do not use Naukri, Indeed, or similar job boards for senior technical hires.",
   },
   {
     q: "What is embedded RPO and when should I use it?",
-    a: "Embedded RPO means we place a dedicated recruiter inside your organisation — attending standups, learning your culture, operating as part of your internal team. Ideal for companies hiring 8–20+ roles per year who want recruitment to feel internal. Pricing is a monthly retainer plus a per-hire success fee.",
+    a: "Embedded RPO means we place a dedicated recruiter inside your organisation. Attending standups, learning your culture, operating as part of your internal team. Ideal for companies hiring 8–20+ roles per year who want recruitment to feel internal. Pricing is a monthly retainer plus a per-hire success fee.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function TechRecruitmentPage() {
             <span className="text-accent">What Others Can&apos;t.</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Permanent tech recruitment for high-growth companies — globally. From Staff Engineers
+            Permanent tech recruitment for high-growth companies, globally, from Staff Engineers
             to Engineering Managers, AI Architects to Cybersecurity leads. We find the people
             who aren&apos;t looking, with a 30-day SLA and contractual accountability.
           </p>
@@ -241,7 +241,7 @@ export default function TechRecruitmentPage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">FAQ</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Tech Recruitment — Common Questions</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Tech Recruitment, Common Questions</h2>
           <div className="space-y-8 max-w-3xl">
             {techFaqs.map((faq) => (
               <div key={faq.q} className="border-b border-border pb-8 last:border-0">

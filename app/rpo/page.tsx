@@ -23,7 +23,7 @@ const whenRPO = [
   {
     trigger: "Building a greenfield GCC",
     detail:
-      "Founding team to 50+ people in 9–12 months. RPO gives you a dedicated recruiter who knows your mandate, your tech stack, and your culture from day one — not a new account manager every quarter.",
+      "Founding team to 50+ people in 9–12 months. RPO gives you a dedicated recruiter who knows your mandate, your tech stack, and your culture from day one, not a new account manager every quarter.",
   },
   {
     trigger: "Scaling an existing GCC rapidly",
@@ -33,7 +33,7 @@ const whenRPO = [
   {
     trigger: "Hiring 8+ roles per year",
     detail:
-      "At this volume, contingent agency fees compound fast. RPO converts variable per-hire costs into predictable monthly overhead — typically 40–60% cheaper at scale.",
+      "At this volume, contingent agency fees compound fast. RPO converts variable per-hire costs into predictable monthly overhead, typically 40–60% cheaper at scale.",
   },
   {
     trigger: "No internal TA team in India yet",
@@ -46,7 +46,7 @@ const whatIncluded = [
   "One dedicated GCC recruiter embedded in your process (Slack, email, your ATS)",
   "Full-cycle recruiting: sourcing, screening, interview coordination, offer management",
   "Weekly pipeline reports with market intelligence on candidate availability and salary benchmarks",
-  "Passive headhunting — we reach out to candidates who are not on job boards",
+  "Passive headhunting, we reach out to candidates who are not on job boards",
   "Employer branding support: job description crafting, GCC positioning for candidates",
   "Contractual 3-month replacement guarantee on all placements",
 ];
@@ -55,7 +55,7 @@ const vsAgency = [
   ["Engagement model", "Per-hire success fee (16–18%)", "Monthly retainer + reduced per-hire fee"],
   ["Recruiter relationship", "Shared across multiple clients", "Dedicated to your GCC only"],
   ["Volume economics", "Costs compound with every hire", "Flat monthly cost, predictable budget"],
-  ["Market intelligence", "Limited — role-by-role", "Ongoing — weekly salary & pipeline reports"],
+  ["Market intelligence", "Limited, role-by-role", "Ongoing, weekly salary & pipeline reports"],
   ["ATS integration", "External, separate workflow", "Embedded in your internal process"],
   ["Best for", "1–5 roles at a time", "8–20+ roles per year, greenfield builds"],
 ];
@@ -90,8 +90,7 @@ export default function RpoPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             For GCCs hiring 8–20+ roles per year, contingent agency fees compound into millions.
-            MutualCS Embedded RPO gives you a specialist GCC recruiter inside your process —
-            at a fixed monthly retainer, with a per-hire fee on placements.
+            MutualCS Embedded RPO gives you a specialist GCC recruiter inside your process at a fixed monthly retainer, with a per-hire fee on placements.
           </p>
 
           {/* Pricing callout */}
@@ -228,10 +227,10 @@ export default function RpoPage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Scoping call", body: "We map your hiring plan — roles, volume, timeline, cities. We agree on retainer level, per-hire fee structure, and engagement scope." },
+              { step: "01", title: "Scoping call", body: "We map your hiring plan, roles, volume, timeline, cities. We agree on retainer level, per-hire fee structure, and engagement scope." },
               { step: "02", title: "Recruiter embedded", body: "Your dedicated GCC recruiter joins your Slack, gets access to your ATS, and meets the hiring managers. Day 1 activation." },
-              { step: "03", title: "Pipeline built", body: "Active sourcing begins immediately — passive outreach, referral networks, GCC-specific communities. Weekly pipeline reports." },
-              { step: "04", title: "Placements + scale", body: "Candidates placed, fees invoiced per hire. Recruiter stays embedded — building deeper context with every hire, getting faster over time." },
+              { step: "03", title: "Pipeline built", body: "Active sourcing begins immediately, passive outreach, referral networks, GCC-specific communities. Weekly pipeline reports." },
+              { step: "04", title: "Placements + scale", body: "Candidates placed, fees invoiced per hire. Recruiter stays embedded, building deeper context with every hire, getting faster over time." },
             ].map((item) => (
               <div key={item.step}>
                 <span className="text-4xl font-display text-foreground/10 block mb-3">{item.step}</span>
@@ -250,8 +249,8 @@ export default function RpoPage() {
             Hiring 8+ GCC Roles This Year?
           </h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-10">
-            Tell us your hiring plan. We&apos;ll build a proposal — with retainer level, per-hire fee,
-            and projected savings vs. contingent agency — within 48 hours.
+            Tell us your hiring plan. We&apos;ll build a proposal, with retainer level, per-hire fee,
+            and projected savings vs. contingent agency, within 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
@@ -293,7 +292,7 @@ export default function RpoPage() {
           {
             "@type": "Question",
             "name": "What is Embedded RPO?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Embedded RPO (Recruitment Process Outsourcing) means a dedicated recruiter from MutualCS works inside your company's hiring process — in your Slack, your ATS, attending your interviews — rather than operating as an external agency. You get the expertise of a specialist GCC recruiter without adding permanent headcount." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Embedded RPO (Recruitment Process Outsourcing) means a dedicated recruiter from MutualCS works inside your company's hiring process: in your Slack, your ATS, attending your interviews, rather than operating as an external agency. You get the expertise of a specialist GCC recruiter without adding permanent headcount." }
           },
           {
             "@type": "Question",
@@ -313,7 +312,7 @@ export default function RpoPage() {
           {
             "@type": "Question",
             "name": "Can MutualCS Embedded RPO help build a greenfield GCC from scratch?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes — greenfield GCC builds are one of the primary use cases for Embedded RPO. When scaling from 0 to 50+ people in 9-12 months, you need a recruiter who understands your founding culture, tech stack, and hiring bar deeply. An embedded model is far more effective than rotating between multiple agencies." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, greenfield GCC builds are one of the primary use cases for Embedded RPO. When scaling from 0 to 50+ people in 9-12 months, you need a recruiter who understands your founding culture, tech stack, and hiring bar deeply. An embedded model is far more effective than rotating between multiple agencies." }
           }
         ]
       })}} />

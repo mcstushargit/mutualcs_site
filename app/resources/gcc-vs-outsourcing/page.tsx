@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Is a GCC more expensive than outsourcing?",
-    a: "In the short term, yes — setting up a GCC requires legal entity formation, infrastructure, and hiring costs. But from year 2–3 onwards, GCCs are typically 30–50% cheaper than outsourcing at equivalent headcount because you eliminate the vendor margin (typically 30–40% of the contract value). Most companies that do the NPV analysis find GCCs cheaper over a 5-year horizon.",
+    a: "In the short term, yes, setting up a GCC requires legal entity formation, infrastructure, and hiring costs. But from year 2–3 onwards, GCCs are typically 30–50% cheaper than outsourcing at equivalent headcount because you eliminate the vendor margin (typically 30–40% of the contract value). Most companies that do the NPV analysis find GCCs cheaper over a 5-year horizon.",
   },
   {
     q: "Who owns the IP in a GCC vs outsourcing?",
-    a: "In a GCC, all IP is owned by the parent company — the code, data, models, and innovations belong to you. In outsourcing, IP ownership depends on the contract, but many outsourcing arrangements create ambiguity around jointly developed IP. This is one of the primary reasons companies transition from outsourcing to GCCs.",
+    a: "In a GCC, all IP is owned by the parent company, the code, data, models, and innovations belong to you. In outsourcing, IP ownership depends on the contract, but many outsourcing arrangements create ambiguity around jointly developed IP. This is one of the primary reasons companies transition from outsourcing to GCCs.",
   },
   {
     q: "Can I start with outsourcing and transition to a GCC later?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "How long does it take to transition from outsourcing to a GCC?",
-    a: "The legal and operational setup takes 3–6 months. Hiring the founding leadership team (Country Head, VP Engineering) takes another 2–3 months with a specialist recruiter. Reaching full operational capacity — 30–100 people — typically takes 12–18 months from decision.",
+    a: "The legal and operational setup takes 3–6 months. Hiring the founding leadership team (Country Head, VP Engineering) takes another 2–3 months with a specialist recruiter. Reaching full operational capacity, 30–100 people, typically takes 12–18 months from decision.",
   },
 ];
 
@@ -94,12 +94,12 @@ export default function GccVsOutsourcingPage() {
         </div>
       </div>
 
-      {/* Quick Answer box — AI featured snippet target */}
+      {/* Quick Answer box. AI featured snippet target */}
       <div className="border-b border-border bg-accent/5">
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            A <strong>GCC (Global Capability Center)</strong> is wholly owned by the parent company — your employees, your IP, your culture, your control.
+            A <strong>GCC (Global Capability Center)</strong> is wholly owned by the parent company, your employees, your IP, your culture, your control.
             <strong> Outsourcing</strong> uses a third-party vendor whose staff work across multiple clients.
             GCCs cost more upfront but are typically 30–50% cheaper than outsourcing over 5 years, and give you full IP ownership, cultural alignment, and talent loyalty.
           </p>
@@ -113,7 +113,7 @@ export default function GccVsOutsourcingPage() {
             GCC vs Outsourcing
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-            The two most common models for accessing offshore tech talent — compared
+            The two most common models for accessing offshore tech talent, compared
             across ownership, cost, IP, talent quality, and control.
           </p>
 
@@ -132,13 +132,13 @@ export default function GccVsOutsourcingPage() {
                 <tbody className="divide-y divide-border">
                   {[
                     ["Ownership", "100% owned by parent company", "Vendor-owned; you buy services"],
-                    ["IP ownership", "All IP belongs to parent", "Contractual — often ambiguous"],
+                    ["IP ownership", "All IP belongs to parent", "Contractual, often ambiguous"],
                     ["Employees", "On parent company payroll", "Vendor employees"],
-                    ["Upfront cost", "Higher — entity setup + hiring", "Lower — contract and go"],
+                    ["Upfront cost", "Higher, entity setup + hiring", "Lower, contract and go"],
                     ["5-year cost", "30–50% cheaper than outsourcing", "Vendor margin adds 30–40%"],
-                    ["Cultural alignment", "Deep — hired for your culture", "Shallow — shared across clients"],
-                    ["Talent loyalty", "High — career path within company", "Lower — easy to move between vendors"],
-                    ["Control", "Full — you set standards & processes", "Contractual SLA-based"],
+                    ["Cultural alignment", "Deep, hired for your culture", "Shallow, shared across clients"],
+                    ["Talent loyalty", "High, career path within company", "Lower, easy to move between vendors"],
+                    ["Control", "Full, you set standards & processes", "Contractual SLA-based"],
                     ["Scalability", "Highly scalable within same entity", "Scale via contract renegotiation"],
                     ["Innovation", "Full R&D and product ownership", "Limited by contract scope"],
                     ["Setup time", "6–12 months to full operation", "4–8 weeks"],
@@ -201,7 +201,7 @@ export default function GccVsOutsourcingPage() {
             <p className="text-muted-foreground leading-relaxed mb-6">
               The second driver is IP and talent. Companies building AI systems, proprietary data platforms,
               or core product features find that outsourcing creates IP ambiguity and talent churn. GCC employees
-              have career paths inside your company — they stay, they grow, they build institutional knowledge.
+              have career paths inside your company, they stay, they grow, they build institutional knowledge.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The third driver is culture. The best engineering talent in India doesn&apos;t want to work at a

@@ -26,7 +26,7 @@ const whyIndia = [
 const faqs = [
   {
     q: "What is the difference between a GCC and outsourcing?",
-    a: "A GCC is wholly owned by the parent company — your employees, your IP, your culture. Outsourcing engages a third-party vendor whose staff work across multiple clients. GCCs offer full control and long-term cost efficiency; outsourcing offers flexibility without capital commitment. Most companies that start with outsourcing eventually transition to a GCC once they reach scale.",
+    a: "A GCC is wholly owned by the parent company, your employees, your IP, your culture. Outsourcing engages a third-party vendor whose staff work across multiple clients. GCCs offer full control and long-term cost efficiency; outsourcing offers flexibility without capital commitment. Most companies that start with outsourcing eventually transition to a GCC once they reach scale.",
   },
   {
     q: "What is the difference between a GCC and a captive center?",
@@ -70,7 +70,7 @@ export default function WhatIsGccPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "What Is a Global Capability Center (GCC)?",
-            "description": "A comprehensive guide to Global Capability Centers — what they are, why companies build them, and how India became the world's largest GCC hub.",
+            "description": "A comprehensive guide to Global Capability Centers, what they are, why companies build them, and how India became the world's largest GCC hub.",
             "publisher": { "@type": "Organization", "name": "MutualCS", "url": "https://mutualcs.com" },
             "mainEntityOfPage": "https://mutualcs.com/resources/what-is-gcc"
           })
@@ -101,12 +101,12 @@ export default function WhatIsGccPage() {
         </div>
       </div>
 
-      {/* Quick Answer — optimised for AI featured snippets */}
+      {/* Quick Answer, optimised for AI featured snippets */}
       <div className="border-b border-border bg-accent/5">
         <div className="max-w-[1200px] mx-auto px-6 py-6">
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-2">Quick Answer</span>
           <p className="text-foreground text-lg leading-relaxed max-w-3xl">
-            A <strong>Global Capability Center (GCC)</strong> is a wholly-owned offshore entity established by a multinational corporation to handle technology development, R&amp;D, data analytics, and operations. Unlike outsourcing, the parent company owns and controls the GCC entirely — including the employees, IP, and culture. India hosts 1,800+ GCCs employing 1.9 million professionals, making it the world&apos;s largest GCC destination.
+            A <strong>Global Capability Center (GCC)</strong> is a wholly-owned offshore entity established by a multinational corporation to handle technology development, R&amp;D, data analytics, and operations. Unlike outsourcing, the parent company owns and controls the GCC entirely. Including the employees, IP, and culture. India hosts 1,800+ GCCs employing 1.9 million professionals, making it the world&apos;s largest GCC destination.
           </p>
         </div>
       </div>
@@ -118,14 +118,14 @@ export default function WhatIsGccPage() {
             What Is a Global Capability Center (GCC)?
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-            A complete guide to GCCs — what they are, why companies build them in India,
+            A complete guide to GCCs, what they are, why companies build them in India,
             how they differ from outsourcing, and what roles they hire for.
           </p>
 
           <section className="mb-16">
             <h2 className="text-3xl font-display tracking-tight mb-6">Definition</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A Global Capability Center (GCC) — also called a Captive Center or Global In-house Center (GIC) — is
+              A Global Capability Center (GCC). Also called a Captive Center or Global In-house Center (GIC). Is
               a wholly-owned subsidiary of a multinational company, set up in a lower-cost geography to perform
               technology, engineering, analytics, and business operations work for the parent.
             </p>
@@ -135,7 +135,7 @@ export default function WhatIsGccPage() {
               and services, under the parent&apos;s culture and leadership. There is no third-party vendor involved.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Early GCCs (2000s) were set up purely for cost arbitrage — labour arbitrage on back-office processes.
+              Early GCCs (2000s) were set up purely for cost arbitrage, labour arbitrage on back-office processes.
               Today, GCCs run core engineering, AI research, and product development for the world&apos;s largest companies.
               JPMorgan, Google, HSBC, Goldman Sachs, and Toyota all have GCCs in India that do work as sophisticated
               as anything in their home markets.
@@ -146,12 +146,12 @@ export default function WhatIsGccPage() {
             <h2 className="text-3xl font-display tracking-tight mb-6">Why Companies Build GCCs</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { title: "Cost efficiency", body: "Senior engineering talent in India costs 20–30% of equivalent US compensation — at comparable quality for most tech roles." },
+                { title: "Cost efficiency", body: "Senior engineering talent in India costs 20–30% of equivalent US compensation, at comparable quality for most tech roles." },
                 { title: "Talent access", body: "India produces 1.5 million engineering graduates per year. For AI/ML, cloud, and cybersecurity, the talent pool is genuinely world-class." },
                 { title: "IP ownership", body: "Unlike outsourcing, everything built in a GCC belongs to the parent company. No vendor lock-in, no shared codebase, no IP risk." },
                 { title: "Scalability", body: "A GCC can scale from 5 to 5,000 people within the same legal and operational structure. Outsourcing relationships don't scale cleanly." },
                 { title: "Cultural alignment", body: "GCC employees are hired by and for the parent company. They build the parent's culture, attend the parent's all-hands, and progress on the parent's career ladder." },
-                { title: "Innovation capacity", body: "Modern GCCs run R&D, file patents, and ship products. They are not back-offices — they are engineering centres with global scope." },
+                { title: "Innovation capacity", body: "Modern GCCs run R&D, file patents, and ship products. They are not back-offices, they are engineering centres with global scope." },
               ].map(item => (
                 <div key={item.title} className="border border-border rounded-xl p-5">
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -225,7 +225,7 @@ export default function WhatIsGccPage() {
             Building a GCC? We Fill the Roles.
           </h2>
           <p className="text-accent-foreground/80 mb-8 max-w-xl mx-auto">
-            From founding Country Head to your 50th engineer — MutualCS is the specialist
+            From founding Country Head to your 50th engineer, MutualCS is the specialist
             recruitment partner for GCC builds globally.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

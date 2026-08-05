@@ -17,7 +17,7 @@ const serviceTypes = [
   "GCC Fast Track",
   "Executive / Leadership Search",
   "Embedded RPO",
-  "Not Sure — Help Me Decide"
+  "Not Sure, Help Me Decide"
 ];
 
 const gccCities = [
@@ -130,8 +130,7 @@ export function ContactSection() {
               Tell Us What You&apos;re Hiring For.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Share your open GCC tech roles and we&apos;ll come back with a tailored plan —
-              including timeline, approach, and the right engagement model.{" "}
+              Share your open GCC tech roles and we&apos;ll come back with a tailored plan. Including timeline, approach, and the right engagement model.{" "}
               <span className="text-foreground font-semibold">Our team will contact you within 4 hours.</span>
             </p>
 
@@ -157,7 +156,7 @@ export function ContactSection() {
                 </div>
               </a>
 
-              <a href={"https://wa.me/917042477535?text=" + encodeURIComponent("Hi MutualCS — I'd like to discuss a hiring mandate.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
+              <a href={"https://wa.me/917042477535?text=" + encodeURIComponent("Hi MutualCS. I'd like to discuss a hiring mandate.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   <svg viewBox="0 0 32 32" className="w-5 h-5 fill-accent" aria-hidden="true">
                     <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.257.59 4.46 1.712 6.404L3.2 28.8l6.564-1.683a12.74 12.74 0 0 0 6.24 1.623h.005c7.058 0 12.79-5.74 12.79-12.8 0-3.42-1.33-6.633-3.75-9.05a12.71 12.71 0 0 0-9.045-3.69zm0 23.383h-.004a10.6 10.6 0 0 1-5.404-1.48l-.388-.23-3.896.999 1.04-3.797-.253-.39a10.58 10.58 0 0 1-1.628-5.685c0-5.868 4.775-10.643 10.647-10.643 2.844 0 5.516 1.109 7.526 3.12a10.58 10.58 0 0 1 3.115 7.53c0 5.868-4.775 10.576-10.755 10.576zm5.838-7.93c-.32-.16-1.892-.933-2.185-1.04-.293-.107-.507-.16-.72.16-.213.32-.826 1.04-1.013 1.253-.187.214-.373.24-.693.08-.32-.16-1.351-.498-2.573-1.587-.951-.848-1.593-1.896-1.78-2.216-.186-.32-.02-.493.14-.652.144-.144.32-.374.48-.56.16-.187.214-.32.32-.534.107-.213.054-.4-.026-.56-.08-.16-.72-1.734-.987-2.374-.26-.623-.523-.539-.72-.549l-.613-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667s1.146 3.093 1.306 3.307c.16.213 2.256 3.444 5.466 4.83.764.33 1.36.527 1.825.674.767.244 1.465.21 2.016.127.615-.092 1.893-.774 2.16-1.52.266-.747.266-1.387.186-1.52-.08-.134-.293-.214-.613-.374z" />
@@ -175,7 +174,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Connect on LinkedIn</div>
-                  <div className="font-semibold">MutualCS — GCC Tech Recruiting</div>
+                  <div className="font-semibold">MutualCS, GCC Tech Recruiting</div>
                 </div>
               </a>
             </div>
@@ -199,7 +198,7 @@ export function ContactSection() {
             {/* Time zone coverage */}
             <p className="mt-6 text-sm text-muted-foreground">
               <span className="text-foreground font-medium">Global coverage:</span>{" "}
-              GST (UAE) · IST (India) · GMT (UK) · EST (US) — we work on your time zone.
+              GST (UAE) · IST (India) · GMT (UK) · EST (US), we work on your time zone.
             </p>
           </div>
 
@@ -233,12 +232,12 @@ export function ContactSection() {
                   </p>
                 </div>
 
-                {/* Candidate deflection — protects lead quality */}
+                {/* Candidate deflection, protects lead quality */}
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-accent/5 border border-accent/20">
                   <Briefcase className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     <span className="text-foreground font-medium">This form is for companies with a hiring mandate.</span>{" "}
-                    Looking for a role yourself? We&apos;re a retained search firm, not a job board —{" "}
+                    Looking for a role yourself? We&apos;re a retained search firm, not a job board, {" "}
                     <a href="/candidates" className="text-accent hover:underline font-medium">see how we work with candidates</a>.
                   </p>
                 </div>
@@ -360,7 +359,7 @@ export function ContactSection() {
                   <label htmlFor="message" className="block text-sm font-medium mb-2">What roles are you hiring for?</label>
                   <Textarea
                     id="message"
-                    placeholder="E.g. 'AI Engineer, Cloud Architect, DevOps Lead — need 3 people in [city] by [month]'"
+                    placeholder="E.g. 'AI Engineer, Cloud Architect, DevOps Lead, need 3 people in [city] by [month]'"
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     rows={3}

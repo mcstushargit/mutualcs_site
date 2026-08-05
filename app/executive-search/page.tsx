@@ -38,15 +38,15 @@ export const metadata: Metadata = {
 const whyExecSearch = [
   {
     heading: "Retained, not contingent",
-    body: "Executive mandates require commitment. We work on a milestone-based retained model — ensuring dedicated senior attention on your search, not a spray-and-pray approach.",
+    body: "Executive mandates require commitment. We work on a milestone-based retained model, ensuring dedicated senior attention on your search, not a spray-and-pray approach.",
   },
   {
     heading: "Passive headhunting only",
-    body: "The leaders you need are not on LinkedIn Easy Apply. We identify and approach them directly — from competitors, adjacent industries, and global talent pools.",
+    body: "The leaders you need are not on LinkedIn Easy Apply. We identify and approach them directly, from competitors, adjacent industries, and global talent pools.",
   },
   {
     heading: "Cross-border mandates",
-    body: "We place leaders who can operate across geographies — India-based leaders for US HQ companies, global executives relocating for GCC director roles, and local C-suite in any country.",
+    body: "We place leaders who can operate across geographies. India-based leaders for US HQ companies, global executives relocating for GCC director roles, and local C-suite in any country.",
   },
   {
     heading: "Discretion as standard",
@@ -68,16 +68,16 @@ const execRoles = [
 ];
 
 const industries = [
-  { name: "Global Capability Centers", examples: "GCC Site Directors, VP Engineering, CHRO — US, UK, SG, JP, ME parent companies" },
-  { name: "Technology & SaaS", examples: "CTO, VP Product, Head of Engineering — Series B to pre-IPO" },
-  { name: "Financial Services", examples: "CFO, CISO, Chief Risk Officer — banks, FinTechs, asset managers" },
-  { name: "Industrial & Manufacturing", examples: "CEO/MD, CTO, Country Head — automotive, pharma, FMCG" },
+  { name: "Global Capability Centers", examples: "GCC Site Directors, VP Engineering, CHRO, US, UK, SG, JP, ME parent companies" },
+  { name: "Technology & SaaS", examples: "CTO, VP Product, Head of Engineering, Series B to pre-IPO" },
+  { name: "Financial Services", examples: "CFO, CISO, Chief Risk Officer, banks, FinTechs, asset managers" },
+  { name: "Industrial & Manufacturing", examples: "CEO/MD, CTO, Country Head. Automotive, pharma, FMCG" },
 ];
 
 const execFaqs = [
   {
     q: "What is executive search and how is it different from contingent recruitment?",
-    a: "Executive search (retained headhunting) is a dedicated, confidential search for senior leadership — CXO, VP, Country Head, and Board mandates. Unlike contingent recruitment (pay on success only), retained search involves a fee split across milestones, ensuring the recruiter's full commitment to your mandate. We do not post roles publicly without client approval.",
+    a: "Executive search (retained headhunting) is a dedicated, confidential search for senior leadership, CXO, VP, Country Head, and Board mandates. Unlike contingent recruitment (pay on success only), retained search involves a fee split across milestones, ensuring the recruiter's full commitment to your mandate. We do not post roles publicly without client approval.",
   },
   {
     q: "How much does executive search cost?",
@@ -85,15 +85,15 @@ const execFaqs = [
   },
   {
     q: "How long does an executive search take?",
-    a: "Our contractual shortlist SLA is 30 days — we present 4–6 interview-ready candidates within 30 days of mandate signature. Total time-to-offer for C-suite mandates is typically 45–90 days depending on interview rounds and decision timelines.",
+    a: "Our contractual shortlist SLA is 30 days. We present 4–6 interview-ready candidates within 30 days of mandate signature. Total time-to-offer for C-suite mandates is typically 45–90 days depending on interview rounds and decision timelines.",
   },
   {
     q: "Do you handle confidential and succession searches?",
-    a: "Yes. We regularly handle confidential mandates — succession planning, replacement searches where the incumbent is still in post, and board appointments. We do not post roles publicly or disclose client identity without explicit permission.",
+    a: "Yes. We regularly handle confidential mandates, succession planning, replacement searches where the incumbent is still in post, and board appointments. We do not post roles publicly or disclose client identity without explicit permission.",
   },
   {
     q: "What seniority levels do you place through executive search?",
-    a: "We place C-suite (CEO/MD, CTO/CIO, CFO, CHRO, CISO), VP-level (VP Engineering, VP Product), Country Heads and GCC Site Directors, Head of AI/Data, General Counsel, and Independent Board Members — globally.",
+    a: "We place C-suite (CEO/MD, CTO/CIO, CFO, CHRO, CISO), VP-level (VP Engineering, VP Product), Country Heads and GCC Site Directors, Head of AI/Data, General Counsel, and Independent Board Members, globally.",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function ExecutiveSearchPage() {
           <span className="text-xs font-mono text-accent uppercase tracking-widest block mb-1">Quick Answer</span>
           <p className="text-foreground leading-relaxed max-w-3xl text-sm">
             <strong>MutualCS executive search:</strong> retained headhunting for CXO, VP Engineering, Country Head, CHRO, CISO, and board mandates globally.
-            Fee 25–28% across milestones. 30-day shortlist SLA with contractual 20% fee-back if missed. Passive candidates only — we never use job boards for senior mandates.
+            Fee 25–28% across milestones. 30-day shortlist SLA with contractual 20% fee-back if missed. Passive candidates only, we never use job boards for senior mandates.
           </p>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function ExecutiveSearchPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             We place CXOs, VPs, and Country Heads for high-growth companies and Global Capability
-            Centers — globally. Retained search with full accountability, passive headhunting, and
+            Centers, globally. Retained search with full accountability, passive headhunting, and
             a 30-day shortlist SLA backed by contract.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -260,7 +260,7 @@ export default function ExecutiveSearchPage() {
       <section className="py-24 border-b border-border">
         <div className="max-w-[1200px] mx-auto px-6">
           <span className="font-mono text-xs text-accent tracking-widest uppercase block mb-4">FAQ</span>
-          <h2 className="text-4xl font-display tracking-tight mb-12">Executive Search — Common Questions</h2>
+          <h2 className="text-4xl font-display tracking-tight mb-12">Executive Search, Common Questions</h2>
           <div className="space-y-8 max-w-3xl">
             {execFaqs.map((faq) => (
               <div key={faq.q} className="border-b border-border pb-8 last:border-0">
